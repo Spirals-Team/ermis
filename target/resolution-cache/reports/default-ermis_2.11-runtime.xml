@@ -1,0 +1,1121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="default"
+		module="ermis_2.11"
+		revision="1.0"
+		conf="runtime"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
+		date="20150825171247"/>
+	<dependencies>
+		<module organisation="org.apache.jclouds" name="jclouds-all">
+			<revision name="1.7.1" status="release" pubdate="20140206134857" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="1">
+				<metadata-artifact status="no" details="" size="12189" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds/jclouds-all/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/jclouds-all/1.7.1/jclouds-all-1.7.1.pom"/>
+				<caller organisation="default" name="ermis_2.11" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="jclouds-all" type="jar" ext="jar" status="no" details="" size="9134" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds/jclouds-all/jars/jclouds-all-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/jclouds-all/1.7.1/jclouds-all-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds" name="jclouds-allblobstore">
+			<revision name="1.7.1" status="release" pubdate="20140206134758" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="75">
+				<metadata-artifact status="no" details="" size="11143" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds/jclouds-allblobstore/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/jclouds-allblobstore/1.7.1/jclouds-allblobstore-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-all" conf="default, compile, runtime, master" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="jclouds-allblobstore" type="jar" ext="jar" status="no" details="" size="8045" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds/jclouds-allblobstore/jars/jclouds-allblobstore-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/jclouds-allblobstore/1.7.1/jclouds-allblobstore-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds.provider" name="hpcloud-objectstorage">
+			<revision name="1.7.1" status="release" pubdate="20140206132852" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="89">
+				<metadata-artifact status="no" details="" size="10719" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/hpcloud-objectstorage/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/hpcloud-objectstorage/1.7.1/hpcloud-objectstorage-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-allblobstore" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="hpcloud-objectstorage" type="bundle" ext="jar" status="no" details="" size="51343" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/hpcloud-objectstorage/bundles/hpcloud-objectstorage-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/hpcloud-objectstorage/1.7.1/hpcloud-objectstorage-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds.api" name="filesystem">
+			<revision name="1.7.1" status="release" pubdate="20140206124513" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="88">
+				<metadata-artifact status="no" details="" size="9344" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.api/filesystem/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/api/filesystem/1.7.1/filesystem-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-allblobstore" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="filesystem" type="bundle" ext="jar" status="no" details="" size="27348" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.api/filesystem/bundles/filesystem-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/api/filesystem/1.7.1/filesystem-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds.provider" name="cloudfiles-uk">
+			<revision name="1.7.1" status="release" pubdate="20140206133147" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="87">
+				<metadata-artifact status="no" details="" size="10444" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/cloudfiles-uk/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/cloudfiles-uk/1.7.1/cloudfiles-uk-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-allblobstore" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="cloudfiles-uk" type="bundle" ext="jar" status="no" details="" size="11815" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/cloudfiles-uk/bundles/cloudfiles-uk-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/cloudfiles-uk/1.7.1/cloudfiles-uk-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds.provider" name="cloudfiles-us">
+			<revision name="1.7.1" status="release" pubdate="20140206133103" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="86">
+				<metadata-artifact status="no" details="" size="10590" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/cloudfiles-us/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/cloudfiles-us/1.7.1/cloudfiles-us-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-allblobstore" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="cloudfiles-us" type="bundle" ext="jar" status="no" details="" size="11868" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/cloudfiles-us/bundles/cloudfiles-us-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/cloudfiles-us/1.7.1/cloudfiles-us-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds.api" name="cloudfiles">
+			<revision name="1.7.1" status="release" pubdate="20140206130021" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="85">
+				<metadata-artifact status="no" details="" size="10510" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.api/cloudfiles/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/api/cloudfiles/1.7.1/cloudfiles-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds.provider" name="cloudfiles-uk" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-allblobstore" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.provider" name="cloudfiles-us" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="cloudfiles" type="jar" ext="jar" status="no" details="" size="39524" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.api/cloudfiles/jars/cloudfiles-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/api/cloudfiles/1.7.1/cloudfiles-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds.api" name="swift">
+			<revision name="1.7.1" status="release" pubdate="20140206125523" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="84">
+				<metadata-artifact status="no" details="" size="11325" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.api/swift/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/api/swift/1.7.1/swift-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds.provider" name="hpcloud-objectstorage" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.api" name="cloudfiles" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-allblobstore" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="swift" type="jar" ext="jar" status="no" details="" size="135344" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.api/swift/jars/swift-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/api/swift/1.7.1/swift-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds.provider" name="azureblob">
+			<revision name="1.7.1" status="release" pubdate="20140206130935" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="82">
+				<metadata-artifact status="no" details="" size="9899" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/azureblob/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/azureblob/1.7.1/azureblob-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-allblobstore" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="azureblob" type="bundle" ext="jar" status="no" details="" size="101492" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/azureblob/bundles/azureblob-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/azureblob/1.7.1/azureblob-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds.common" name="azure-common">
+			<revision name="1.7.1" status="release" pubdate="20140206123015" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="83">
+				<metadata-artifact status="no" details="" size="8912" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.common/azure-common/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/common/azure-common/1.7.1/azure-common-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds.provider" name="azureblob" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="azure-common" type="bundle" ext="jar" status="no" details="" size="33164" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.common/azure-common/bundles/azure-common-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/common/azure-common/1.7.1/azure-common-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds.provider" name="cloudonestorage">
+			<revision name="1.7.1" status="release" pubdate="20140206131736" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="81">
+				<metadata-artifact status="no" details="" size="10109" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/cloudonestorage/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/cloudonestorage/1.7.1/cloudonestorage-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-allblobstore" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="cloudonestorage" type="bundle" ext="jar" status="no" details="" size="11506" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/cloudonestorage/bundles/cloudonestorage-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/cloudonestorage/1.7.1/cloudonestorage-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds.provider" name="ninefold-storage">
+			<revision name="1.7.1" status="release" pubdate="20140206131653" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="79">
+				<metadata-artifact status="no" details="" size="10105" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/ninefold-storage/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/ninefold-storage/1.7.1/ninefold-storage-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-allblobstore" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="ninefold-storage" type="bundle" ext="jar" status="no" details="" size="11581" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/ninefold-storage/bundles/ninefold-storage-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/ninefold-storage/1.7.1/ninefold-storage-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds.api" name="atmos">
+			<revision name="1.7.1" status="release" pubdate="20140206125317" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="80">
+				<metadata-artifact status="no" details="" size="9645" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.api/atmos/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/api/atmos/1.7.1/atmos-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds.provider" name="ninefold-storage" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.provider" name="cloudonestorage" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-allblobstore" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="atmos" type="jar" ext="jar" status="no" details="" size="105663" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.api/atmos/jars/atmos-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/api/atmos/1.7.1/atmos-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds.provider" name="aws-s3">
+			<revision name="1.7.1" status="release" pubdate="20140206131327" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="78">
+				<metadata-artifact status="no" details="" size="10637" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/aws-s3/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/aws-s3/1.7.1/aws-s3-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-allblobstore" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="aws-s3" type="bundle" ext="jar" status="no" details="" size="69207" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/aws-s3/bundles/aws-s3-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/aws-s3/1.7.1/aws-s3-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds.api" name="s3">
+			<revision name="1.7.1" status="release" pubdate="20140206124659" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="76">
+				<metadata-artifact status="no" details="" size="10176" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.api/s3/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/api/s3/1.7.1/s3-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds.provider" name="aws-s3" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-allblobstore" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="s3" type="jar" ext="jar" status="no" details="" size="160792" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.api/s3/jars/s3-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/api/s3/1.7.1/s3-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds" name="jclouds-blobstore">
+			<revision name="1.7.1" status="release" pubdate="20140206124414" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="77">
+				<metadata-artifact status="no" details="" size="9055" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds/jclouds-blobstore/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/jclouds-blobstore/1.7.1/jclouds-blobstore-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds.api" name="swift" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.api" name="atmos" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.provider" name="azureblob" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.api" name="s3" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.api" name="filesystem" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="jclouds-blobstore" type="jar" ext="jar" status="no" details="" size="172057" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds/jclouds-blobstore/jars/jclouds-blobstore-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/jclouds-blobstore/1.7.1/jclouds-blobstore-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds" name="jclouds-allcompute">
+			<revision name="1.7.1" status="release" pubdate="20140206134728" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="42">
+				<metadata-artifact status="no" details="" size="13895" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds/jclouds-allcompute/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/jclouds-allcompute/1.7.1/jclouds-allcompute-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-all" conf="default, compile, runtime, master" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="jclouds-allcompute" type="jar" ext="jar" status="no" details="" size="8644" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds/jclouds-allcompute/jars/jclouds-allcompute-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/jclouds-allcompute/1.7.1/jclouds-allcompute-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds.provider" name="rackspace-cloudservers-uk">
+			<revision name="1.7.1" status="release" pubdate="20140206133653" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="74">
+				<metadata-artifact status="no" details="" size="11268" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/rackspace-cloudservers-uk/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/rackspace-cloudservers-uk/1.7.1/rackspace-cloudservers-uk-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-allcompute" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="rackspace-cloudservers-uk" type="bundle" ext="jar" status="no" details="" size="14205" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/rackspace-cloudservers-uk/bundles/rackspace-cloudservers-uk-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/rackspace-cloudservers-uk/1.7.1/rackspace-cloudservers-uk-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds.provider" name="hpcloud-compute">
+			<revision name="1.7.1" status="release" pubdate="20140206132803" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="72">
+				<metadata-artifact status="no" details="" size="10709" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/hpcloud-compute/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/hpcloud-compute/1.7.1/hpcloud-compute-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-allcompute" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="hpcloud-compute" type="bundle" ext="jar" status="no" details="" size="15762" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/hpcloud-compute/bundles/hpcloud-compute-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/hpcloud-compute/1.7.1/hpcloud-compute-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds.provider" name="ninefold-compute">
+			<revision name="1.7.1" status="release" pubdate="20140206132719" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="71">
+				<metadata-artifact status="no" details="" size="10299" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/ninefold-compute/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/ninefold-compute/1.7.1/ninefold-compute-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-allcompute" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="ninefold-compute" type="bundle" ext="jar" status="no" details="" size="11932" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/ninefold-compute/bundles/ninefold-compute-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/ninefold-compute/1.7.1/ninefold-compute-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds.api" name="cloudstack">
+			<revision name="1.7.1" status="release" pubdate="20140206124225" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="70">
+				<metadata-artifact status="no" details="" size="10356" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.api/cloudstack/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/api/cloudstack/1.7.1/cloudstack-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds.provider" name="ninefold-compute" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-allcompute" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="cloudstack" type="jar" ext="jar" status="no" details="" size="756822" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.api/cloudstack/jars/cloudstack-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/api/cloudstack/1.7.1/cloudstack-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds.provider" name="softlayer">
+			<revision name="1.7.1" status="release" pubdate="20140206132627" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="69">
+				<metadata-artifact status="no" details="" size="9963" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/softlayer/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/softlayer/1.7.1/softlayer-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-allcompute" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="softlayer" type="bundle" ext="jar" status="no" details="" size="137190" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/softlayer/bundles/softlayer-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/softlayer/1.7.1/softlayer-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds.provider" name="go2cloud-jhb1">
+			<revision name="1.7.1" status="release" pubdate="20140206132536" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="68">
+				<metadata-artifact status="no" details="" size="10267" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/go2cloud-jhb1/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/go2cloud-jhb1/1.7.1/go2cloud-jhb1-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-allcompute" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="go2cloud-jhb1" type="bundle" ext="jar" status="no" details="" size="12182" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/go2cloud-jhb1/bundles/go2cloud-jhb1-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/go2cloud-jhb1/1.7.1/go2cloud-jhb1-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds.provider" name="cloudsigma-lvs">
+			<revision name="1.7.1" status="release" pubdate="20140206130842" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="67">
+				<metadata-artifact status="no" details="" size="10277" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/cloudsigma-lvs/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/cloudsigma-lvs/1.7.1/cloudsigma-lvs-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-allcompute" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="cloudsigma-lvs" type="bundle" ext="jar" status="no" details="" size="173208" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/cloudsigma-lvs/bundles/cloudsigma-lvs-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/cloudsigma-lvs/1.7.1/cloudsigma-lvs-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds.provider" name="cloudsigma-zrh">
+			<revision name="1.7.1" status="release" pubdate="20140206130756" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="66">
+				<metadata-artifact status="no" details="" size="10266" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/cloudsigma-zrh/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/cloudsigma-zrh/1.7.1/cloudsigma-zrh-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-allcompute" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="cloudsigma-zrh" type="bundle" ext="jar" status="no" details="" size="173191" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/cloudsigma-zrh/bundles/cloudsigma-zrh-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/cloudsigma-zrh/1.7.1/cloudsigma-zrh-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds.provider" name="skalicloud-sdg-my">
+			<revision name="1.7.1" status="release" pubdate="20140206132405" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="65">
+				<metadata-artifact status="no" details="" size="10309" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/skalicloud-sdg-my/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/skalicloud-sdg-my/1.7.1/skalicloud-sdg-my-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-allcompute" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="skalicloud-sdg-my" type="bundle" ext="jar" status="no" details="" size="12441" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/skalicloud-sdg-my/bundles/skalicloud-sdg-my-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/skalicloud-sdg-my/1.7.1/skalicloud-sdg-my-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds.provider" name="serverlove-z1-man">
+			<revision name="1.7.1" status="release" pubdate="20140206132322" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="64">
+				<metadata-artifact status="no" details="" size="10311" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/serverlove-z1-man/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/serverlove-z1-man/1.7.1/serverlove-z1-man-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-allcompute" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="serverlove-z1-man" type="bundle" ext="jar" status="no" details="" size="12493" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/serverlove-z1-man/bundles/serverlove-z1-man-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/serverlove-z1-man/1.7.1/serverlove-z1-man-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds.provider" name="openhosting-east1">
+			<revision name="1.7.1" status="release" pubdate="20140206132237" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="63">
+				<metadata-artifact status="no" details="" size="10309" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/openhosting-east1/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/openhosting-east1/1.7.1/openhosting-east1-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-allcompute" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="openhosting-east1" type="bundle" ext="jar" status="no" details="" size="12923" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/openhosting-east1/bundles/openhosting-east1-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/openhosting-east1/1.7.1/openhosting-east1-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds.provider" name="elastichosts-lon-b">
+			<revision name="1.7.1" status="release" pubdate="20140206132027" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="62">
+				<metadata-artifact status="no" details="" size="10333" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/elastichosts-lon-b/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/elastichosts-lon-b/1.7.1/elastichosts-lon-b-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-allcompute" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="elastichosts-lon-b" type="bundle" ext="jar" status="no" details="" size="12508" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/elastichosts-lon-b/bundles/elastichosts-lon-b-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/elastichosts-lon-b/1.7.1/elastichosts-lon-b-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds.provider" name="elastichosts-sat-p">
+			<revision name="1.7.1" status="release" pubdate="20140206131945" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="61">
+				<metadata-artifact status="no" details="" size="10333" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/elastichosts-sat-p/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/elastichosts-sat-p/1.7.1/elastichosts-sat-p-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-allcompute" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="elastichosts-sat-p" type="bundle" ext="jar" status="no" details="" size="12525" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/elastichosts-sat-p/bundles/elastichosts-sat-p-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/elastichosts-sat-p/1.7.1/elastichosts-sat-p-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds.provider" name="elastichosts-lon-p">
+			<revision name="1.7.1" status="release" pubdate="20140206131902" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="60">
+				<metadata-artifact status="no" details="" size="10328" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/elastichosts-lon-p/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/elastichosts-lon-p/1.7.1/elastichosts-lon-p-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-allcompute" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="elastichosts-lon-p" type="bundle" ext="jar" status="no" details="" size="12451" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/elastichosts-lon-p/bundles/elastichosts-lon-p-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/elastichosts-lon-p/1.7.1/elastichosts-lon-p-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds.api" name="elasticstack">
+			<revision name="1.7.1" status="release" pubdate="20140206125216" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="59">
+				<metadata-artifact status="no" details="" size="10147" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.api/elasticstack/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/api/elasticstack/1.7.1/elasticstack-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds.provider" name="elastichosts-lon-p" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.provider" name="serverlove-z1-man" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.provider" name="elastichosts-lon-b" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.provider" name="elastichosts-sat-p" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-allcompute" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.provider" name="go2cloud-jhb1" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.provider" name="skalicloud-sdg-my" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.provider" name="openhosting-east1" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="elasticstack" type="jar" ext="jar" status="no" details="" size="139601" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.api/elasticstack/jars/elasticstack-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/api/elasticstack/1.7.1/elasticstack-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds.provider" name="gogrid">
+			<revision name="1.7.1" status="release" pubdate="20140206130700" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="58">
+				<metadata-artifact status="no" details="" size="10066" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/gogrid/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/gogrid/1.7.1/gogrid-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-allcompute" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="gogrid" type="bundle" ext="jar" status="no" details="" size="167669" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/gogrid/bundles/gogrid-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/gogrid/1.7.1/gogrid-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds.provider" name="bluelock-vcloud-zone01">
+			<revision name="1.7.1" status="release" pubdate="20140206131819" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="57">
+				<metadata-artifact status="no" details="" size="10491" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/bluelock-vcloud-zone01/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/bluelock-vcloud-zone01/1.7.1/bluelock-vcloud-zone01-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-allcompute" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="bluelock-vcloud-zone01" type="bundle" ext="jar" status="no" details="" size="12219" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/bluelock-vcloud-zone01/bundles/bluelock-vcloud-zone01-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/bluelock-vcloud-zone01/1.7.1/bluelock-vcloud-zone01-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds.api" name="cloudsigma">
+			<revision name="1.7.1" status="release" pubdate="20140206124050" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="56">
+				<metadata-artifact status="no" details="" size="10101" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.api/cloudsigma/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/api/cloudsigma/1.7.1/cloudsigma-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds.provider" name="cloudsigma-zrh" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-allcompute" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.provider" name="cloudsigma-lvs" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="cloudsigma" type="jar" ext="jar" status="no" details="" size="171065" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.api/cloudsigma/jars/cloudsigma-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/api/cloudsigma/1.7.1/cloudsigma-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds.provider" name="cloudservers-uk">
+			<revision name="1.7.1" status="release" pubdate="20140206133019" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="55">
+				<metadata-artifact status="no" details="" size="10503" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/cloudservers-uk/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/cloudservers-uk/1.7.1/cloudservers-uk-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-allcompute" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="cloudservers-uk" type="bundle" ext="jar" status="no" details="" size="11806" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/cloudservers-uk/bundles/cloudservers-uk-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/cloudservers-uk/1.7.1/cloudservers-uk-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds.provider" name="cloudservers-us">
+			<revision name="1.7.1" status="release" pubdate="20140206132937" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="52">
+				<metadata-artifact status="no" details="" size="10499" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/cloudservers-us/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/cloudservers-us/1.7.1/cloudservers-us-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-allcompute" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="cloudservers-us" type="bundle" ext="jar" status="no" details="" size="11797" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/cloudservers-us/bundles/cloudservers-us-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/cloudservers-us/1.7.1/cloudservers-us-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds.api" name="cloudservers">
+			<revision name="1.7.1" status="release" pubdate="20140206130115" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="54">
+				<metadata-artifact status="no" details="" size="10455" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.api/cloudservers/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/api/cloudservers/1.7.1/cloudservers-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds.provider" name="cloudservers-us" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.provider" name="cloudservers-uk" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-allcompute" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="cloudservers" type="jar" ext="jar" status="no" details="" size="113108" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.api/cloudservers/jars/cloudservers-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/api/cloudservers/1.7.1/cloudservers-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds.common" name="openstack-common">
+			<revision name="1.7.1" status="release" pubdate="20140206123105" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="53">
+				<metadata-artifact status="no" details="" size="8949" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.common/openstack-common/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/common/openstack-common/1.7.1/openstack-common-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds.api" name="swift" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.provider" name="cloudservers-us" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.provider" name="cloudservers-uk" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.api" name="cloudservers" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="openstack-common" type="jar" ext="jar" status="no" details="" size="66770" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.common/openstack-common/jars/openstack-common-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/common/openstack-common/1.7.1/openstack-common-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds.api" name="byon">
+			<revision name="1.7.1" status="release" pubdate="20140206124601" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="50">
+				<metadata-artifact status="no" details="" size="9733" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.api/byon/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/api/byon/1.7.1/byon-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-allcompute" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="byon" type="bundle" ext="jar" status="no" details="" size="51974" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.api/byon/bundles/byon-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/api/byon/1.7.1/byon-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.yaml" name="snakeyaml">
+			<revision name="1.11" status="release" pubdate="20120930111818" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.snakeyaml.org" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="51">
+				<license name="Apache License Version 2.0" url="LICENSE.txt"/>
+				<metadata-artifact status="no" details="" size="3432" time="0" location="/Users/spyroslalos/.ivy2/cache/org.yaml/snakeyaml/ivy-1.11.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/yaml/snakeyaml/1.11/snakeyaml-1.11.pom"/>
+				<caller organisation="org.apache.jclouds.api" name="byon" conf="compile, runtime" rev="1.11" rev-constraint-default="1.11" rev-constraint-dynamic="1.11" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="snakeyaml" type="bundle" ext="jar" status="no" details="" size="270553" time="0" location="/Users/spyroslalos/.ivy2/cache/org.yaml/snakeyaml/bundles/snakeyaml-1.11.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/yaml/snakeyaml/1.11/snakeyaml-1.11.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds.api" name="openstack-nova-ec2">
+			<revision name="1.7.1" status="release" pubdate="20140206125839" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="49">
+				<metadata-artifact status="no" details="" size="10445" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.api/openstack-nova-ec2/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/api/openstack-nova-ec2/1.7.1/openstack-nova-ec2-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-allcompute" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="openstack-nova-ec2" type="bundle" ext="jar" status="no" details="" size="25390" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.api/openstack-nova-ec2/bundles/openstack-nova-ec2-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/api/openstack-nova-ec2/1.7.1/openstack-nova-ec2-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds.provider" name="aws-ec2">
+			<revision name="1.7.1" status="release" pubdate="20140206131514" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="46">
+				<metadata-artifact status="no" details="" size="10795" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/aws-ec2/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/aws-ec2/1.7.1/aws-ec2-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-allcompute" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="aws-ec2" type="bundle" ext="jar" status="no" details="" size="196185" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/aws-ec2/bundles/aws-ec2-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/aws-ec2/1.7.1/aws-ec2-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds.api" name="ec2">
+			<revision name="1.7.1" status="release" pubdate="20140206124822" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="47">
+				<metadata-artifact status="no" details="" size="10530" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.api/ec2/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/api/ec2/1.7.1/ec2-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-allcompute" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.provider" name="aws-ec2" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.api" name="openstack-nova-ec2" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="ec2" type="jar" ext="jar" status="no" details="" size="399750" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.api/ec2/jars/ec2-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/api/ec2/1.7.1/ec2-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds.provider" name="greenhousedata-element-vcloud">
+			<revision name="1.7.1" status="release" pubdate="20140206132450" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="43">
+				<metadata-artifact status="no" details="" size="10591" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/greenhousedata-element-vcloud/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/greenhousedata-element-vcloud/1.7.1/greenhousedata-element-vcloud-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-allcompute" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="greenhousedata-element-vcloud" type="bundle" ext="jar" status="no" details="" size="13749" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/greenhousedata-element-vcloud/bundles/greenhousedata-element-vcloud-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/greenhousedata-element-vcloud/1.7.1/greenhousedata-element-vcloud-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds.api" name="vcloud">
+			<revision name="1.7.1" status="release" pubdate="20140206125058" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="44">
+				<metadata-artifact status="no" details="" size="10218" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.api/vcloud/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/api/vcloud/1.7.1/vcloud-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds.provider" name="bluelock-vcloud-zone01" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-allcompute" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.provider" name="greenhousedata-element-vcloud" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="vcloud" type="jar" ext="jar" status="no" details="" size="374956" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.api/vcloud/jars/vcloud-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/api/vcloud/1.7.1/vcloud-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.jamesmurty.utils" name="java-xmlbuilder">
+			<revision name="0.4" status="release" pubdate="20101027030304" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/java-xmlbuilder/" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="45">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2885" time="0" location="/Users/spyroslalos/.ivy2/cache/com.jamesmurty.utils/java-xmlbuilder/ivy-0.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/jamesmurty/utils/java-xmlbuilder/0.4/java-xmlbuilder-0.4.pom"/>
+				<caller organisation="org.apache.jclouds.api" name="vcloud" conf="compile, runtime" rev="0.4" rev-constraint-default="0.4" rev-constraint-dynamic="0.4" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.api" name="s3" conf="compile, runtime" rev="0.4" rev-constraint-default="0.4" rev-constraint-dynamic="0.4" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="java-xmlbuilder" type="jar" ext="jar" status="no" details="" size="18490" time="0" location="/Users/spyroslalos/.ivy2/cache/com.jamesmurty.utils/java-xmlbuilder/jars/java-xmlbuilder-0.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/jamesmurty/utils/java-xmlbuilder/0.4/java-xmlbuilder-0.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds" name="jclouds-allloadbalancer">
+			<revision name="1.7.1" status="release" pubdate="20140206134826" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="35">
+				<metadata-artifact status="no" details="" size="9651" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds/jclouds-allloadbalancer/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/jclouds-allloadbalancer/1.7.1/jclouds-allloadbalancer-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-all" conf="default, compile, runtime, master" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="jclouds-allloadbalancer" type="jar" ext="jar" status="no" details="" size="7780" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds/jclouds-allloadbalancer/jars/jclouds-allloadbalancer-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/jclouds-allloadbalancer/1.7.1/jclouds-allloadbalancer-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds.provider" name="rackspace-cloudloadbalancers-us">
+			<revision name="1.7.1" status="release" pubdate="20140206133526" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="41">
+				<metadata-artifact status="no" details="" size="11111" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/rackspace-cloudloadbalancers-us/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/rackspace-cloudloadbalancers-us/1.7.1/rackspace-cloudloadbalancers-us-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-allloadbalancer" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="rackspace-cloudloadbalancers-us" type="bundle" ext="jar" status="no" details="" size="12672" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/rackspace-cloudloadbalancers-us/bundles/rackspace-cloudloadbalancers-us-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/rackspace-cloudloadbalancers-us/1.7.1/rackspace-cloudloadbalancers-us-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds.provider" name="rackspace-cloudloadbalancers-uk">
+			<revision name="1.7.1" status="release" pubdate="20140206133610" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="36">
+				<metadata-artifact status="no" details="" size="11115" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/rackspace-cloudloadbalancers-uk/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/rackspace-cloudloadbalancers-uk/1.7.1/rackspace-cloudloadbalancers-uk-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-allloadbalancer" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="rackspace-cloudloadbalancers-uk" type="bundle" ext="jar" status="no" details="" size="12556" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/rackspace-cloudloadbalancers-uk/bundles/rackspace-cloudloadbalancers-uk-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/rackspace-cloudloadbalancers-uk/1.7.1/rackspace-cloudloadbalancers-uk-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds.api" name="rackspace-cloudloadbalancers">
+			<revision name="1.7.1" status="release" pubdate="20140206130302" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="40">
+				<metadata-artifact status="no" details="" size="10872" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.api/rackspace-cloudloadbalancers/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/api/rackspace-cloudloadbalancers/1.7.1/rackspace-cloudloadbalancers-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds.provider" name="rackspace-cloudloadbalancers-us" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.provider" name="rackspace-cloudloadbalancers-uk" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="rackspace-cloudloadbalancers" type="jar" ext="jar" status="no" details="" size="154838" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.api/rackspace-cloudloadbalancers/jars/rackspace-cloudloadbalancers-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/api/rackspace-cloudloadbalancers/1.7.1/rackspace-cloudloadbalancers-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds" name="jclouds-loadbalancer">
+			<revision name="1.7.1" status="release" pubdate="20140206123546" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="37">
+				<metadata-artifact status="no" details="" size="9685" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds/jclouds-loadbalancer/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/jclouds-loadbalancer/1.7.1/jclouds-loadbalancer-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds.provider" name="rackspace-cloudloadbalancers-us" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.provider" name="rackspace-cloudloadbalancers-uk" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.api" name="rackspace-cloudloadbalancers" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="jclouds-loadbalancer" type="jar" ext="jar" status="no" details="" size="24170" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds/jclouds-loadbalancer/jars/jclouds-loadbalancer-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/jclouds-loadbalancer/1.7.1/jclouds-loadbalancer-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds.provider" name="dynect">
+			<revision name="1.7.1" status="release" pubdate="20140206134253" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="34">
+				<metadata-artifact status="no" details="" size="9585" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/dynect/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/dynect/1.7.1/dynect-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-all" conf="default, compile, runtime, master" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="dynect" type="bundle" ext="jar" status="no" details="" size="122448" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/dynect/bundles/dynect-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/dynect/1.7.1/dynect-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds.provider" name="ultradns-ws">
+			<revision name="1.7.1" status="release" pubdate="20140206134150" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="33">
+				<metadata-artifact status="no" details="" size="9424" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/ultradns-ws/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/ultradns-ws/1.7.1/ultradns-ws-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-all" conf="default, compile, runtime, master" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="ultradns-ws" type="bundle" ext="jar" status="no" details="" size="164096" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/ultradns-ws/bundles/ultradns-ws-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/ultradns-ws/1.7.1/ultradns-ws-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds.provider" name="aws-route53">
+			<revision name="1.7.1" status="release" pubdate="20140206134055" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="31">
+				<metadata-artifact status="no" details="" size="9708" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/aws-route53/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/aws-route53/1.7.1/aws-route53-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-all" conf="default, compile, runtime, master" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="aws-route53" type="bundle" ext="jar" status="no" details="" size="11523" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/aws-route53/bundles/aws-route53-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/aws-route53/1.7.1/aws-route53-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds.api" name="route53">
+			<revision name="1.7.1" status="release" pubdate="20140206130543" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="32">
+				<metadata-artifact status="no" details="" size="10645" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.api/route53/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/api/route53/1.7.1/route53-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds.provider" name="aws-route53" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="route53" type="jar" ext="jar" status="no" details="" size="75119" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.api/route53/jars/route53-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/api/route53/1.7.1/route53-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds.provider" name="aws-sts">
+			<revision name="1.7.1" status="release" pubdate="20140206134012" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="30">
+				<metadata-artifact status="no" details="" size="9667" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/aws-sts/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/aws-sts/1.7.1/aws-sts-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-all" conf="default, compile, runtime, master" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="aws-sts" type="bundle" ext="jar" status="no" details="" size="11484" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/aws-sts/bundles/aws-sts-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/aws-sts/1.7.1/aws-sts-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds.provider" name="aws-sqs">
+			<revision name="1.7.1" status="release" pubdate="20140206131611" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="28">
+				<metadata-artifact status="no" details="" size="9810" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/aws-sqs/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/aws-sqs/1.7.1/aws-sqs-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-all" conf="default, compile, runtime, master" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="aws-sqs" type="bundle" ext="jar" status="no" details="" size="11883" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/aws-sqs/bundles/aws-sqs-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/aws-sqs/1.7.1/aws-sqs-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds.api" name="sqs">
+			<revision name="1.7.1" status="release" pubdate="20140206124942" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="29">
+				<metadata-artifact status="no" details="" size="10494" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.api/sqs/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/api/sqs/1.7.1/sqs-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds.provider" name="aws-sqs" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="sqs" type="jar" ext="jar" status="no" details="" size="81145" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.api/sqs/jars/sqs-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/api/sqs/1.7.1/sqs-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds.provider" name="rackspace-clouddatabases-uk">
+			<revision name="1.7.1" status="release" pubdate="20140206133442" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="27">
+				<metadata-artifact status="no" details="" size="11193" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/rackspace-clouddatabases-uk/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/rackspace-clouddatabases-uk/1.7.1/rackspace-clouddatabases-uk-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-all" conf="default, compile, runtime, master" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="rackspace-clouddatabases-uk" type="bundle" ext="jar" status="no" details="" size="13092" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/rackspace-clouddatabases-uk/bundles/rackspace-clouddatabases-uk-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/rackspace-clouddatabases-uk/1.7.1/rackspace-clouddatabases-uk-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds.provider" name="rackspace-clouddatabases-us">
+			<revision name="1.7.1" status="release" pubdate="20140206133400" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="25">
+				<metadata-artifact status="no" details="" size="11193" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/rackspace-clouddatabases-us/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/rackspace-clouddatabases-us/1.7.1/rackspace-clouddatabases-us-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-all" conf="default, compile, runtime, master" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="rackspace-clouddatabases-us" type="bundle" ext="jar" status="no" details="" size="13199" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/rackspace-clouddatabases-us/bundles/rackspace-clouddatabases-us-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/rackspace-clouddatabases-us/1.7.1/rackspace-clouddatabases-us-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds.api" name="openstack-trove">
+			<revision name="1.7.1" status="release" pubdate="20140206125929" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="26">
+				<metadata-artifact status="no" details="" size="10338" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.api/openstack-trove/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/api/openstack-trove/1.7.1/openstack-trove-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds.provider" name="rackspace-clouddatabases-us" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.provider" name="rackspace-clouddatabases-uk" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="openstack-trove" type="jar" ext="jar" status="no" details="" size="49432" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.api/openstack-trove/jars/openstack-trove-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/api/openstack-trove/1.7.1/openstack-trove-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds.provider" name="rackspace-clouddns-uk">
+			<revision name="1.7.1" status="release" pubdate="20140206133315" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="24">
+				<metadata-artifact status="no" details="" size="11109" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/rackspace-clouddns-uk/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/rackspace-clouddns-uk/1.7.1/rackspace-clouddns-uk-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-all" conf="default, compile, runtime, master" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="rackspace-clouddns-uk" type="bundle" ext="jar" status="no" details="" size="12149" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/rackspace-clouddns-uk/bundles/rackspace-clouddns-uk-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/rackspace-clouddns-uk/1.7.1/rackspace-clouddns-uk-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds.provider" name="rackspace-clouddns-us">
+			<revision name="1.7.1" status="release" pubdate="20140206133230" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="23">
+				<metadata-artifact status="no" details="" size="11622" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/rackspace-clouddns-us/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/rackspace-clouddns-us/1.7.1/rackspace-clouddns-us-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-all" conf="default, compile, runtime, master" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="rackspace-clouddns-us" type="bundle" ext="jar" status="no" details="" size="12224" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/rackspace-clouddns-us/bundles/rackspace-clouddns-us-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/rackspace-clouddns-us/1.7.1/rackspace-clouddns-us-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds.provider" name="rackspace-cloudblockstorage-uk">
+			<revision name="1.7.1" status="release" pubdate="20140206133822" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="22">
+				<metadata-artifact status="no" details="" size="11254" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/rackspace-cloudblockstorage-uk/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/rackspace-cloudblockstorage-uk/1.7.1/rackspace-cloudblockstorage-uk-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-all" conf="default, compile, runtime, master" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="rackspace-cloudblockstorage-uk" type="bundle" ext="jar" status="no" details="" size="13211" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/rackspace-cloudblockstorage-uk/bundles/rackspace-cloudblockstorage-uk-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/rackspace-cloudblockstorage-uk/1.7.1/rackspace-cloudblockstorage-uk-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds.provider" name="rackspace-cloudblockstorage-us">
+			<revision name="1.7.1" status="release" pubdate="20140206133737" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="21">
+				<metadata-artifact status="no" details="" size="11250" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/rackspace-cloudblockstorage-us/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/rackspace-cloudblockstorage-us/1.7.1/rackspace-cloudblockstorage-us-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-all" conf="default, compile, runtime, master" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="rackspace-cloudblockstorage-us" type="bundle" ext="jar" status="no" details="" size="13329" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/rackspace-cloudblockstorage-us/bundles/rackspace-cloudblockstorage-us-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/rackspace-cloudblockstorage-us/1.7.1/rackspace-cloudblockstorage-us-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds.provider" name="aws-cloudwatch">
+			<revision name="1.7.1" status="release" pubdate="20140206131415" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="18">
+				<metadata-artifact status="no" details="" size="9791" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/aws-cloudwatch/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/aws-cloudwatch/1.7.1/aws-cloudwatch-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-all" conf="default, compile, runtime, master" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="aws-cloudwatch" type="bundle" ext="jar" status="no" details="" size="12243" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/aws-cloudwatch/bundles/aws-cloudwatch-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/aws-cloudwatch/1.7.1/aws-cloudwatch-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds.api" name="cloudwatch">
+			<revision name="1.7.1" status="release" pubdate="20140206123734" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="19">
+				<metadata-artifact status="no" details="" size="10675" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.api/cloudwatch/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/api/cloudwatch/1.7.1/cloudwatch-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds.provider" name="aws-cloudwatch" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="cloudwatch" type="jar" ext="jar" status="no" details="" size="109334" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.api/cloudwatch/jars/cloudwatch-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/api/cloudwatch/1.7.1/cloudwatch-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds.api" name="sts">
+			<revision name="1.7.1" status="release" pubdate="20140206123637" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="20">
+				<metadata-artifact status="no" details="" size="9592" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.api/sts/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/api/sts/1.7.1/sts-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds.api" name="cloudwatch" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.api" name="ec2" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.api" name="s3" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.api" name="sqs" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.provider" name="aws-sts" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.api" name="route53" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="sts" type="jar" ext="jar" status="no" details="" size="64772" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.api/sts/jars/sts-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/api/sts/1.7.1/sts-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds.api" name="rackspace-clouddns">
+			<revision name="1.7.1" status="release" pubdate="20140206130449" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="17">
+				<metadata-artifact status="no" details="" size="11124" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.api/rackspace-clouddns/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/api/rackspace-clouddns/1.7.1/rackspace-clouddns-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds.provider" name="rackspace-clouddns-us" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.provider" name="rackspace-clouddns-uk" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-all" conf="default, compile, runtime, master" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="rackspace-clouddns" type="jar" ext="jar" status="no" details="" size="100189" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.api/rackspace-clouddns/jars/rackspace-clouddns-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/api/rackspace-clouddns/1.7.1/rackspace-clouddns-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds.provider" name="rackspace-cloudservers-us">
+			<revision name="1.7.1" status="release" pubdate="20140206130357" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="73">
+				<metadata-artifact status="no" details="" size="11267" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/rackspace-cloudservers-us/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/rackspace-cloudservers-us/1.7.1/rackspace-cloudservers-us-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-allcompute" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="rackspace-cloudservers-us" type="bundle" ext="jar" status="no" details="" size="14467" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.provider/rackspace-cloudservers-us/bundles/rackspace-cloudservers-us-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/provider/rackspace-cloudservers-us/1.7.1/rackspace-cloudservers-us-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds.api" name="openstack-nova">
+			<revision name="1.7.1" status="release" pubdate="20140206125730" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="48">
+				<metadata-artifact status="no" details="" size="10859" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.api/openstack-nova/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/api/openstack-nova/1.7.1/openstack-nova-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-allcompute" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.provider" name="hpcloud-compute" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.provider" name="rackspace-cloudservers-uk" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.api" name="openstack-nova-ec2" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.provider" name="rackspace-cloudservers-us" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="openstack-nova" type="jar" ext="jar" status="no" details="" size="381043" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.api/openstack-nova/jars/openstack-nova-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/api/openstack-nova/1.7.1/openstack-nova-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds" name="jclouds-compute">
+			<revision name="1.7.1" status="release" pubdate="20140206123350" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="38">
+				<metadata-artifact status="no" details="" size="9464" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds/jclouds-compute/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/jclouds-compute/1.7.1/jclouds-compute-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds.provider" name="gogrid" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.api" name="byon" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.api" name="elasticstack" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.api" name="ec2" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.api" name="vcloud" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.api" name="cloudstack" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.api" name="cloudservers" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.provider" name="softlayer" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.api" name="cloudsigma" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.api" name="openstack-nova" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-loadbalancer" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="jclouds-compute" type="jar" ext="jar" status="no" details="" size="503359" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds/jclouds-compute/jars/jclouds-compute-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/jclouds-compute/1.7.1/jclouds-compute-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds" name="jclouds-scriptbuilder">
+			<revision name="1.7.1" status="release" pubdate="20140206123224" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="39">
+				<metadata-artifact status="no" details="" size="9979" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds/jclouds-scriptbuilder/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/jclouds-scriptbuilder/1.7.1/jclouds-scriptbuilder-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-compute" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="jclouds-scriptbuilder" type="bundle" ext="jar" status="no" details="" size="172493" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds/jclouds-scriptbuilder/bundles/jclouds-scriptbuilder-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/jclouds-scriptbuilder/1.7.1/jclouds-scriptbuilder-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds.api" name="openstack-cinder">
+			<revision name="1.7.1" status="release" pubdate="20140206125618" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="16">
+				<metadata-artifact status="no" details="" size="10282" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.api/openstack-cinder/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/api/openstack-cinder/1.7.1/openstack-cinder-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds.provider" name="rackspace-cloudblockstorage-us" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.provider" name="rackspace-cloudblockstorage-uk" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-all" conf="default, compile, runtime, master" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="openstack-cinder" type="jar" ext="jar" status="no" details="" size="56792" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.api/openstack-cinder/jars/openstack-cinder-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/api/openstack-cinder/1.7.1/openstack-cinder-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds.api" name="rackspace-cloudidentity">
+			<revision name="1.7.1" status="release" pubdate="20140206130206" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="2">
+				<metadata-artifact status="no" details="" size="10287" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.api/rackspace-cloudidentity/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/api/rackspace-cloudidentity/1.7.1/rackspace-cloudidentity-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds.provider" name="rackspace-clouddatabases-us" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.provider" name="rackspace-clouddns-us" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.provider" name="rackspace-cloudloadbalancers-us" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.provider" name="rackspace-cloudloadbalancers-uk" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.provider" name="rackspace-clouddatabases-uk" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.provider" name="rackspace-clouddns-uk" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.api" name="rackspace-clouddns" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.provider" name="rackspace-cloudblockstorage-us" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.api" name="rackspace-cloudloadbalancers" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.provider" name="rackspace-cloudblockstorage-uk" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.provider" name="rackspace-cloudservers-uk" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.provider" name="rackspace-cloudservers-us" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-all" conf="default, compile, runtime, master" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="rackspace-cloudidentity" type="jar" ext="jar" status="no" details="" size="23982" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.api/rackspace-cloudidentity/jars/rackspace-cloudidentity-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/api/rackspace-cloudidentity/1.7.1/rackspace-cloudidentity-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds.api" name="openstack-keystone">
+			<revision name="1.7.1" status="release" pubdate="20140206125419" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="3">
+				<metadata-artifact status="no" details="" size="10051" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.api/openstack-keystone/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/api/openstack-keystone/1.7.1/openstack-keystone-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds.provider" name="rackspace-clouddatabases-us" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.provider" name="rackspace-cloudloadbalancers-uk" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.provider" name="rackspace-clouddatabases-uk" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.api" name="rackspace-cloudloadbalancers" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.api" name="openstack-trove" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.api" name="swift" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.api" name="rackspace-cloudidentity" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.provider" name="rackspace-clouddns-us" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.provider" name="hpcloud-objectstorage" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.provider" name="rackspace-cloudloadbalancers-us" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.provider" name="rackspace-clouddns-uk" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.api" name="rackspace-clouddns" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.provider" name="rackspace-cloudblockstorage-us" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.api" name="openstack-cinder" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.provider" name="rackspace-cloudblockstorage-uk" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.api" name="openstack-nova" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="openstack-keystone" type="jar" ext="jar" status="no" details="" size="165712" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds.api/openstack-keystone/jars/openstack-keystone-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/api/openstack-keystone/1.7.1/openstack-keystone-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.jclouds" name="jclouds-core">
+			<revision name="1.7.1" status="release" pubdate="20140206122835" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="4">
+				<metadata-artifact status="no" details="" size="11504" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds/jclouds-core/ivy-1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/jclouds/jclouds-core/1.7.1/jclouds-core-1.7.1.pom"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-scriptbuilder" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.provider" name="rackspace-clouddatabases-us" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.common" name="azure-common" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.api" name="sts" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.provider" name="rackspace-clouddatabases-uk" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.provider" name="dynect" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.api" name="openstack-keystone" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.api" name="openstack-trove" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-blobstore" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-loadbalancer" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.provider" name="rackspace-clouddns-us" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.provider" name="rackspace-clouddns-uk" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.provider" name="ultradns-ws" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.api" name="vcloud" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.api" name="rackspace-clouddns" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.provider" name="rackspace-cloudblockstorage-us" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.api" name="openstack-cinder" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.api" name="cloudstack" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-compute" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.provider" name="rackspace-cloudblockstorage-uk" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.jclouds.common" name="openstack-common" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="jclouds-core" type="jar" ext="jar" status="no" details="" size="785158" time="0" location="/Users/spyroslalos/.ivy2/cache/org.apache.jclouds/jclouds-core/jars/jclouds-core-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/jclouds/jclouds-core/1.7.1/jclouds-core-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.guava" name="guava">
+			<revision name="15.0" status="release" pubdate="20130906215249" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="15">
+				<metadata-artifact status="no" details="" size="6085" time="0" location="/Users/spyroslalos/.ivy2/cache/com.google.guava/guava/ivy-15.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/guava/guava/15.0/guava-15.0.pom"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-core" conf="compile, runtime" rev="15.0" rev-constraint-default="15.0" rev-constraint-dynamic="15.0" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="guava" type="bundle" ext="jar" status="no" details="" size="2172168" time="0" location="/Users/spyroslalos/.ivy2/cache/com.google.guava/guava/bundles/guava-15.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/guava/guava/15.0/guava-15.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.code.gson" name="gson">
+			<revision name="2.2.4" status="release" pubdate="20130513235652" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/google-gson/" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="14">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3255" time="0" location="/Users/spyroslalos/.ivy2/cache/com.google.code.gson/gson/ivy-2.2.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/code/gson/gson/2.2.4/gson-2.2.4.pom"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-core" conf="compile, runtime" rev="2.2.4" rev-constraint-default="2.2.4" rev-constraint-dynamic="2.2.4" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="gson" type="jar" ext="jar" status="no" details="" size="190432" time="0" location="/Users/spyroslalos/.ivy2/cache/com.google.code.gson/gson/jars/gson-2.2.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.annotation" name="jsr250-api">
+			<revision name="1.0" status="release" pubdate="20150225085251" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jcp.org/aboutJava/communityprocess/final/jsr250/index.html" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="13">
+				<license name="COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) Version 1.0" url="https://glassfish.dev.java.net/public/CDDLv1.0.html"/>
+				<metadata-artifact status="no" details="" size="2454" time="0" location="/Users/spyroslalos/.ivy2/cache/javax.annotation/jsr250-api/ivy-1.0.xml" searched="false" origin-is-local="true" origin-location="/Users/spyroslalos/Downloads/activator-dist-1.3.5/repository/javax.annotation/jsr250-api/1.0/ivys/ivy.xml"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-core" conf="compile, runtime" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="jsr250-api" type="jar" ext="jar" status="no" details="" size="5848" time="0" location="/Users/spyroslalos/Downloads/activator-dist-1.3.5/repository/javax.annotation/jsr250-api/1.0/jars/jsr250-api.jar">
+						<origin-location is-local="true" location="/Users/spyroslalos/Downloads/activator-dist-1.3.5/repository/javax.annotation/jsr250-api/1.0/jars/jsr250-api.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.99soft.guice" name="rocoto">
+			<revision name="6.2" status="release" pubdate="20121018152511" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://99soft.github.com/rocoto/" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="12">
+				<metadata-artifact status="no" details="" size="5209" time="0" location="/Users/spyroslalos/.ivy2/cache/org.99soft.guice/rocoto/ivy-6.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/99soft/guice/rocoto/6.2/rocoto-6.2.pom"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-core" conf="compile, runtime" rev="6.2" rev-constraint-default="6.2" rev-constraint-dynamic="6.2" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="rocoto" type="bundle" ext="jar" status="no" details="" size="48178" time="0" location="/Users/spyroslalos/.ivy2/cache/org.99soft.guice/rocoto/bundles/rocoto-6.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/99soft/guice/rocoto/6.2/rocoto-6.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.inject.extensions" name="guice-assistedinject">
+			<revision name="3.0" status="release" pubdate="20110325192054" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="6">
+				<metadata-artifact status="successful" details="" size="549" time="83" location="/Users/spyroslalos/.ivy2/cache/com.google.inject.extensions/guice-assistedinject/ivy-3.0.xml" searched="true" original-local-location="/Users/spyroslalos/.ivy2/cache/com.google.inject.extensions/guice-assistedinject/ivy-3.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/inject/extensions/guice-assistedinject/3.0/guice-assistedinject-3.0.pom"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-core" conf="compile, runtime" rev="3.0" rev-constraint-default="3.0" rev-constraint-dynamic="3.0" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="guice-assistedinject" type="jar" ext="jar" status="no" details="" size="36998" time="0" location="/Users/spyroslalos/.ivy2/cache/com.google.inject.extensions/guice-assistedinject/jars/guice-assistedinject-3.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/inject/extensions/guice-assistedinject/3.0/guice-assistedinject-3.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.inject" name="guice">
+			<revision name="3.0" status="release" pubdate="20110325191947" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="7">
+				<metadata-artifact status="no" details="" size="3997" time="0" location="/Users/spyroslalos/.ivy2/cache/com.google.inject/guice/ivy-3.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/inject/guice/3.0/guice-3.0.pom"/>
+				<caller organisation="org.99soft.guice" name="rocoto" conf="compile, runtime" rev="3.0" rev-constraint-default="3.0" rev-constraint-dynamic="3.0" callerrev="6.2"/>
+				<caller organisation="com.google.inject.extensions" name="guice-assistedinject" conf="compile, runtime" rev="3.0" rev-constraint-default="3.0" rev-constraint-dynamic="3.0" callerrev="3.0"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-core" conf="compile, runtime" rev="3.0" rev-constraint-default="3.0" rev-constraint-dynamic="3.0" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="guice" type="jar" ext="jar" status="no" details="" size="710492" time="0" location="/Users/spyroslalos/.ivy2/cache/com.google.inject/guice/jars/guice-3.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/inject/guice/3.0/guice-3.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.sonatype.sisu.inject" name="cglib">
+			<revision name="2.2.1-v20090111" status="release" pubdate="20110104141244" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://sourceforge.net/projects/cglib/" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="10">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3800" time="0" location="/Users/spyroslalos/.ivy2/cache/org.sonatype.sisu.inject/cglib/ivy-2.2.1-v20090111.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/sonatype/sisu/inject/cglib/2.2.1-v20090111/cglib-2.2.1-v20090111.pom"/>
+				<caller organisation="com.google.inject" name="guice" conf="compile, runtime" rev="2.2.1-v20090111" rev-constraint-default="2.2.1-v20090111" rev-constraint-dynamic="2.2.1-v20090111" callerrev="3.0"/>
+				<artifacts>
+					<artifact name="cglib" type="jar" ext="jar" status="no" details="" size="278864" time="0" location="/Users/spyroslalos/.ivy2/cache/org.sonatype.sisu.inject/cglib/jars/cglib-2.2.1-v20090111.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/sonatype/sisu/inject/cglib/2.2.1-v20090111/cglib-2.2.1-v20090111.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="asm" name="asm">
+			<revision name="3.1" status="release" pubdate="20080120113126" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="11">
+				<metadata-artifact status="no" details="" size="2800" time="0" location="/Users/spyroslalos/.ivy2/cache/asm/asm/ivy-3.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/asm/asm/3.1/asm-3.1.pom"/>
+				<caller organisation="org.sonatype.sisu.inject" name="cglib" conf="compile, runtime" rev="3.1" rev-constraint-default="3.1" rev-constraint-dynamic="3.1" callerrev="2.2.1-v20090111"/>
+				<artifacts>
+					<artifact name="asm" type="jar" ext="jar" status="no" details="" size="43033" time="0" location="/Users/spyroslalos/.ivy2/cache/asm/asm/jars/asm-3.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/asm/asm/3.1/asm-3.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="aopalliance" name="aopalliance">
+			<revision name="1.0" status="release" pubdate="20150225085300" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://aopalliance.sourceforge.net" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="9">
+				<license name="Public Domain"/>
+				<metadata-artifact status="no" details="" size="2280" time="0" location="/Users/spyroslalos/.ivy2/cache/aopalliance/aopalliance/ivy-1.0.xml" searched="false" origin-is-local="true" origin-location="/Users/spyroslalos/Downloads/activator-dist-1.3.5/repository/aopalliance/aopalliance/1.0/ivys/ivy.xml"/>
+				<caller organisation="com.google.inject" name="guice" conf="compile, runtime" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="3.0"/>
+				<artifacts>
+					<artifact name="aopalliance" type="jar" ext="jar" status="no" details="" size="4467" time="0" location="/Users/spyroslalos/Downloads/activator-dist-1.3.5/repository/aopalliance/aopalliance/1.0/jars/aopalliance.jar">
+						<origin-location is-local="true" location="/Users/spyroslalos/Downloads/activator-dist-1.3.5/repository/aopalliance/aopalliance/1.0/jars/aopalliance.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.inject" name="javax.inject">
+			<revision name="1" status="release" pubdate="20150225085253" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/atinject/" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="8">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2369" time="0" location="/Users/spyroslalos/.ivy2/cache/javax.inject/javax.inject/ivy-1.xml" searched="false" origin-is-local="true" origin-location="/Users/spyroslalos/Downloads/activator-dist-1.3.5/repository/javax.inject/javax.inject/1/ivys/ivy.xml"/>
+				<caller organisation="org.99soft.guice" name="rocoto" conf="compile, runtime" rev="1" rev-constraint-default="1" rev-constraint-dynamic="1" callerrev="6.2"/>
+				<caller organisation="com.google.inject" name="guice" conf="compile, runtime" rev="1" rev-constraint-default="1" rev-constraint-dynamic="1" callerrev="3.0"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-core" conf="compile, runtime" rev="1" rev-constraint-default="1" rev-constraint-dynamic="1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="javax.inject" type="jar" ext="jar" status="no" details="" size="2497" time="0" location="/Users/spyroslalos/Downloads/activator-dist-1.3.5/repository/javax.inject/javax.inject/1/jars/javax.inject.jar">
+						<origin-location is-local="true" location="/Users/spyroslalos/Downloads/activator-dist-1.3.5/repository/javax.inject/javax.inject/1/jars/javax.inject.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.ws.rs" name="jsr311-api">
+			<revision name="1.1.1" status="release" pubdate="20091124004141" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://jsr311.dev.java.net" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="5">
+				<license name="                 CDDL License             " url="http://www.opensource.org/licenses/cddl1.php"/>
+				<metadata-artifact status="no" details="" size="2792" time="0" location="/Users/spyroslalos/.ivy2/cache/javax.ws.rs/jsr311-api/ivy-1.1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/ws/rs/jsr311-api/1.1.1/jsr311-api-1.1.1.pom"/>
+				<caller organisation="org.apache.jclouds" name="jclouds-core" conf="compile, runtime" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="1.7.1"/>
+				<artifacts>
+					<artifact name="jsr311-api" type="jar" ext="jar" status="no" details="" size="46367" time="0" location="/Users/spyroslalos/.ivy2/cache/javax.ws.rs/jsr311-api/jars/jsr311-api-1.1.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/ws/rs/jsr311-api/1.1.1/jsr311-api-1.1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.11.7" status="release" pubdate="20150622221702" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.7/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="0">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2653" time="0" location="/Users/spyroslalos/.ivy2/cache/org.scala-lang/scala-library/ivy-2.11.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.7/scala-library-2.11.7.pom"/>
+				<caller organisation="default" name="ermis_2.11" conf="compile, runtime" rev="2.11.7" rev-constraint-default="2.11.7" rev-constraint-dynamic="2.11.7" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="5745606" time="0" location="/Users/spyroslalos/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.7/scala-library-2.11.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:e="http://ant.apache.org/ivy/extra">
+	<info organisation="default"
+		module="ermis$sources_javadoc_2.11"
+		revision="1.0"
+		status="integration"
+		publication="20150825171256"
+	/>
+	<configurations>
+		<conf name="compile" visibility="public" description=""/>
+		<conf name="runtime" visibility="public" description="" extends="compile"/>
+		<conf name="test" visibility="public" description="" extends="runtime"/>
+		<conf name="provided" visibility="public" description=""/>
+		<conf name="optional" visibility="public" description=""/>
+		<conf name="compile-internal" visibility="private" description="" extends="compile,optional,provided"/>
+		<conf name="runtime-internal" visibility="private" description="" extends="runtime,optional"/>
+		<conf name="test-internal" visibility="private" description="" extends="test,optional,provided"/>
+		<conf name="plugin" visibility="private" description=""/>
+		<conf name="sources" visibility="public" description=""/>
+		<conf name="docs" visibility="public" description=""/>
+		<conf name="pom" visibility="public" description=""/>
+		<conf name="scala-tool" visibility="private" description=""/>
+	</configurations>
+	<publications>
+	</publications>
+	<dependencies>
+		<dependency org="org.scala-lang" name="scala-library" rev="2.11.7" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile);scala-tool->default(compile)" info.apiURL="http://www.scala-lang.org/api/2.11.7/">
+			<artifact name="scala-library" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="scala-library" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds" name="jclouds-all" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="jclouds-all" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		</dependency>
+		<dependency org="org.apache.jclouds.api" name="rackspace-cloudidentity" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="rackspace-cloudidentity" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="rackspace-cloudidentity" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds.api" name="openstack-keystone" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="openstack-keystone" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="openstack-keystone" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds" name="jclouds-core" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="jclouds-core" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="jclouds-core" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="javax.ws.rs" name="jsr311-api" rev="1.1.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="jsr311-api" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="jsr311-api" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.google.inject.extensions" name="guice-assistedinject" rev="3.0" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="guice-assistedinject" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="guice-assistedinject" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.google.inject" name="guice" rev="3.0" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="guice" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="guice" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="javax.inject" name="javax.inject" rev="1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="javax.inject" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="javax.inject" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="aopalliance" name="aopalliance" rev="1.0" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="aopalliance" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		</dependency>
+		<dependency org="org.sonatype.sisu.inject" name="cglib" rev="2.2.1-v20090111" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="cglib" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="cglib" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="asm" name="asm" rev="3.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="asm" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		</dependency>
+		<dependency org="org.99soft.guice" name="rocoto" rev="6.2" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="rocoto" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="rocoto" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="javax.annotation" name="jsr250-api" rev="1.0" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="jsr250-api" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		</dependency>
+		<dependency org="com.google.code.gson" name="gson" rev="2.2.4" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="gson" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="gson" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.google.guava" name="guava" rev="15.0" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="guava" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="guava" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds.api" name="openstack-cinder" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="openstack-cinder" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="openstack-cinder" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds.api" name="rackspace-clouddns" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="rackspace-clouddns" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="rackspace-clouddns" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds.provider" name="aws-cloudwatch" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="aws-cloudwatch" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="aws-cloudwatch" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds.api" name="cloudwatch" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="cloudwatch" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="cloudwatch" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds.api" name="sts" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="sts" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="sts" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds.provider" name="rackspace-cloudblockstorage-us" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="rackspace-cloudblockstorage-us" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="rackspace-cloudblockstorage-us" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds.provider" name="rackspace-cloudblockstorage-uk" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="rackspace-cloudblockstorage-uk" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="rackspace-cloudblockstorage-uk" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds.provider" name="rackspace-clouddns-us" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="rackspace-clouddns-us" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="rackspace-clouddns-us" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds.provider" name="rackspace-clouddns-uk" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="rackspace-clouddns-uk" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="rackspace-clouddns-uk" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds.provider" name="rackspace-clouddatabases-us" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="rackspace-clouddatabases-us" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="rackspace-clouddatabases-us" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds.api" name="openstack-trove" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="openstack-trove" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="openstack-trove" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds.provider" name="rackspace-clouddatabases-uk" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="rackspace-clouddatabases-uk" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="rackspace-clouddatabases-uk" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds.provider" name="aws-sqs" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="aws-sqs" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="aws-sqs" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds.api" name="sqs" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="sqs" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="sqs" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds.provider" name="aws-sts" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="aws-sts" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="aws-sts" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds.provider" name="aws-route53" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="aws-route53" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="aws-route53" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds.api" name="route53" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="route53" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="route53" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds.provider" name="ultradns-ws" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="ultradns-ws" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="ultradns-ws" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds.provider" name="dynect" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="dynect" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="dynect" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds" name="jclouds-allloadbalancer" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="jclouds-allloadbalancer" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		</dependency>
+		<dependency org="org.apache.jclouds.provider" name="rackspace-cloudloadbalancers-uk" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="rackspace-cloudloadbalancers-uk" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="rackspace-cloudloadbalancers-uk" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds" name="jclouds-loadbalancer" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="jclouds-loadbalancer" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="jclouds-loadbalancer" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds" name="jclouds-compute" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="jclouds-compute" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="jclouds-compute" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds" name="jclouds-scriptbuilder" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="jclouds-scriptbuilder" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="jclouds-scriptbuilder" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds.api" name="rackspace-cloudloadbalancers" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="rackspace-cloudloadbalancers" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="rackspace-cloudloadbalancers" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds.provider" name="rackspace-cloudloadbalancers-us" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="rackspace-cloudloadbalancers-us" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="rackspace-cloudloadbalancers-us" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds" name="jclouds-allcompute" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="jclouds-allcompute" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		</dependency>
+		<dependency org="org.apache.jclouds.provider" name="greenhousedata-element-vcloud" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="greenhousedata-element-vcloud" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="greenhousedata-element-vcloud" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds.api" name="vcloud" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="vcloud" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="vcloud" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="com.jamesmurty.utils" name="java-xmlbuilder" rev="0.4" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="java-xmlbuilder" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="java-xmlbuilder" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds.provider" name="aws-ec2" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="aws-ec2" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="aws-ec2" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds.api" name="ec2" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="ec2" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="ec2" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds.api" name="openstack-nova" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="openstack-nova" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="openstack-nova" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds.api" name="openstack-nova-ec2" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="openstack-nova-ec2" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="openstack-nova-ec2" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds.api" name="byon" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="byon" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="byon" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.yaml" name="snakeyaml" rev="1.11" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="snakeyaml" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="snakeyaml" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds.provider" name="cloudservers-us" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="cloudservers-us" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="cloudservers-us" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds.common" name="openstack-common" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="openstack-common" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="openstack-common" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds.api" name="cloudservers" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="cloudservers" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="cloudservers" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds.provider" name="cloudservers-uk" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="cloudservers-uk" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="cloudservers-uk" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds.api" name="cloudsigma" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="cloudsigma" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="cloudsigma" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds.provider" name="bluelock-vcloud-zone01" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="bluelock-vcloud-zone01" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="bluelock-vcloud-zone01" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds.provider" name="gogrid" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="gogrid" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="gogrid" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds.api" name="elasticstack" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="elasticstack" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="elasticstack" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds.provider" name="elastichosts-lon-p" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="elastichosts-lon-p" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="elastichosts-lon-p" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds.provider" name="elastichosts-sat-p" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="elastichosts-sat-p" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="elastichosts-sat-p" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds.provider" name="elastichosts-lon-b" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="elastichosts-lon-b" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="elastichosts-lon-b" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds.provider" name="openhosting-east1" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="openhosting-east1" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="openhosting-east1" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds.provider" name="serverlove-z1-man" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="serverlove-z1-man" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="serverlove-z1-man" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds.provider" name="skalicloud-sdg-my" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="skalicloud-sdg-my" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="skalicloud-sdg-my" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds.provider" name="cloudsigma-zrh" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="cloudsigma-zrh" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="cloudsigma-zrh" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds.provider" name="cloudsigma-lvs" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="cloudsigma-lvs" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="cloudsigma-lvs" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds.provider" name="go2cloud-jhb1" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="go2cloud-jhb1" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="go2cloud-jhb1" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds.provider" name="softlayer" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="softlayer" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="softlayer" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds.api" name="cloudstack" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="cloudstack" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="cloudstack" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds.provider" name="ninefold-compute" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="ninefold-compute" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="ninefold-compute" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds.provider" name="hpcloud-compute" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="hpcloud-compute" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="hpcloud-compute" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds.provider" name="rackspace-cloudservers-us" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="rackspace-cloudservers-us" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="rackspace-cloudservers-us" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds.provider" name="rackspace-cloudservers-uk" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="rackspace-cloudservers-uk" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="rackspace-cloudservers-uk" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds" name="jclouds-allblobstore" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="jclouds-allblobstore" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		</dependency>
+		<dependency org="org.apache.jclouds.api" name="s3" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="s3" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="s3" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds" name="jclouds-blobstore" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="jclouds-blobstore" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="jclouds-blobstore" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds.provider" name="aws-s3" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="aws-s3" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="aws-s3" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds.provider" name="ninefold-storage" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="ninefold-storage" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="ninefold-storage" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds.api" name="atmos" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="atmos" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="atmos" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds.provider" name="cloudonestorage" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="cloudonestorage" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="cloudonestorage" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds.provider" name="azureblob" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="azureblob" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="azureblob" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds.common" name="azure-common" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="azure-common" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="azure-common" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds.api" name="swift" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="swift" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="swift" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds.api" name="cloudfiles" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="cloudfiles" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="cloudfiles" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds.provider" name="cloudfiles-us" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="cloudfiles-us" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="cloudfiles-us" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds.provider" name="cloudfiles-uk" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="cloudfiles-uk" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="cloudfiles-uk" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds.api" name="filesystem" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="filesystem" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="filesystem" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.apache.jclouds.provider" name="hpcloud-objectstorage" rev="1.7.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
+			<artifact name="hpcloud-objectstorage" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="hpcloud-objectstorage" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.scala-lang" name="scala-compiler" rev="2.11.7" transitive="false" conf="scala-tool->default(compile)">
+			<artifact name="scala-compiler" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="scala-compiler" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.scala-lang" name="scala-reflect" rev="2.11.7" transitive="false" conf="scala-tool->default(compile)" info.apiURL="http://www.scala-lang.org/api/2.11.7/">
+			<artifact name="scala-reflect" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="scala-reflect" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.scala-lang.modules" name="scala-xml_2.11" rev="1.0.4" transitive="false" conf="scala-tool->default(compile)">
+			<artifact name="scala-xml_2.11" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="scala-xml_2.11" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="org.scala-lang.modules" name="scala-parser-combinators_2.11" rev="1.0.4" transitive="false" conf="scala-tool->default(compile)">
+			<artifact name="scala-parser-combinators_2.11" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="scala-parser-combinators_2.11" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+		<dependency org="jline" name="jline" rev="2.12.1" transitive="false" conf="scala-tool->default(compile)">
+			<artifact name="jline" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+			<artifact name="jline" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		</dependency>
+	</dependencies>
+</ivy-module>
