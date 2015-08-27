@@ -4,7 +4,7 @@
 		module="ermis$sources_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20150825171255"
+		publication="20150827102525"
 	/>
 	<configurations>
 		<conf name="default" visibility="public" description=""/>

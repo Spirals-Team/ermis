@@ -12,7 +12,7 @@ trait Origin {
   def jsonFields: Map[String, String]
 }
 
-case class OpenstackOrg( endpoint: String, region: String, tenant: String, user: String,
+  case class OpenstackOrg( endpoint: String, elempath: String, region: String, tenant: String, user: String,
                          accessKey: String, resources: Set[String] )(val secretKey: String) extends Origin{
 
   lazy val vendor = "openstack"
