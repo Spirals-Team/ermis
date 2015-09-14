@@ -40,14 +40,14 @@ object NovaConnector {
   /*
     get available flavors
    */
-  def flavor(arg: String) {
+  def flavor(arg: String): String ={
 
-    if ( arg == "flavor-list" ) {
+
       val novaClient = getNovaClient()
       val flavors = novaClient.flavors().list( true ).execute()
-      Utils.printJson( flavors )
+      return Utils.returnJson( flavors )
 
-    }
+
   }
 
   def main(args: Array[String]) {

@@ -57,6 +57,24 @@ public class Utils {
         }
     }
 
+    public static String returnJson(Object o) {
+        ObjectMapper mapper = new ObjectMapper();
+        String output="";
+        try {
+            //System.out.println(mapper.writeValueAsString(o));
+            /*
+              DefaultPrettyPrinter pp = new DefaultPrettyPrinter();
+              pp.indentArrayWith(new Lf2SpacesIndenter());
+              System.out.println(mapper.writer(pp).writeValueAsString(o));
+            */
+            output= mapper.writerWithDefaultPrettyPrinter()
+                    .writeValueAsString(o);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return output;
+    }
+
     //from openstack-java-sdk/openstack-examples/../SwiftExample.java
     public static void write(InputStream is, String path) {
         try {

@@ -9,7 +9,9 @@ case class Created(location: String) extends ResultMessage
 
 case class Success(message: String) extends ResultMessage
 
-case class ResultItem(items: List[String]) extends ResultMessage
+//case class ResultItem(items: List[String]) extends ResultMessage
+
+case class ResultItem(item: String) extends ResultMessage
 
 case class Error(message: String)
 
