@@ -703,9 +703,9 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#test-agent;0.13.8!test-agent.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#test-interface;1.0!test-interface.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.8!apply-macro.jar
-[debug] :: resolution report :: resolve 449ms :: artifacts dl 31ms
+[debug] :: resolution report :: resolve 931ms :: artifacts dl 36ms
 [debug] 	report for default#ermis$sbt_2.11;1.0 default produced in /Users/spyroslalos/Desktop/me/INRIA/project/ermis/target/resolution-cache/reports/default-ermis$sbt_2.11-default.xml
-[debug] 	resolve done (449ms resolve - 31ms download)
+[debug] 	resolve done (931ms resolve - 36ms download)
 [debug] Using inline dependencies specified in Scala.
 [debug] :: resolving dependencies :: default#ermis$sources_2.11;1.0
 [debug] 	confs: [default]
@@ -1069,6 +1069,6 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#precompiled-2_8_2;0.13.8!precompiled-2_8_2.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-sbt#precompiled-2_9_2;0.13.8!precompiled-2_9_2.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-sbt#precompiled-2_9_3;0.13.8!precompiled-2_9_3.jar(src)
-[debug] :: resolution report :: resolve 187ms :: artifacts dl 34ms
+[debug] :: resolution report :: resolve 176ms :: artifacts dl 86ms
 [debug] 	report for default#ermis$sources_2.11;1.0 default produced in /Users/spyroslalos/Desktop/me/INRIA/project/ermis/target/resolution-cache/reports/default-ermis$sources_2.11-default.xml
-[debug] 	resolve done (187ms resolve - 34ms download)
+[debug] 	resolve done (176ms resolve - 86ms download)
