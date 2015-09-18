@@ -51,7 +51,7 @@ object NovaConnector {
     return flavors.getList
 }
 
-  def SimpleGet(arg: String): String ={
+  def GerServers(arg: String): String ={
 
     val novaClient = getNovaClient()
     val servers = novaClient.servers().list( true ).execute()

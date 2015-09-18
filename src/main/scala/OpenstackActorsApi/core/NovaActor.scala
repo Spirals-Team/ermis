@@ -29,6 +29,7 @@ object NovaActor {
   }
 
 }
+
 class NovaActor extends Actor {
   import NovaActor._
   val log = Logging(context.system, this)
@@ -44,11 +45,18 @@ class NovaActor extends Actor {
 
   def receive = {
 
-    case Get(names) => {
+    case "hello" => {
       print("Am not advanced")
-      sender ! names
+      sender ! client
    //     context.become(advanced(names))
     }
- }
+    case client:Nova => {
+      if (client==null)
+        sender ! " NULL"
+      else
+        sender ! "not NULL"
+    }
+
+  }
 
 }
