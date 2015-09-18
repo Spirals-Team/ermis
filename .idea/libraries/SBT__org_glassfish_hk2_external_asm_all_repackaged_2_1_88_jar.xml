@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="SBT: org.glassfish.hk2.external:asm-all-repackaged:2.1.88:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/org.glassfish.hk2.external/asm-all-repackaged/jars/asm-all-repackaged-2.1.88.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

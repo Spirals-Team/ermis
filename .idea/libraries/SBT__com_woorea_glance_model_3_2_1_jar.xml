@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="SBT: com.woorea:glance-model:3.2.1:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/com.woorea/glance-model/jars/glance-model-3.2.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
