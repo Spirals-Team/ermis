@@ -13,12 +13,9 @@ import com.woorea.openstack.nova.Nova
  */
 class NovaFlavorActor extends Actor{
 
-
   def connected(novaClient: Nova): Receive ={
 
-
     case flavor_name: String => {
-      // Search
       var found=false
       // Get Flavors and check if the flavor exists or not
       var FlavorsSeq = scala.collection.JavaConversions.asScalaBuffer(NovaConnector.GetFlavors(novaClient))

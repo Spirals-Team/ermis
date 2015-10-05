@@ -113,13 +113,11 @@ object NovaConnector {
     print(serversSeq)
 
     var FlavorsSeq = scala.collection.JavaConversions.asScalaBuffer(NovaConnector.GetFlavors(novaClient))
-  //  print(FlavorsSeq)
     for (flavor <- FlavorsSeq) {
       print(flavor+"$###$########")
     }
 
     var keysSeq = scala.collection.JavaConversions.asScalaBuffer(NovaConnector.GetKeys(novaClient))
-    //  print(FlavorsSeq)
     for (key <- keysSeq) {
       print(key.getName+"$###$########")
     }
@@ -140,8 +138,6 @@ object NovaConnector {
 
     */
     //==========================================
-
-
 
   }
 

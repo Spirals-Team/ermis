@@ -21,54 +21,6 @@ class NovaActor(FlavorActor: ActorRef, KeyActor: ActorRef, ImageActor: ActorRef)
 
   val log = Logging(context.system, this)
 
-  /*
-   *@param: NovaClient instance
-   *@return: The new instance
-   */
-  def create_instance( novaClient: Nova, instanceinfo: CreateVMrq ): Server = {
-
-    //create a new instance
-    val serverForCreate = new ServerForCreate()
-    serverForCreate.setName( instanceinfo.name )
-
-    implicit val timeout = Timeout(5 seconds)
-
-    //check the requested Flavor
-    val futureFlavor = FlavorActor ? "dlyse.small"
-    val resultFlavor = Await.result(futureFlavor, timeout.duration).asInstanceOf[String]
-    if (!resultFlavor.isEmpty) {
-      serverForCreate.setFlavorRef(resultFlavor)
-    }
-    else
-      return null
-
-    //for the images ask the GlanceImageActor
-    val futureImage = ImageActor ? "Ubuntu 14.04.2 LTX"
-    val resultImage = Await.result(futureImage, timeout.duration).asInstanceOf[String]
-    if (!resultImage.isEmpty) {
-      serverForCreate.setImageRef(resultImage)
-    }
-    else
-      return null
-
-    //erverForCreate.setImageRef( novaClient.images().list( true ).execute().getList.get(0).getId() )
-    //check the requested Keypair
-    val futureKey = KeyActor ? "lalos"
-    val resultKey = Await.result(futureKey, timeout.duration).asInstanceOf[String]
-    if (!resultKey.isEmpty) {
-      serverForCreate.setKeyName(resultKey)
-    }
-    else
-      return null
-
-    //create the new server -- create nova
-    val server = novaClient.servers().boot(serverForCreate).execute()
-    print(server.toString)
-
-    return server
-
-  }
-
   //State_1
   //We have already created the nova client
   //Return instances list
@@ -87,16 +39,46 @@ class NovaActor(FlavorActor: ActorRef, KeyActor: ActorRef, ImageActor: ActorRef)
     in that case: we create a new instance
     and return it to the sender
      */
-    case instancerq: CreateVMrq => {
+    case instanceinfo: CreateVMrq => {
 
-      print("Let's create a new instance")
-      var server=create_instance( client, instancerq )
-      if (server != null) {
-        sender ! server
-        servers.add(server)
+      //create a new instance
+      val serverForCreate = new ServerForCreate()
+      serverForCreate.setName( instanceinfo.name )
+
+      implicit val timeout = Timeout(5 seconds)
+
+      //check the requested Flavor
+      val futureFlavor = FlavorActor ? instanceinfo.flavor
+      val resultFlavor = Await.result(futureFlavor, timeout.duration).asInstanceOf[String]
+      if (!resultFlavor.isEmpty) {
+        serverForCreate.setFlavorRef(resultFlavor)
       }
       else
-        sender ! server
+        sender ! "Flavor not Found"
+
+      //for the images ask the GlanceImageActor
+      val futureImage = ImageActor ? instanceinfo.image
+      val resultImage = Await.result(futureImage, timeout.duration).asInstanceOf[String]
+      if (!resultImage.isEmpty) {
+        serverForCreate.setImageRef(resultImage)
+      }
+      else
+        sender ! "Image not Found"
+
+      val futureKey = KeyActor ? instanceinfo.keyname
+      val resultKey = Await.result(futureKey, timeout.duration).asInstanceOf[String]
+      if (!resultKey.isEmpty) {
+        serverForCreate.setKeyName(resultKey)
+      }
+      else
+        sender ! "KeyPAIR not Found"
+
+      //create the new server -- create nova
+      if (!resultFlavor.isEmpty && !resultImage.isEmpty && !resultKey.isEmpty) {
+        val server = client.servers().boot(serverForCreate).execute()
+        sender ! s"Created server with name $server"
+        servers.add(server)
+      }
       context become is_connected( client,servers )
 
     }

@@ -67,7 +67,7 @@ class SprayRouteService extends HttpService with Actor {
 
               case Success(value) =>
                 //reply back to client with a message
-                complete(s"The result was $value")
+                complete(s"$value")
 
               case Failure(value) =>
                 complete(s"$value")
@@ -130,10 +130,10 @@ class SprayRouteService extends HttpService with Actor {
 
   //Send request to Nova Actor
   //to create a new instance and add it to the existing list
-  def NovaCreateInstance(novaActor: ActorRef, instancerq: CreateVMrq): Future[Server] = {
+  def NovaCreateInstance(novaActor: ActorRef, instancerq: CreateVMrq): Future[String] = {
     implicit val timeout = Timeout(5 seconds)
     val Message = instancerq
-    (novaActor ? Message).mapTo[Server]
+    (novaActor ? Message).mapTo[String]
   }
   /*
     Connect to a Hypervisor

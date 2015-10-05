@@ -12,7 +12,6 @@ class GlanceImageActor extends Actor{
 
 
     case image_name: String => {
-      // Search
       var found=false
       // Get Flavors and check if the flavor exists or  not
       var ImagessSeq = scala.collection.JavaConversions.asScalaBuffer(NovaConnector.GetImages(novaClient))
@@ -25,7 +24,6 @@ class GlanceImageActor extends Actor{
         }
       }
       if (!found){
-      //  print(s"NOT found the requested Image $image_name")
         val image = None
         sender ! ""
       }

@@ -17,7 +17,6 @@ class NovaKeyActor extends Actor{
   def connected(novaClient: Nova): Receive ={
 
     case key_name: String => {
-      // Search
       var found=false
       // Get Flavors and check if the flavor exists or not
       var keysSeq = scala.collection.JavaConversions.asScalaBuffer(NovaConnector.GetKeys(novaClient))
