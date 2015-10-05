@@ -1,4 +1,4 @@
-name := "ermis"
+name := "openstackApi"
 
 version := "1.0"
 

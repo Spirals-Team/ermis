@@ -1,4 +1,4 @@
-package Dsl
+package dsl
 
 
 class example {

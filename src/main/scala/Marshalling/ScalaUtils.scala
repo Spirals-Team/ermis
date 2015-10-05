@@ -1,4 +1,4 @@
-package Marshalling
+package marshalling
 
 import com.fasterxml.jackson.databind.{DeserializationFeature, ObjectMapper}
 import com.fasterxml.jackson.module.scala.DefaultScalaModule

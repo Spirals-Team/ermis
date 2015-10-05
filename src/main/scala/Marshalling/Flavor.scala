@@ -1,4 +1,4 @@
-package Marshalling
+package marshalling
 
 import org.codehaus.jackson.annotate.JsonIgnoreProperties
 
