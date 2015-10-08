@@ -4,7 +4,11 @@
 		module="ermis$sources_2.11"
 		revision="1.0"
 		status="integration"
+<<<<<<< HEAD
 		publication="20150911151300"
+=======
+		publication="20150916144155"
+>>>>>>> master
 	/>
 	<configurations>
 		<conf name="default" visibility="public" description=""/>

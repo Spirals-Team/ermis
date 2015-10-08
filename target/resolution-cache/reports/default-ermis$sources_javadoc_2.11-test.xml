@@ -7,10 +7,17 @@
 		revision="1.0"
 		conf="test"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
+<<<<<<< HEAD
 		date="20150911151301"/>
 	<dependencies>
 		<module organisation="io.spray" name="spray-testkit_2.11">
 			<revision name="1.3.2" status="release" pubdate="20141008155319" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spray.io" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="73">
+=======
+		date="20150916144157"/>
+	<dependencies>
+		<module organisation="io.spray" name="spray-testkit_2.11">
+			<revision name="1.3.2" status="release" pubdate="20141008155319" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spray.io" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="72">
+>>>>>>> master
 				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="3928" time="0" location="/Users/spyroslalos/.ivy2/cache/io.spray/spray-testkit_2.11/ivy-1.3.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/spray/spray-testkit_2.11/1.3.2/spray-testkit_2.11-1.3.2.pom"/>
 				<caller organisation="default" name="ermis$sources_javadoc_2.11" conf="test, compile, runtime" rev="1.3.2" rev-constraint-default="1.3.2" rev-constraint-dynamic="1.3.2" callerrev="1.0"/>
@@ -27,6 +34,7 @@
 				</artifacts>
 			</revision>
 		</module>
+<<<<<<< HEAD
 		<module organisation="com.woorea" name="openstack-examples">
 			<revision name="3.1.1" status="release" pubdate="20150306150623" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="72">
 				<metadata-artifact status="no" details="" size="4263" time="0" location="/Users/spyroslalos/.ivy2/cache/com.woorea/openstack-examples/ivy-3.1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/woorea/openstack-examples/3.1.1/openstack-examples-3.1.1.pom"/>
@@ -57,11 +65,25 @@
 					</artifact>
 					<artifact name="jersey2-connector" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="3858" time="0" location="/Users/spyroslalos/.ivy2/cache/com.woorea/jersey2-connector/srcs/jersey2-connector-3.1.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/woorea/jersey2-connector/3.1.1/jersey2-connector-3.1.1-sources.jar"/>
+=======
+		<module organisation="com.woorea" name="jersey2-connector">
+			<revision name="3.2.2-SNAPSHOT" status="integration" pubdate="20150915125924" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://maven.apache.org" downloaded="false" searched="true" default="false" conf="default(compile), default, compile, runtime, master" position="54">
+				<metadata-artifact status="no" details="" size="4890" time="0" location="/Users/spyroslalos/.ivy2/cache/com.woorea/jersey2-connector/ivy-3.2.2-SNAPSHOT.xml" searched="true" origin-is-local="true" origin-location="/Users/spyroslalos/.m2/repository/com/woorea/jersey2-connector/3.2.2-SNAPSHOT/jersey2-connector-3.2.2-SNAPSHOT.pom"/>
+				<caller organisation="default" name="ermis$sources_javadoc_2.11" conf="test, compile, runtime" rev="3.2.2-SNAPSHOT" rev-constraint-default="3.2.2-SNAPSHOT" rev-constraint-dynamic="3.2.2-SNAPSHOT" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="jersey2-connector" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="7538" time="0" location="/Users/spyroslalos/.m2/repository/com/woorea/jersey2-connector/3.2.2-SNAPSHOT/jersey2-connector-3.2.2-SNAPSHOT-sources.jar">
+						<origin-location is-local="true" location="/Users/spyroslalos/.m2/repository/com/woorea/jersey2-connector/3.2.2-SNAPSHOT/jersey2-connector-3.2.2-SNAPSHOT-sources.jar"/>
+					</artifact>
+					<artifact name="jersey2-connector" type="doc" ext="jar" extra-classifier="javadoc" status="failed" details="" size="0" time="0"/>
+					<artifact name="jersey2-connector" type="jar" ext="jar" status="no" details="" size="14503" time="0" location="/Users/spyroslalos/.m2/repository/com/woorea/jersey2-connector/3.2.2-SNAPSHOT/jersey2-connector-3.2.2-SNAPSHOT.jar">
+						<origin-location is-local="true" location="/Users/spyroslalos/.m2/repository/com/woorea/jersey2-connector/3.2.2-SNAPSHOT/jersey2-connector-3.2.2-SNAPSHOT.jar"/>
+>>>>>>> master
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.glassfish.jersey.media" name="jersey-media-json-jackson">
+<<<<<<< HEAD
 			<revision name="2.0-rc1" status="release" pubdate="20130326021501" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="69">
 				<metadata-artifact status="no" details="" size="30942" time="0" location="/Users/spyroslalos/.ivy2/cache/org.glassfish.jersey.media/jersey-media-json-jackson/ivy-2.0-rc1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/glassfish/jersey/media/jersey-media-json-jackson/2.0-rc1/jersey-media-json-jackson-2.0-rc1.pom"/>
 				<caller organisation="default" name="ermis$sources_javadoc_2.11" conf="test, compile, runtime" rev="2.0-rc1" rev-constraint-default="2.0-rc1" rev-constraint-dynamic="2.0-rc1" callerrev="1.0"/>
@@ -74,6 +96,20 @@
 					</artifact>
 					<artifact name="jersey-media-json-jackson" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="22630" time="0" location="/Users/spyroslalos/.ivy2/cache/org.glassfish.jersey.media/jersey-media-json-jackson/docs/jersey-media-json-jackson-2.0-rc1-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/jersey/media/jersey-media-json-jackson/2.0-rc1/jersey-media-json-jackson-2.0-rc1-javadoc.jar"/>
+=======
+			<revision name="2.0" status="release" pubdate="20130514203352" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="67">
+				<metadata-artifact status="no" details="" size="31256" time="0" location="/Users/spyroslalos/.ivy2/cache/org.glassfish.jersey.media/jersey-media-json-jackson/ivy-2.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/glassfish/jersey/media/jersey-media-json-jackson/2.0/jersey-media-json-jackson-2.0.pom"/>
+				<caller organisation="default" name="ermis$sources_javadoc_2.11" conf="test, compile, runtime" rev="2.0" rev-constraint-default="2.0" rev-constraint-dynamic="2.0" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="jersey-media-json-jackson" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="22606" time="0" location="/Users/spyroslalos/.ivy2/cache/org.glassfish.jersey.media/jersey-media-json-jackson/docs/jersey-media-json-jackson-2.0-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/jersey/media/jersey-media-json-jackson/2.0/jersey-media-json-jackson-2.0-javadoc.jar"/>
+					</artifact>
+					<artifact name="jersey-media-json-jackson" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="2272" time="0" location="/Users/spyroslalos/.ivy2/cache/org.glassfish.jersey.media/jersey-media-json-jackson/srcs/jersey-media-json-jackson-2.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/jersey/media/jersey-media-json-jackson/2.0/jersey-media-json-jackson-2.0-sources.jar"/>
+					</artifact>
+					<artifact name="jersey-media-json-jackson" type="jar" ext="jar" status="no" details="" size="4922" time="0" location="/Users/spyroslalos/.ivy2/cache/org.glassfish.jersey.media/jersey-media-json-jackson/jars/jersey-media-json-jackson-2.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/jersey/media/jersey-media-json-jackson/2.0/jersey-media-json-jackson-2.0.jar"/>
+>>>>>>> master
 					</artifact>
 				</artifacts>
 			</revision>
@@ -110,6 +146,7 @@
 				</artifacts>
 			</revision>
 		</module>
+<<<<<<< HEAD
 		<module organisation="org.glassfish.jersey.core" name="jersey-client">
 			<revision name="2.0-rc1" status="release" pubdate="20130326020720" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="57">
 				<metadata-artifact status="no" details="" size="30800" time="0" location="/Users/spyroslalos/.ivy2/cache/org.glassfish.jersey.core/jersey-client/ivy-2.0-rc1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/glassfish/jersey/core/jersey-client/2.0-rc1/jersey-client-2.0-rc1.pom"/>
@@ -123,11 +160,57 @@
 					</artifact>
 					<artifact name="jersey-client" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="76059" time="0" location="/Users/spyroslalos/.ivy2/cache/org.glassfish.jersey.core/jersey-client/srcs/jersey-client-2.0-rc1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/jersey/core/jersey-client/2.0-rc1/jersey-client-2.0-rc1-sources.jar"/>
+=======
+		<module organisation="org.codehaus.jackson" name="jackson-mapper-asl">
+			<revision name="1.9.11" status="release" pubdate="20121106172745" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jackson.codehaus.org" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="69">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2661" time="0" location="/Users/spyroslalos/.ivy2/cache/org.codehaus.jackson/jackson-mapper-asl/ivy-1.9.11.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.9.11/jackson-mapper-asl-1.9.11.pom"/>
+				<caller organisation="default" name="ermis$sources_javadoc_2.11" conf="test, compile, runtime" rev="1.9.11" rev-constraint-default="1.9.11" rev-constraint-dynamic="1.9.11" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="jackson-mapper-asl" type="jar" ext="jar" status="no" details="" size="780421" time="0" location="/Users/spyroslalos/.ivy2/cache/org.codehaus.jackson/jackson-mapper-asl/jars/jackson-mapper-asl-1.9.11.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.9.11/jackson-mapper-asl-1.9.11.jar"/>
+					</artifact>
+					<artifact name="jackson-mapper-asl" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="548045" time="0" location="/Users/spyroslalos/.ivy2/cache/org.codehaus.jackson/jackson-mapper-asl/srcs/jackson-mapper-asl-1.9.11-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.9.11/jackson-mapper-asl-1.9.11-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.codehaus.jackson" name="jackson-core-asl">
+			<revision name="1.9.11" status="release" pubdate="20121106172713" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jackson.codehaus.org" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="68">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2438" time="0" location="/Users/spyroslalos/.ivy2/cache/org.codehaus.jackson/jackson-core-asl/ivy-1.9.11.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-core-asl/1.9.11/jackson-core-asl-1.9.11.pom"/>
+				<caller organisation="default" name="ermis$sources_javadoc_2.11" conf="test, compile, runtime" rev="1.9.11" rev-constraint-default="1.9.11" rev-constraint-dynamic="1.9.11" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="jackson-core-asl" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="240282" time="0" location="/Users/spyroslalos/.ivy2/cache/org.codehaus.jackson/jackson-core-asl/srcs/jackson-core-asl-1.9.11-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-core-asl/1.9.11/jackson-core-asl-1.9.11-sources.jar"/>
+					</artifact>
+					<artifact name="jackson-core-asl" type="jar" ext="jar" status="no" details="" size="232131" time="0" location="/Users/spyroslalos/.ivy2/cache/org.codehaus.jackson/jackson-core-asl/jars/jackson-core-asl-1.9.11.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-core-asl/1.9.11/jackson-core-asl-1.9.11.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.glassfish.jersey.core" name="jersey-client">
+			<revision name="2.0" status="release" pubdate="20130514200826" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="55">
+				<metadata-artifact status="no" details="" size="31722" time="0" location="/Users/spyroslalos/.ivy2/cache/org.glassfish.jersey.core/jersey-client/ivy-2.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/glassfish/jersey/core/jersey-client/2.0/jersey-client-2.0.pom"/>
+				<caller organisation="default" name="ermis$sources_javadoc_2.11" conf="test, compile, runtime" rev="2.0" rev-constraint-default="2.0" rev-constraint-dynamic="2.0" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="jersey-client" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="76178" time="0" location="/Users/spyroslalos/.ivy2/cache/org.glassfish.jersey.core/jersey-client/srcs/jersey-client-2.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/jersey/core/jersey-client/2.0/jersey-client-2.0-sources.jar"/>
+					</artifact>
+					<artifact name="jersey-client" type="jar" ext="jar" status="no" details="" size="115422" time="0" location="/Users/spyroslalos/.ivy2/cache/org.glassfish.jersey.core/jersey-client/jars/jersey-client-2.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/jersey/core/jersey-client/2.0/jersey-client-2.0.jar"/>
+					</artifact>
+					<artifact name="jersey-client" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="181192" time="0" location="/Users/spyroslalos/.ivy2/cache/org.glassfish.jersey.core/jersey-client/docs/jersey-client-2.0-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/jersey/core/jersey-client/2.0/jersey-client-2.0-javadoc.jar"/>
+>>>>>>> master
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.glassfish.jersey.core" name="jersey-common">
+<<<<<<< HEAD
 			<revision name="2.0-rc1" status="release" pubdate="20130326020644" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="58">
 				<metadata-artifact status="no" details="" size="30819" time="0" location="/Users/spyroslalos/.ivy2/cache/org.glassfish.jersey.core/jersey-common/ivy-2.0-rc1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/glassfish/jersey/core/jersey-common/2.0-rc1/jersey-common-2.0-rc1.pom"/>
 				<caller organisation="default" name="ermis$sources_javadoc_2.11" conf="test, compile, runtime" rev="2.0-rc1" rev-constraint-default="2.0-rc1" rev-constraint-dynamic="2.0-rc1" callerrev="1.0"/>
@@ -140,11 +223,26 @@
 					</artifact>
 					<artifact name="jersey-common" type="jar" ext="jar" status="no" details="" size="576684" time="0" location="/Users/spyroslalos/.ivy2/cache/org.glassfish.jersey.core/jersey-common/jars/jersey-common-2.0-rc1.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/jersey/core/jersey-common/2.0-rc1/jersey-common-2.0-rc1.jar"/>
+=======
+			<revision name="2.0" status="release" pubdate="20130514200755" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="56">
+				<metadata-artifact status="no" details="" size="32057" time="0" location="/Users/spyroslalos/.ivy2/cache/org.glassfish.jersey.core/jersey-common/ivy-2.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/glassfish/jersey/core/jersey-common/2.0/jersey-common-2.0.pom"/>
+				<caller organisation="default" name="ermis$sources_javadoc_2.11" conf="test, compile, runtime" rev="2.0" rev-constraint-default="2.0" rev-constraint-dynamic="2.0" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="jersey-common" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="1409128" time="0" location="/Users/spyroslalos/.ivy2/cache/org.glassfish.jersey.core/jersey-common/docs/jersey-common-2.0-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/jersey/core/jersey-common/2.0/jersey-common-2.0-javadoc.jar"/>
+					</artifact>
+					<artifact name="jersey-common" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="486929" time="0" location="/Users/spyroslalos/.ivy2/cache/org.glassfish.jersey.core/jersey-common/srcs/jersey-common-2.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/jersey/core/jersey-common/2.0/jersey-common-2.0-sources.jar"/>
+					</artifact>
+					<artifact name="jersey-common" type="jar" ext="jar" status="no" details="" size="582126" time="0" location="/Users/spyroslalos/.ivy2/cache/org.glassfish.jersey.core/jersey-common/jars/jersey-common-2.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/jersey/core/jersey-common/2.0/jersey-common-2.0.jar"/>
+>>>>>>> master
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.glassfish.hk2" name="hk2-locator">
+<<<<<<< HEAD
 			<revision name="2.1.78" status="release" pubdate="20130322011157" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="65">
 				<metadata-artifact status="no" details="" size="6389" time="0" location="/Users/spyroslalos/.ivy2/cache/org.glassfish.hk2/hk2-locator/ivy-2.1.78.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/glassfish/hk2/hk2-locator/2.1.78/hk2-locator-2.1.78.pom"/>
 				<caller organisation="default" name="ermis$sources_javadoc_2.11" conf="test, compile, runtime" rev="2.1.78" rev-constraint-default="2.1.78" rev-constraint-dynamic="2.1.78" callerrev="1.0"/>
@@ -157,11 +255,26 @@
 					</artifact>
 					<artifact name="hk2-locator" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="202697" time="0" location="/Users/spyroslalos/.ivy2/cache/org.glassfish.hk2/hk2-locator/docs/hk2-locator-2.1.78-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/hk2/hk2-locator/2.1.78/hk2-locator-2.1.78-javadoc.jar"/>
+=======
+			<revision name="2.1.88" status="release" pubdate="20130419004818" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="63">
+				<metadata-artifact status="no" details="" size="14471" time="0" location="/Users/spyroslalos/.ivy2/cache/org.glassfish.hk2/hk2-locator/ivy-2.1.88.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/glassfish/hk2/hk2-locator/2.1.88/hk2-locator-2.1.88.pom"/>
+				<caller organisation="default" name="ermis$sources_javadoc_2.11" conf="test, compile, runtime" rev="2.1.88" rev-constraint-default="2.1.88" rev-constraint-dynamic="2.1.88" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="hk2-locator" type="jar" ext="jar" status="no" details="" size="126379" time="0" location="/Users/spyroslalos/.ivy2/cache/org.glassfish.hk2/hk2-locator/jars/hk2-locator-2.1.88.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/hk2/hk2-locator/2.1.88/hk2-locator-2.1.88.jar"/>
+					</artifact>
+					<artifact name="hk2-locator" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="92400" time="0" location="/Users/spyroslalos/.ivy2/cache/org.glassfish.hk2/hk2-locator/srcs/hk2-locator-2.1.88-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/hk2/hk2-locator/2.1.88/hk2-locator-2.1.88-sources.jar"/>
+					</artifact>
+					<artifact name="hk2-locator" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="203184" time="0" location="/Users/spyroslalos/.ivy2/cache/org.glassfish.hk2/hk2-locator/docs/hk2-locator-2.1.88-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/hk2/hk2-locator/2.1.88/hk2-locator-2.1.88-javadoc.jar"/>
+>>>>>>> master
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.glassfish.hk2.external" name="cglib">
+<<<<<<< HEAD
 			<revision name="2.1.78" status="release" pubdate="20130322004456" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="68">
 				<metadata-artifact status="no" details="" size="7184" time="0" location="/Users/spyroslalos/.ivy2/cache/org.glassfish.hk2.external/cglib/ivy-2.1.78.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/glassfish/hk2/external/cglib/2.1.78/cglib-2.1.78.pom"/>
 				<caller organisation="default" name="ermis$sources_javadoc_2.11" conf="test, compile, runtime" rev="2.1.78" rev-constraint-default="2.1.78" rev-constraint-dynamic="2.1.78" callerrev="1.0"/>
@@ -174,11 +287,26 @@
 					</artifact>
 					<artifact name="cglib" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="174012" time="0" location="/Users/spyroslalos/.ivy2/cache/org.glassfish.hk2.external/cglib/srcs/cglib-2.1.78-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/hk2/external/cglib/2.1.78/cglib-2.1.78-sources.jar"/>
+=======
+			<revision name="2.1.88" status="release" pubdate="20130419002121" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="65">
+				<metadata-artifact status="no" details="" size="20372" time="0" location="/Users/spyroslalos/.ivy2/cache/org.glassfish.hk2.external/cglib/ivy-2.1.88.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/glassfish/hk2/external/cglib/2.1.88/cglib-2.1.88.pom"/>
+				<caller organisation="default" name="ermis$sources_javadoc_2.11" conf="test, compile, runtime" rev="2.1.88" rev-constraint-default="2.1.88" rev-constraint-dynamic="2.1.88" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="cglib" type="jar" ext="jar" status="no" details="" size="282848" time="0" location="/Users/spyroslalos/.ivy2/cache/org.glassfish.hk2.external/cglib/jars/cglib-2.1.88.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/hk2/external/cglib/2.1.88/cglib-2.1.88.jar"/>
+					</artifact>
+					<artifact name="cglib" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="639383" time="0" location="/Users/spyroslalos/.ivy2/cache/org.glassfish.hk2.external/cglib/docs/cglib-2.1.88-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/hk2/external/cglib/2.1.88/cglib-2.1.88-javadoc.jar"/>
+					</artifact>
+					<artifact name="cglib" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="174011" time="0" location="/Users/spyroslalos/.ivy2/cache/org.glassfish.hk2.external/cglib/srcs/cglib-2.1.88-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/hk2/external/cglib/2.1.88/cglib-2.1.88-sources.jar"/>
+>>>>>>> master
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.glassfish.hk2.external" name="asm-all-repackaged">
+<<<<<<< HEAD
 			<revision name="2.1.78" status="release" pubdate="20130322004816" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="67">
 				<metadata-artifact status="no" details="" size="7115" time="0" location="/Users/spyroslalos/.ivy2/cache/org.glassfish.hk2.external/asm-all-repackaged/ivy-2.1.78.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/glassfish/hk2/external/asm-all-repackaged/2.1.78/asm-all-repackaged-2.1.78.pom"/>
 				<caller organisation="default" name="ermis$sources_javadoc_2.11" conf="test, compile, runtime" rev="2.1.78" rev-constraint-default="2.1.78" rev-constraint-dynamic="2.1.78" callerrev="1.0"/>
@@ -191,11 +319,26 @@
 					</artifact>
 					<artifact name="asm-all-repackaged" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="347873" time="0" location="/Users/spyroslalos/.ivy2/cache/org.glassfish.hk2.external/asm-all-repackaged/srcs/asm-all-repackaged-2.1.78-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/hk2/external/asm-all-repackaged/2.1.78/asm-all-repackaged-2.1.78-sources.jar"/>
+=======
+			<revision name="2.1.88" status="release" pubdate="20130419002442" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="64">
+				<metadata-artifact status="no" details="" size="20303" time="0" location="/Users/spyroslalos/.ivy2/cache/org.glassfish.hk2.external/asm-all-repackaged/ivy-2.1.88.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/glassfish/hk2/external/asm-all-repackaged/2.1.88/asm-all-repackaged-2.1.88.pom"/>
+				<caller organisation="default" name="ermis$sources_javadoc_2.11" conf="test, compile, runtime" rev="2.1.88" rev-constraint-default="2.1.88" rev-constraint-dynamic="2.1.88" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="asm-all-repackaged" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="347873" time="0" location="/Users/spyroslalos/.ivy2/cache/org.glassfish.hk2.external/asm-all-repackaged/srcs/asm-all-repackaged-2.1.88-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/hk2/external/asm-all-repackaged/2.1.88/asm-all-repackaged-2.1.88-sources.jar"/>
+					</artifact>
+					<artifact name="asm-all-repackaged" type="jar" ext="jar" status="no" details="" size="309970" time="0" location="/Users/spyroslalos/.ivy2/cache/org.glassfish.hk2.external/asm-all-repackaged/jars/asm-all-repackaged-2.1.88.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/hk2/external/asm-all-repackaged/2.1.88/asm-all-repackaged-2.1.88.jar"/>
+					</artifact>
+					<artifact name="asm-all-repackaged" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="772194" time="0" location="/Users/spyroslalos/.ivy2/cache/org.glassfish.hk2.external/asm-all-repackaged/docs/asm-all-repackaged-2.1.88-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/hk2/external/asm-all-repackaged/2.1.88/asm-all-repackaged-2.1.88-javadoc.jar"/>
+>>>>>>> master
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.glassfish.hk2.external" name="javax.inject">
+<<<<<<< HEAD
 			<revision name="2.1.78" status="release" pubdate="20130322005142" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="66">
 				<metadata-artifact status="no" details="" size="7186" time="0" location="/Users/spyroslalos/.ivy2/cache/org.glassfish.hk2.external/javax.inject/ivy-2.1.78.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/glassfish/hk2/external/javax.inject/2.1.78/javax.inject-2.1.78.pom"/>
 				<caller organisation="default" name="ermis$sources_javadoc_2.11" conf="test, compile, runtime" rev="2.1.78" rev-constraint-default="2.1.78" rev-constraint-dynamic="2.1.78" callerrev="1.0"/>
@@ -208,11 +351,26 @@
 					</artifact>
 					<artifact name="javax.inject" type="jar" ext="jar" status="no" details="" size="6619" time="0" location="/Users/spyroslalos/.ivy2/cache/org.glassfish.hk2.external/javax.inject/jars/javax.inject-2.1.78.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/hk2/external/javax.inject/2.1.78/javax.inject-2.1.78.jar"/>
+=======
+			<revision name="2.1.88" status="release" pubdate="20130419002805" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="62">
+				<metadata-artifact status="no" details="" size="20374" time="0" location="/Users/spyroslalos/.ivy2/cache/org.glassfish.hk2.external/javax.inject/ivy-2.1.88.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/glassfish/hk2/external/javax.inject/2.1.88/javax.inject-2.1.88.pom"/>
+				<caller organisation="default" name="ermis$sources_javadoc_2.11" conf="test, compile, runtime" rev="2.1.88" rev-constraint-default="2.1.88" rev-constraint-dynamic="2.1.88" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="javax.inject" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="58279" time="0" location="/Users/spyroslalos/.ivy2/cache/org.glassfish.hk2.external/javax.inject/docs/javax.inject-2.1.88-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/hk2/external/javax.inject/2.1.88/javax.inject-2.1.88-javadoc.jar"/>
+					</artifact>
+					<artifact name="javax.inject" type="jar" ext="jar" status="no" details="" size="6619" time="0" location="/Users/spyroslalos/.ivy2/cache/org.glassfish.hk2.external/javax.inject/jars/javax.inject-2.1.88.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/hk2/external/javax.inject/2.1.88/javax.inject-2.1.88.jar"/>
+					</artifact>
+					<artifact name="javax.inject" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="13583" time="0" location="/Users/spyroslalos/.ivy2/cache/org.glassfish.hk2.external/javax.inject/srcs/javax.inject-2.1.88-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/hk2/external/javax.inject/2.1.88/javax.inject-2.1.88-sources.jar"/>
+>>>>>>> master
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.glassfish.hk2" name="hk2-api">
+<<<<<<< HEAD
 			<revision name="2.1.78" status="release" pubdate="20130322005827" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="61">
 				<metadata-artifact status="no" details="" size="5598" time="0" location="/Users/spyroslalos/.ivy2/cache/org.glassfish.hk2/hk2-api/ivy-2.1.78.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/glassfish/hk2/hk2-api/2.1.78/hk2-api-2.1.78.pom"/>
 				<caller organisation="default" name="ermis$sources_javadoc_2.11" conf="test, compile, runtime" rev="2.1.78" rev-constraint-default="2.1.78" rev-constraint-dynamic="2.1.78" callerrev="1.0"/>
@@ -225,11 +383,26 @@
 					</artifact>
 					<artifact name="hk2-api" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="530941" time="0" location="/Users/spyroslalos/.ivy2/cache/org.glassfish.hk2/hk2-api/docs/hk2-api-2.1.78-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/hk2/hk2-api/2.1.78/hk2-api-2.1.78-javadoc.jar"/>
+=======
+			<revision name="2.1.88" status="release" pubdate="20130419003449" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="59">
+				<metadata-artifact status="no" details="" size="18362" time="0" location="/Users/spyroslalos/.ivy2/cache/org.glassfish.hk2/hk2-api/ivy-2.1.88.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/glassfish/hk2/hk2-api/2.1.88/hk2-api-2.1.88.pom"/>
+				<caller organisation="default" name="ermis$sources_javadoc_2.11" conf="test, compile, runtime" rev="2.1.88" rev-constraint-default="2.1.88" rev-constraint-dynamic="2.1.88" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="hk2-api" type="jar" ext="jar" status="no" details="" size="113357" time="0" location="/Users/spyroslalos/.ivy2/cache/org.glassfish.hk2/hk2-api/jars/hk2-api-2.1.88.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/hk2/hk2-api/2.1.88/hk2-api-2.1.88.jar"/>
+					</artifact>
+					<artifact name="hk2-api" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="530915" time="0" location="/Users/spyroslalos/.ivy2/cache/org.glassfish.hk2/hk2-api/docs/hk2-api-2.1.88-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/hk2/hk2-api/2.1.88/hk2-api-2.1.88-javadoc.jar"/>
+					</artifact>
+					<artifact name="hk2-api" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="176259" time="0" location="/Users/spyroslalos/.ivy2/cache/org.glassfish.hk2/hk2-api/srcs/hk2-api-2.1.88-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/hk2/hk2-api/2.1.88/hk2-api-2.1.88-sources.jar"/>
+>>>>>>> master
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.glassfish.hk2" name="hk2-utils">
+<<<<<<< HEAD
 			<revision name="2.1.78" status="release" pubdate="20130322005505" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="64">
 				<metadata-artifact status="no" details="" size="5540" time="0" location="/Users/spyroslalos/.ivy2/cache/org.glassfish.hk2/hk2-utils/ivy-2.1.78.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/glassfish/hk2/hk2-utils/2.1.78/hk2-utils-2.1.78.pom"/>
 				<caller organisation="default" name="ermis$sources_javadoc_2.11" conf="test, compile, runtime" rev="2.1.78" rev-constraint-default="2.1.78" rev-constraint-dynamic="2.1.78" callerrev="1.0"/>
@@ -242,12 +415,30 @@
 					</artifact>
 					<artifact name="hk2-utils" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="25478" time="0" location="/Users/spyroslalos/.ivy2/cache/org.glassfish.hk2/hk2-utils/srcs/hk2-utils-2.1.78-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/hk2/hk2-utils/2.1.78/hk2-utils-2.1.78-sources.jar"/>
+=======
+			<revision name="2.1.88" status="release" pubdate="20130419003127" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="61">
+				<metadata-artifact status="no" details="" size="13622" time="0" location="/Users/spyroslalos/.ivy2/cache/org.glassfish.hk2/hk2-utils/ivy-2.1.88.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/glassfish/hk2/hk2-utils/2.1.88/hk2-utils-2.1.88.pom"/>
+				<caller organisation="default" name="ermis$sources_javadoc_2.11" conf="test, compile, runtime" rev="2.1.88" rev-constraint-default="2.1.88" rev-constraint-dynamic="2.1.88" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="hk2-utils" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="25478" time="0" location="/Users/spyroslalos/.ivy2/cache/org.glassfish.hk2/hk2-utils/srcs/hk2-utils-2.1.88-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/hk2/hk2-utils/2.1.88/hk2-utils-2.1.88-sources.jar"/>
+					</artifact>
+					<artifact name="hk2-utils" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="99190" time="0" location="/Users/spyroslalos/.ivy2/cache/org.glassfish.hk2/hk2-utils/docs/hk2-utils-2.1.88-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/hk2/hk2-utils/2.1.88/hk2-utils-2.1.88-javadoc.jar"/>
+					</artifact>
+					<artifact name="hk2-utils" type="jar" ext="jar" status="no" details="" size="52305" time="0" location="/Users/spyroslalos/.ivy2/cache/org.glassfish.hk2/hk2-utils/jars/hk2-utils-2.1.88.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/hk2/hk2-utils/2.1.88/hk2-utils-2.1.88.jar"/>
+>>>>>>> master
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.glassfish.hk2" name="osgi-resource-locator">
+<<<<<<< HEAD
 			<revision name="1.0.1" status="release" pubdate="20110113160008" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="62">
+=======
+			<revision name="1.0.1" status="release" pubdate="20110113160008" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="60">
+>>>>>>> master
 				<metadata-artifact status="no" details="" size="2926" time="0" location="/Users/spyroslalos/.ivy2/cache/org.glassfish.hk2/osgi-resource-locator/ivy-1.0.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/glassfish/hk2/osgi-resource-locator/1.0.1/osgi-resource-locator-1.0.1.pom"/>
 				<caller organisation="default" name="ermis$sources_javadoc_2.11" conf="test, compile, runtime" rev="1.0.1" rev-constraint-default="1.0.1" rev-constraint-dynamic="1.0.1" callerrev="1.0"/>
 				<artifacts>
@@ -263,6 +454,7 @@
 				</artifacts>
 			</revision>
 		</module>
+<<<<<<< HEAD
 		<module organisation="javax.ws.rs" name="javax.ws.rs-api">
 			<revision name="2.0-rc3" status="release" pubdate="20130324160021" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jax-rs-spec.java.net" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="59">
 				<license name="CDDL 1.1" url="http://glassfish.java.net/public/CDDL+GPL_1_1.html"/>
@@ -278,10 +470,27 @@
 					</artifact>
 					<artifact name="javax.ws.rs-api" type="jar" ext="jar" status="no" details="" size="112291" time="0" location="/Users/spyroslalos/.ivy2/cache/javax.ws.rs/javax.ws.rs-api/jars/javax.ws.rs-api-2.0-rc3.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/ws/rs/javax.ws.rs-api/2.0-rc3/javax.ws.rs-api-2.0-rc3.jar"/>
+=======
+		<module organisation="javax.annotation" name="javax.annotation-api">
+			<revision name="1.2" status="release" pubdate="20130426193829" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jcp.org/en/jsr/detail?id=250" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="58">
+				<license name="CDDL + GPLv2 with classpath exception" url="https://glassfish.dev.java.net/nonav/public/CDDL+GPL.html"/>
+				<metadata-artifact status="no" details="" size="4009" time="0" location="/Users/spyroslalos/.ivy2/cache/javax.annotation/javax.annotation-api/ivy-1.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/annotation/javax.annotation-api/1.2/javax.annotation-api-1.2.pom"/>
+				<caller organisation="default" name="ermis$sources_javadoc_2.11" conf="test, compile, runtime" rev="1.2" rev-constraint-default="1.2" rev-constraint-dynamic="1.2" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="javax.annotation-api" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="123708" time="0" location="/Users/spyroslalos/.ivy2/cache/javax.annotation/javax.annotation-api/docs/javax.annotation-api-1.2-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/annotation/javax.annotation-api/1.2/javax.annotation-api-1.2-javadoc.jar"/>
+					</artifact>
+					<artifact name="javax.annotation-api" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="42311" time="0" location="/Users/spyroslalos/.ivy2/cache/javax.annotation/javax.annotation-api/srcs/javax.annotation-api-1.2-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/annotation/javax.annotation-api/1.2/javax.annotation-api-1.2-sources.jar"/>
+					</artifact>
+					<artifact name="javax.annotation-api" type="jar" ext="jar" status="no" details="" size="26366" time="0" location="/Users/spyroslalos/.ivy2/cache/javax.annotation/javax.annotation-api/jars/javax.annotation-api-1.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/annotation/javax.annotation-api/1.2/javax.annotation-api-1.2.jar"/>
+>>>>>>> master
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
+<<<<<<< HEAD
 		<module organisation="javax.annotation" name="javax.annotation-api">
 			<revision name="1.2-b02" status="release" pubdate="20130212175852" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jcp.org/en/jsr/detail?id=250" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="60">
 				<license name="CDDL + GPLv2 with classpath exception" url="https://glassfish.dev.java.net/nonav/public/CDDL+GPL.html"/>
@@ -296,11 +505,29 @@
 					</artifact>
 					<artifact name="javax.annotation-api" type="jar" ext="jar" status="no" details="" size="26117" time="0" location="/Users/spyroslalos/.ivy2/cache/javax.annotation/javax.annotation-api/jars/javax.annotation-api-1.2-b02.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/annotation/javax.annotation-api/1.2-b02/javax.annotation-api-1.2-b02.jar"/>
+=======
+		<module organisation="javax.ws.rs" name="javax.ws.rs-api">
+			<revision name="2.0" status="release" pubdate="20130502193920" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jax-rs-spec.java.net" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="57">
+				<license name="CDDL 1.1" url="http://glassfish.java.net/public/CDDL+GPL_1_1.html"/>
+				<license name="GPL2 w/ CPE" url="http://glassfish.java.net/public/CDDL+GPL_1_1.html"/>
+				<metadata-artifact status="no" details="" size="4001" time="0" location="/Users/spyroslalos/.ivy2/cache/javax.ws.rs/javax.ws.rs-api/ivy-2.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/ws/rs/javax.ws.rs-api/2.0/javax.ws.rs-api-2.0.pom"/>
+				<caller organisation="default" name="ermis$sources_javadoc_2.11" conf="test, compile, runtime" rev="2.0" rev-constraint-default="2.0" rev-constraint-dynamic="2.0" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="javax.ws.rs-api" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="747261" time="0" location="/Users/spyroslalos/.ivy2/cache/javax.ws.rs/javax.ws.rs-api/docs/javax.ws.rs-api-2.0-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/ws/rs/javax.ws.rs-api/2.0/javax.ws.rs-api-2.0-javadoc.jar"/>
+					</artifact>
+					<artifact name="javax.ws.rs-api" type="jar" ext="jar" status="no" details="" size="112758" time="0" location="/Users/spyroslalos/.ivy2/cache/javax.ws.rs/javax.ws.rs-api/jars/javax.ws.rs-api-2.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/ws/rs/javax.ws.rs-api/2.0/javax.ws.rs-api-2.0.jar"/>
+					</artifact>
+					<artifact name="javax.ws.rs-api" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="263578" time="0" location="/Users/spyroslalos/.ivy2/cache/javax.ws.rs/javax.ws.rs-api/srcs/javax.ws.rs-api-2.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/ws/rs/javax.ws.rs-api/2.0/javax.ws.rs-api-2.0-sources.jar"/>
+>>>>>>> master
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="com.woorea" name="swift-client">
+<<<<<<< HEAD
 			<revision name="3.1.1" status="release" pubdate="20150306150318" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="54">
 				<metadata-artifact status="no" details="" size="3684" time="0" location="/Users/spyroslalos/.ivy2/cache/com.woorea/swift-client/ivy-3.1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/woorea/swift-client/3.1.1/swift-client-3.1.1.pom"/>
 				<caller organisation="default" name="ermis$sources_javadoc_2.11" conf="test, compile, runtime" rev="3.1.1" rev-constraint-default="3.1.1" rev-constraint-dynamic="3.1.1" callerrev="1.0"/>
@@ -313,11 +540,26 @@
 					</artifact>
 					<artifact name="swift-client" type="jar" ext="jar" status="no" details="" size="11683" time="0" location="/Users/spyroslalos/.ivy2/cache/com.woorea/swift-client/jars/swift-client-3.1.1.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/woorea/swift-client/3.1.1/swift-client-3.1.1.jar"/>
+=======
+			<revision name="3.2.1" status="release" pubdate="20130726140712" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="52">
+				<metadata-artifact status="no" details="" size="3789" time="0" location="/Users/spyroslalos/.ivy2/cache/com.woorea/swift-client/ivy-3.2.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/woorea/swift-client/3.2.1/swift-client-3.2.1.pom"/>
+				<caller organisation="default" name="ermis$sources_javadoc_2.11" conf="test, compile, runtime" rev="3.2.1" rev-constraint-default="3.2.1" rev-constraint-dynamic="3.2.1" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="swift-client" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="106832" time="0" location="/Users/spyroslalos/.ivy2/cache/com.woorea/swift-client/docs/swift-client-3.2.1-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/woorea/swift-client/3.2.1/swift-client-3.2.1-javadoc.jar"/>
+					</artifact>
+					<artifact name="swift-client" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="3613" time="0" location="/Users/spyroslalos/.ivy2/cache/com.woorea/swift-client/srcs/swift-client-3.2.1-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/woorea/swift-client/3.2.1/swift-client-3.2.1-sources.jar"/>
+					</artifact>
+					<artifact name="swift-client" type="jar" ext="jar" status="no" details="" size="11644" time="0" location="/Users/spyroslalos/.ivy2/cache/com.woorea/swift-client/jars/swift-client-3.2.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/woorea/swift-client/3.2.1/swift-client-3.2.1.jar"/>
+>>>>>>> master
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="com.woorea" name="swift-model">
+<<<<<<< HEAD
 			<revision name="3.1.1" status="release" pubdate="20150306150302" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="55">
 				<metadata-artifact status="no" details="" size="3396" time="0" location="/Users/spyroslalos/.ivy2/cache/com.woorea/swift-model/ivy-3.1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/woorea/swift-model/3.1.1/swift-model-3.1.1.pom"/>
 				<caller organisation="default" name="ermis$sources_javadoc_2.11" conf="test, compile, runtime" rev="3.1.1" rev-constraint-default="3.1.1" rev-constraint-dynamic="3.1.1" callerrev="1.0"/>
@@ -330,11 +572,26 @@
 					</artifact>
 					<artifact name="swift-model" type="jar" ext="jar" status="no" details="" size="5951" time="0" location="/Users/spyroslalos/.ivy2/cache/com.woorea/swift-model/jars/swift-model-3.1.1.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/woorea/swift-model/3.1.1/swift-model-3.1.1.jar"/>
+=======
+			<revision name="3.2.1" status="release" pubdate="20130726140642" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="53">
+				<metadata-artifact status="no" details="" size="3501" time="0" location="/Users/spyroslalos/.ivy2/cache/com.woorea/swift-model/ivy-3.2.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/woorea/swift-model/3.2.1/swift-model-3.2.1.pom"/>
+				<caller organisation="default" name="ermis$sources_javadoc_2.11" conf="test, compile, runtime" rev="3.2.1" rev-constraint-default="3.2.1" rev-constraint-dynamic="3.2.1" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="swift-model" type="jar" ext="jar" status="no" details="" size="5944" time="0" location="/Users/spyroslalos/.ivy2/cache/com.woorea/swift-model/jars/swift-model-3.2.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/woorea/swift-model/3.2.1/swift-model-3.2.1.jar"/>
+					</artifact>
+					<artifact name="swift-model" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="56295" time="0" location="/Users/spyroslalos/.ivy2/cache/com.woorea/swift-model/docs/swift-model-3.2.1-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/woorea/swift-model/3.2.1/swift-model-3.2.1-javadoc.jar"/>
+					</artifact>
+					<artifact name="swift-model" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="3662" time="0" location="/Users/spyroslalos/.ivy2/cache/com.woorea/swift-model/srcs/swift-model-3.2.1-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/woorea/swift-model/3.2.1/swift-model-3.2.1-sources.jar"/>
+>>>>>>> master
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="com.woorea" name="quantum-client">
+<<<<<<< HEAD
 			<revision name="3.1.1" status="release" pubdate="20150306150345" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="52">
 				<metadata-artifact status="no" details="" size="3692" time="0" location="/Users/spyroslalos/.ivy2/cache/com.woorea/quantum-client/ivy-3.1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/woorea/quantum-client/3.1.1/quantum-client-3.1.1.pom"/>
 				<caller organisation="default" name="ermis$sources_javadoc_2.11" conf="test, compile, runtime" rev="3.1.1" rev-constraint-default="3.1.1" rev-constraint-dynamic="3.1.1" callerrev="1.0"/>
@@ -347,11 +604,26 @@
 					</artifact>
 					<artifact name="quantum-client" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="4716" time="0" location="/Users/spyroslalos/.ivy2/cache/com.woorea/quantum-client/srcs/quantum-client-3.1.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/woorea/quantum-client/3.1.1/quantum-client-3.1.1-sources.jar"/>
+=======
+			<revision name="3.2.1" status="release" pubdate="20130726140817" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="50">
+				<metadata-artifact status="no" details="" size="3797" time="0" location="/Users/spyroslalos/.ivy2/cache/com.woorea/quantum-client/ivy-3.2.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/woorea/quantum-client/3.2.1/quantum-client-3.2.1.pom"/>
+				<caller organisation="default" name="ermis$sources_javadoc_2.11" conf="test, compile, runtime" rev="3.2.1" rev-constraint-default="3.2.1" rev-constraint-dynamic="3.2.1" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="quantum-client" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="4552" time="0" location="/Users/spyroslalos/.ivy2/cache/com.woorea/quantum-client/srcs/quantum-client-3.2.1-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/woorea/quantum-client/3.2.1/quantum-client-3.2.1-sources.jar"/>
+					</artifact>
+					<artifact name="quantum-client" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="133982" time="0" location="/Users/spyroslalos/.ivy2/cache/com.woorea/quantum-client/docs/quantum-client-3.2.1-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/woorea/quantum-client/3.2.1/quantum-client-3.2.1-javadoc.jar"/>
+					</artifact>
+					<artifact name="quantum-client" type="jar" ext="jar" status="no" details="" size="17638" time="0" location="/Users/spyroslalos/.ivy2/cache/com.woorea/quantum-client/jars/quantum-client-3.2.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/woorea/quantum-client/3.2.1/quantum-client-3.2.1.jar"/>
+>>>>>>> master
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="com.woorea" name="quantum-model">
+<<<<<<< HEAD
 			<revision name="3.1.1" status="release" pubdate="20150306150333" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="53">
 				<metadata-artifact status="no" details="" size="3507" time="0" location="/Users/spyroslalos/.ivy2/cache/com.woorea/quantum-model/ivy-3.1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/woorea/quantum-model/3.1.1/quantum-model-3.1.1.pom"/>
 				<caller organisation="default" name="ermis$sources_javadoc_2.11" conf="test, compile, runtime" rev="3.1.1" rev-constraint-default="3.1.1" rev-constraint-dynamic="3.1.1" callerrev="1.0"/>
@@ -364,11 +636,26 @@
 					</artifact>
 					<artifact name="quantum-model" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="8703" time="0" location="/Users/spyroslalos/.ivy2/cache/com.woorea/quantum-model/srcs/quantum-model-3.1.1-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/woorea/quantum-model/3.1.1/quantum-model-3.1.1-sources.jar"/>
+=======
+			<revision name="3.2.1" status="release" pubdate="20130726140747" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="51">
+				<metadata-artifact status="no" details="" size="3507" time="0" location="/Users/spyroslalos/.ivy2/cache/com.woorea/quantum-model/ivy-3.2.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/woorea/quantum-model/3.2.1/quantum-model-3.2.1.pom"/>
+				<caller organisation="default" name="ermis$sources_javadoc_2.11" conf="test, compile, runtime" rev="3.2.1" rev-constraint-default="3.2.1" rev-constraint-dynamic="3.2.1" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="quantum-model" type="jar" ext="jar" status="no" details="" size="15209" time="0" location="/Users/spyroslalos/.ivy2/cache/com.woorea/quantum-model/jars/quantum-model-3.2.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/woorea/quantum-model/3.2.1/quantum-model-3.2.1.jar"/>
+					</artifact>
+					<artifact name="quantum-model" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="93374" time="0" location="/Users/spyroslalos/.ivy2/cache/com.woorea/quantum-model/docs/quantum-model-3.2.1-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/woorea/quantum-model/3.2.1/quantum-model-3.2.1-javadoc.jar"/>
+					</artifact>
+					<artifact name="quantum-model" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="8468" time="0" location="/Users/spyroslalos/.ivy2/cache/com.woorea/quantum-model/srcs/quantum-model-3.2.1-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/woorea/quantum-model/3.2.1/quantum-model-3.2.1-sources.jar"/>
+>>>>>>> master
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="com.woorea" name="nova-client">
+<<<<<<< HEAD
 			<revision name="3.1.1" status="release" pubdate="20150306150002" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="50">
 				<metadata-artifact status="no" details="" size="3680" time="0" location="/Users/spyroslalos/.ivy2/cache/com.woorea/nova-client/ivy-3.1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/woorea/nova-client/3.1.1/nova-client-3.1.1.pom"/>
 				<caller organisation="default" name="ermis$sources_javadoc_2.11" conf="test, compile, runtime" rev="3.1.1" rev-constraint-default="3.1.1" rev-constraint-dynamic="3.1.1" callerrev="1.0"/>
@@ -381,11 +668,24 @@
 					</artifact>
 					<artifact name="nova-client" type="jar" ext="jar" status="no" details="" size="89515" time="0" location="/Users/spyroslalos/.ivy2/cache/com.woorea/nova-client/jars/nova-client-3.1.1.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/woorea/nova-client/3.1.1/nova-client-3.1.1.jar"/>
+=======
+			<revision name="3.2.2-SNAPSHOT" status="integration" pubdate="20150915125902" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="true" default="false" conf="default(compile), default, compile, runtime, master" position="48">
+				<metadata-artifact status="no" details="" size="3816" time="0" location="/Users/spyroslalos/.ivy2/cache/com.woorea/nova-client/ivy-3.2.2-SNAPSHOT.xml" searched="true" origin-is-local="true" origin-location="/Users/spyroslalos/.m2/repository/com/woorea/nova-client/3.2.2-SNAPSHOT/nova-client-3.2.2-SNAPSHOT.pom"/>
+				<caller organisation="default" name="ermis$sources_javadoc_2.11" conf="test, compile, runtime" rev="3.2.2-SNAPSHOT" rev-constraint-default="3.2.2-SNAPSHOT" rev-constraint-dynamic="3.2.2-SNAPSHOT" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="nova-client" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="15156" time="0" location="/Users/spyroslalos/.m2/repository/com/woorea/nova-client/3.2.2-SNAPSHOT/nova-client-3.2.2-SNAPSHOT-sources.jar">
+						<origin-location is-local="true" location="/Users/spyroslalos/.m2/repository/com/woorea/nova-client/3.2.2-SNAPSHOT/nova-client-3.2.2-SNAPSHOT-sources.jar"/>
+					</artifact>
+					<artifact name="nova-client" type="doc" ext="jar" extra-classifier="javadoc" status="failed" details="" size="0" time="0"/>
+					<artifact name="nova-client" type="jar" ext="jar" status="no" details="" size="96889" time="0" location="/Users/spyroslalos/.m2/repository/com/woorea/nova-client/3.2.2-SNAPSHOT/nova-client-3.2.2-SNAPSHOT.jar">
+						<origin-location is-local="true" location="/Users/spyroslalos/.m2/repository/com/woorea/nova-client/3.2.2-SNAPSHOT/nova-client-3.2.2-SNAPSHOT.jar"/>
+>>>>>>> master
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="com.woorea" name="nova-model">
+<<<<<<< HEAD
 			<revision name="3.1.1" status="release" pubdate="20150306145939" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="51">
 				<metadata-artifact status="no" details="" size="3393" time="0" location="/Users/spyroslalos/.ivy2/cache/com.woorea/nova-model/ivy-3.1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/woorea/nova-model/3.1.1/nova-model-3.1.1.pom"/>
 				<caller organisation="default" name="ermis$sources_javadoc_2.11" conf="test, compile, runtime" rev="3.1.1" rev-constraint-default="3.1.1" rev-constraint-dynamic="3.1.1" callerrev="1.0"/>
@@ -398,11 +698,24 @@
 					</artifact>
 					<artifact name="nova-model" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="446901" time="0" location="/Users/spyroslalos/.ivy2/cache/com.woorea/nova-model/docs/nova-model-3.1.1-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/woorea/nova-model/3.1.1/nova-model-3.1.1-javadoc.jar"/>
+=======
+			<revision name="3.2.2-SNAPSHOT" status="integration" pubdate="20150915125902" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="true" default="false" conf="default(compile), default, compile, runtime, master" position="49">
+				<metadata-artifact status="no" details="" size="3511" time="0" location="/Users/spyroslalos/.ivy2/cache/com.woorea/nova-model/ivy-3.2.2-SNAPSHOT.xml" searched="true" origin-is-local="true" origin-location="/Users/spyroslalos/.m2/repository/com/woorea/nova-model/3.2.2-SNAPSHOT/nova-model-3.2.2-SNAPSHOT.pom"/>
+				<caller organisation="default" name="ermis$sources_javadoc_2.11" conf="test, compile, runtime" rev="3.2.2-SNAPSHOT" rev-constraint-default="3.2.2-SNAPSHOT" rev-constraint-dynamic="3.2.2-SNAPSHOT" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="nova-model" type="doc" ext="jar" extra-classifier="javadoc" status="failed" details="" size="0" time="0"/>
+					<artifact name="nova-model" type="jar" ext="jar" status="no" details="" size="83957" time="0" location="/Users/spyroslalos/.m2/repository/com/woorea/nova-model/3.2.2-SNAPSHOT/nova-model-3.2.2-SNAPSHOT.jar">
+						<origin-location is-local="true" location="/Users/spyroslalos/.m2/repository/com/woorea/nova-model/3.2.2-SNAPSHOT/nova-model-3.2.2-SNAPSHOT.jar"/>
+					</artifact>
+					<artifact name="nova-model" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="37111" time="0" location="/Users/spyroslalos/.m2/repository/com/woorea/nova-model/3.2.2-SNAPSHOT/nova-model-3.2.2-SNAPSHOT-sources.jar">
+						<origin-location is-local="true" location="/Users/spyroslalos/.m2/repository/com/woorea/nova-model/3.2.2-SNAPSHOT/nova-model-3.2.2-SNAPSHOT-sources.jar"/>
+>>>>>>> master
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="com.woorea" name="keystone-client">
+<<<<<<< HEAD
 			<revision name="3.1.1" status="release" pubdate="20150306150221" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="48">
 				<metadata-artifact status="no" details="" size="3696" time="0" location="/Users/spyroslalos/.ivy2/cache/com.woorea/keystone-client/ivy-3.1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/woorea/keystone-client/3.1.1/keystone-client-3.1.1.pom"/>
 				<caller organisation="default" name="ermis$sources_javadoc_2.11" conf="test, compile, runtime" rev="3.1.1" rev-constraint-default="3.1.1" rev-constraint-dynamic="3.1.1" callerrev="1.0"/>
@@ -416,10 +729,24 @@
 					<artifact name="keystone-client" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="212050" time="0" location="/Users/spyroslalos/.ivy2/cache/com.woorea/keystone-client/docs/keystone-client-3.1.1-javadoc.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/woorea/keystone-client/3.1.1/keystone-client-3.1.1-javadoc.jar"/>
 					</artifact>
+=======
+			<revision name="3.2.2-SNAPSHOT" status="integration" pubdate="20150915125902" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="true" default="false" conf="default(compile), default, compile, runtime, master" position="45">
+				<metadata-artifact status="no" details="" size="3832" time="0" location="/Users/spyroslalos/.ivy2/cache/com.woorea/keystone-client/ivy-3.2.2-SNAPSHOT.xml" searched="true" origin-is-local="true" origin-location="/Users/spyroslalos/.m2/repository/com/woorea/keystone-client/3.2.2-SNAPSHOT/keystone-client-3.2.2-SNAPSHOT.pom"/>
+				<caller organisation="default" name="ermis$sources_javadoc_2.11" conf="test, compile, runtime" rev="3.2.2-SNAPSHOT" rev-constraint-default="3.2.2-SNAPSHOT" rev-constraint-dynamic="3.2.2-SNAPSHOT" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="keystone-client" type="jar" ext="jar" status="no" details="" size="34890" time="0" location="/Users/spyroslalos/.m2/repository/com/woorea/keystone-client/3.2.2-SNAPSHOT/keystone-client-3.2.2-SNAPSHOT.jar">
+						<origin-location is-local="true" location="/Users/spyroslalos/.m2/repository/com/woorea/keystone-client/3.2.2-SNAPSHOT/keystone-client-3.2.2-SNAPSHOT.jar"/>
+					</artifact>
+					<artifact name="keystone-client" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="7684" time="0" location="/Users/spyroslalos/.m2/repository/com/woorea/keystone-client/3.2.2-SNAPSHOT/keystone-client-3.2.2-SNAPSHOT-sources.jar">
+						<origin-location is-local="true" location="/Users/spyroslalos/.m2/repository/com/woorea/keystone-client/3.2.2-SNAPSHOT/keystone-client-3.2.2-SNAPSHOT-sources.jar"/>
+					</artifact>
+					<artifact name="keystone-client" type="doc" ext="jar" extra-classifier="javadoc" status="failed" details="" size="0" time="0"/>
+>>>>>>> master
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="com.woorea" name="keystone-model">
+<<<<<<< HEAD
 			<revision name="3.1.1" status="release" pubdate="20150306150139" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="49">
 				<metadata-artifact status="no" details="" size="3405" time="0" location="/Users/spyroslalos/.ivy2/cache/com.woorea/keystone-model/ivy-3.1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/woorea/keystone-model/3.1.1/keystone-model-3.1.1.pom"/>
 				<caller organisation="default" name="ermis$sources_javadoc_2.11" conf="test, compile, runtime" rev="3.1.1" rev-constraint-default="3.1.1" rev-constraint-dynamic="3.1.1" callerrev="1.0"/>
@@ -483,10 +810,38 @@
 					</artifact>
 					<artifact name="ceilometer-client" type="jar" ext="jar" status="no" details="" size="8293" time="0" location="/Users/spyroslalos/.ivy2/cache/com.woorea/ceilometer-client/jars/ceilometer-client-3.1.1.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/woorea/ceilometer-client/3.1.1/ceilometer-client-3.1.1.jar"/>
+=======
+			<revision name="3.2.2-SNAPSHOT" status="integration" pubdate="20150915125902" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="true" default="false" conf="default(compile), default, compile, runtime, master" position="47">
+				<metadata-artifact status="no" details="" size="3523" time="0" location="/Users/spyroslalos/.ivy2/cache/com.woorea/keystone-model/ivy-3.2.2-SNAPSHOT.xml" searched="true" origin-is-local="true" origin-location="/Users/spyroslalos/.m2/repository/com/woorea/keystone-model/3.2.2-SNAPSHOT/keystone-model-3.2.2-SNAPSHOT.pom"/>
+				<caller organisation="default" name="ermis$sources_javadoc_2.11" conf="test, compile, runtime" rev="3.2.2-SNAPSHOT" rev-constraint-default="3.2.2-SNAPSHOT" rev-constraint-dynamic="3.2.2-SNAPSHOT" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="keystone-model" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="11939" time="0" location="/Users/spyroslalos/.m2/repository/com/woorea/keystone-model/3.2.2-SNAPSHOT/keystone-model-3.2.2-SNAPSHOT-sources.jar">
+						<origin-location is-local="true" location="/Users/spyroslalos/.m2/repository/com/woorea/keystone-model/3.2.2-SNAPSHOT/keystone-model-3.2.2-SNAPSHOT-sources.jar"/>
+					</artifact>
+					<artifact name="keystone-model" type="jar" ext="jar" status="no" details="" size="23215" time="0" location="/Users/spyroslalos/.m2/repository/com/woorea/keystone-model/3.2.2-SNAPSHOT/keystone-model-3.2.2-SNAPSHOT.jar">
+						<origin-location is-local="true" location="/Users/spyroslalos/.m2/repository/com/woorea/keystone-model/3.2.2-SNAPSHOT/keystone-model-3.2.2-SNAPSHOT.jar"/>
+					</artifact>
+					<artifact name="keystone-model" type="doc" ext="jar" extra-classifier="javadoc" status="failed" details="" size="0" time="0"/>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.woorea" name="openstack-client">
+			<revision name="3.2.2-SNAPSHOT" status="integration" pubdate="20150915125902" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="true" default="false" conf="default(compile), default, compile, runtime, master" position="46">
+				<metadata-artifact status="no" details="" size="3519" time="0" location="/Users/spyroslalos/.ivy2/cache/com.woorea/openstack-client/ivy-3.2.2-SNAPSHOT.xml" searched="true" origin-is-local="true" origin-location="/Users/spyroslalos/.m2/repository/com/woorea/openstack-client/3.2.2-SNAPSHOT/openstack-client-3.2.2-SNAPSHOT.pom"/>
+				<caller organisation="default" name="ermis$sources_javadoc_2.11" conf="test, compile, runtime" rev="3.2.2-SNAPSHOT" rev-constraint-default="3.2.2-SNAPSHOT" rev-constraint-dynamic="3.2.2-SNAPSHOT" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="openstack-client" type="doc" ext="jar" extra-classifier="javadoc" status="failed" details="" size="0" time="0"/>
+					<artifact name="openstack-client" type="jar" ext="jar" status="no" details="" size="10936" time="0" location="/Users/spyroslalos/.m2/repository/com/woorea/openstack-client/3.2.2-SNAPSHOT/openstack-client-3.2.2-SNAPSHOT.jar">
+						<origin-location is-local="true" location="/Users/spyroslalos/.m2/repository/com/woorea/openstack-client/3.2.2-SNAPSHOT/openstack-client-3.2.2-SNAPSHOT.jar"/>
+					</artifact>
+					<artifact name="openstack-client" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="8722" time="0" location="/Users/spyroslalos/.m2/repository/com/woorea/openstack-client/3.2.2-SNAPSHOT/openstack-client-3.2.2-SNAPSHOT-sources.jar">
+						<origin-location is-local="true" location="/Users/spyroslalos/.m2/repository/com/woorea/openstack-client/3.2.2-SNAPSHOT/openstack-client-3.2.2-SNAPSHOT-sources.jar"/>
+>>>>>>> master
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
+<<<<<<< HEAD
 		<module organisation="com.woorea" name="ceilometer-model">
 			<revision name="3.1.1" status="release" pubdate="20150306150400" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="45">
 				<metadata-artifact status="no" details="" size="3411" time="0" location="/Users/spyroslalos/.ivy2/cache/com.woorea/ceilometer-model/ivy-3.1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/woorea/ceilometer-model/3.1.1/ceilometer-model-3.1.1.pom"/>
@@ -500,10 +855,26 @@
 					</artifact>
 					<artifact name="ceilometer-model" type="jar" ext="jar" status="no" details="" size="6299" time="0" location="/Users/spyroslalos/.ivy2/cache/com.woorea/ceilometer-model/jars/ceilometer-model-3.1.1.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/woorea/ceilometer-model/3.1.1/ceilometer-model-3.1.1.jar"/>
+=======
+		<module organisation="com.woorea" name="glance-client">
+			<revision name="3.2.1" status="release" pubdate="20130726140503" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="43">
+				<metadata-artifact status="no" details="" size="3793" time="0" location="/Users/spyroslalos/.ivy2/cache/com.woorea/glance-client/ivy-3.2.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/woorea/glance-client/3.2.1/glance-client-3.2.1.pom"/>
+				<caller organisation="default" name="ermis$sources_javadoc_2.11" conf="test, compile, runtime" rev="3.2.1" rev-constraint-default="3.2.1" rev-constraint-dynamic="3.2.1" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="glance-client" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="3705" time="0" location="/Users/spyroslalos/.ivy2/cache/com.woorea/glance-client/srcs/glance-client-3.2.1-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/woorea/glance-client/3.2.1/glance-client-3.2.1-sources.jar"/>
+					</artifact>
+					<artifact name="glance-client" type="jar" ext="jar" status="no" details="" size="18380" time="0" location="/Users/spyroslalos/.ivy2/cache/com.woorea/glance-client/jars/glance-client-3.2.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/woorea/glance-client/3.2.1/glance-client-3.2.1.jar"/>
+					</artifact>
+					<artifact name="glance-client" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="103773" time="0" location="/Users/spyroslalos/.ivy2/cache/com.woorea/glance-client/docs/glance-client-3.2.1-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/woorea/glance-client/3.2.1/glance-client-3.2.1-javadoc.jar"/>
+>>>>>>> master
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
+<<<<<<< HEAD
 		<module organisation="com.woorea" name="openstack-client">
 			<revision name="3.1.1" status="release" pubdate="20150306145923" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="42">
 				<metadata-artifact status="no" details="" size="3401" time="0" location="/Users/spyroslalos/.ivy2/cache/com.woorea/openstack-client/ivy-3.1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/woorea/openstack-client/3.1.1/openstack-client-3.1.1.pom"/>
@@ -517,10 +888,26 @@
 					</artifact>
 					<artifact name="openstack-client" type="jar" ext="jar" status="no" details="" size="10861" time="0" location="/Users/spyroslalos/.ivy2/cache/com.woorea/openstack-client/jars/openstack-client-3.1.1.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/woorea/openstack-client/3.1.1/openstack-client-3.1.1.jar"/>
+=======
+		<module organisation="com.woorea" name="glance-model">
+			<revision name="3.2.1" status="release" pubdate="20130726140429" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="44">
+				<metadata-artifact status="no" details="" size="3504" time="0" location="/Users/spyroslalos/.ivy2/cache/com.woorea/glance-model/ivy-3.2.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/woorea/glance-model/3.2.1/glance-model-3.2.1.pom"/>
+				<caller organisation="default" name="ermis$sources_javadoc_2.11" conf="test, compile, runtime" rev="3.2.1" rev-constraint-default="3.2.1" rev-constraint-dynamic="3.2.1" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="glance-model" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="70668" time="0" location="/Users/spyroslalos/.ivy2/cache/com.woorea/glance-model/docs/glance-model-3.2.1-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/woorea/glance-model/3.2.1/glance-model-3.2.1-javadoc.jar"/>
+					</artifact>
+					<artifact name="glance-model" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="5320" time="0" location="/Users/spyroslalos/.ivy2/cache/com.woorea/glance-model/srcs/glance-model-3.2.1-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/woorea/glance-model/3.2.1/glance-model-3.2.1-sources.jar"/>
+					</artifact>
+					<artifact name="glance-model" type="jar" ext="jar" status="no" details="" size="8663" time="0" location="/Users/spyroslalos/.ivy2/cache/com.woorea/glance-model/jars/glance-model-3.2.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/woorea/glance-model/3.2.1/glance-model-3.2.1.jar"/>
+>>>>>>> master
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
+<<<<<<< HEAD
 		<module organisation="org.codehaus.jackson" name="jackson-mapper-asl">
 			<revision name="1.9.13" status="release" pubdate="20150225084915" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jackson.codehaus.org" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="43">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
@@ -535,10 +922,26 @@
 					</artifact>
 					<artifact name="jackson-mapper-asl" type="jar" ext="jar" status="no" details="" size="780664" time="0" location="/Users/spyroslalos/.ivy2/cache/org.codehaus.jackson/jackson-mapper-asl/jars/jackson-mapper-asl-1.9.13.jar">
 						<origin-location is-local="false" location="file:/Users/spyroslalos/Downloads/activator-dist-1.3.5/repository/org.codehaus.jackson/jackson-mapper-asl/1.9.13/jars/jackson-mapper-asl.jar"/>
+=======
+		<module organisation="com.woorea" name="ceilometer-client">
+			<revision name="3.2.1" status="release" pubdate="20130726140931" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="41">
+				<metadata-artifact status="no" details="" size="3809" time="0" location="/Users/spyroslalos/.ivy2/cache/com.woorea/ceilometer-client/ivy-3.2.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/woorea/ceilometer-client/3.2.1/ceilometer-client-3.2.1.pom"/>
+				<caller organisation="default" name="ermis$sources_javadoc_2.11" conf="test, compile, runtime" rev="3.2.1" rev-constraint-default="3.2.1" rev-constraint-dynamic="3.2.1" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="ceilometer-client" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="83153" time="0" location="/Users/spyroslalos/.ivy2/cache/com.woorea/ceilometer-client/docs/ceilometer-client-3.2.1-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/woorea/ceilometer-client/3.2.1/ceilometer-client-3.2.1-javadoc.jar"/>
+					</artifact>
+					<artifact name="ceilometer-client" type="jar" ext="jar" status="no" details="" size="8271" time="0" location="/Users/spyroslalos/.ivy2/cache/com.woorea/ceilometer-client/jars/ceilometer-client-3.2.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/woorea/ceilometer-client/3.2.1/ceilometer-client-3.2.1.jar"/>
+					</artifact>
+					<artifact name="ceilometer-client" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="3543" time="0" location="/Users/spyroslalos/.ivy2/cache/com.woorea/ceilometer-client/srcs/ceilometer-client-3.2.1-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/woorea/ceilometer-client/3.2.1/ceilometer-client-3.2.1-sources.jar"/>
+>>>>>>> master
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
+<<<<<<< HEAD
 		<module organisation="org.codehaus.jackson" name="jackson-core-asl">
 			<revision name="1.9.13" status="release" pubdate="20150225084913" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jackson.codehaus.org" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="44">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
@@ -553,6 +956,21 @@
 					</artifact>
 					<artifact name="jackson-core-asl" type="jar" ext="jar" status="no" details="" size="232248" time="0" location="/Users/spyroslalos/.ivy2/cache/org.codehaus.jackson/jackson-core-asl/jars/jackson-core-asl-1.9.13.jar">
 						<origin-location is-local="false" location="file:/Users/spyroslalos/Downloads/activator-dist-1.3.5/repository/org.codehaus.jackson/jackson-core-asl/1.9.13/jars/jackson-core-asl.jar"/>
+=======
+		<module organisation="com.woorea" name="ceilometer-model">
+			<revision name="3.2.1" status="release" pubdate="20130726140852" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="42">
+				<metadata-artifact status="no" details="" size="3516" time="0" location="/Users/spyroslalos/.ivy2/cache/com.woorea/ceilometer-model/ivy-3.2.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/woorea/ceilometer-model/3.2.1/ceilometer-model-3.2.1.pom"/>
+				<caller organisation="default" name="ermis$sources_javadoc_2.11" conf="test, compile, runtime" rev="3.2.1" rev-constraint-default="3.2.1" rev-constraint-dynamic="3.2.1" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="ceilometer-model" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="49760" time="0" location="/Users/spyroslalos/.ivy2/cache/com.woorea/ceilometer-model/docs/ceilometer-model-3.2.1-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/woorea/ceilometer-model/3.2.1/ceilometer-model-3.2.1-javadoc.jar"/>
+					</artifact>
+					<artifact name="ceilometer-model" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="3504" time="0" location="/Users/spyroslalos/.ivy2/cache/com.woorea/ceilometer-model/srcs/ceilometer-model-3.2.1-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/woorea/ceilometer-model/3.2.1/ceilometer-model-3.2.1-sources.jar"/>
+					</artifact>
+					<artifact name="ceilometer-model" type="jar" ext="jar" status="no" details="" size="6292" time="0" location="/Users/spyroslalos/.ivy2/cache/com.woorea/ceilometer-model/jars/ceilometer-model-3.2.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/woorea/ceilometer-model/3.2.1/ceilometer-model-3.2.1.jar"/>
+>>>>>>> master
 					</artifact>
 				</artifacts>
 			</revision>
@@ -1065,7 +1483,11 @@
 				<artifacts>
 				</artifacts>
 			</revision>
+<<<<<<< HEAD
 			<revision name="2.11.1" status="release" pubdate="20140520100308" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="76">
+=======
+			<revision name="2.11.1" status="release" pubdate="20140520100308" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="75">
+>>>>>>> master
 				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
 				<metadata-artifact status="no" details="" size="3131" time="0" location="/Users/spyroslalos/.ivy2/cache/org.scala-lang/scala-compiler/ivy-2.11.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.1/scala-compiler-2.11.1.pom"/>
 				<caller organisation="default" name="ermis$sources_javadoc_2.11" conf="test, compile, runtime" rev="2.11.1" rev-constraint-default="2.11.1" rev-constraint-dynamic="2.11.1" callerrev="1.0"/>
@@ -1100,7 +1522,11 @@
 			</revision>
 		</module>
 		<module organisation="javax.inject" name="javax.inject">
+<<<<<<< HEAD
 			<revision name="1" status="release" pubdate="20150225085253" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/atinject/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="63">
+=======
+			<revision name="1" status="release" pubdate="20150225085253" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/atinject/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="66">
+>>>>>>> master
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="2369" time="0" location="/Users/spyroslalos/.ivy2/cache/javax.inject/javax.inject/ivy-1.xml" searched="false" origin-is-local="true" origin-location="/Users/spyroslalos/Downloads/activator-dist-1.3.5/repository/javax.inject/javax.inject/1/ivys/ivy.xml"/>
 				<caller organisation="default" name="ermis$sources_javadoc_2.11" conf="test, compile, runtime" rev="1" rev-constraint-default="1" rev-constraint-dynamic="1" callerrev="1.0"/>
@@ -1263,7 +1689,11 @@
 			</revision>
 		</module>
 		<module organisation="org.specs2" name="specs2_2.11">
+<<<<<<< HEAD
 			<revision name="2.3.13" status="release" pubdate="20140711011142" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://specs2.org/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="75">
+=======
+			<revision name="2.3.13" status="release" pubdate="20140711011142" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://specs2.org/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="74">
+>>>>>>> master
 				<license name="MIT-style" url="http://www.opensource.org/licenses/mit-license.php"/>
 				<metadata-artifact status="no" details="" size="4212" time="0" location="/Users/spyroslalos/.ivy2/cache/org.specs2/specs2_2.11/ivy-2.3.13.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/specs2/specs2_2.11/2.3.13/specs2_2.11-2.3.13.pom"/>
 				<caller organisation="default" name="ermis$sources_javadoc_2.11" conf="test, compile, runtime" rev="2.3.13" rev-constraint-default="2.3.13" rev-constraint-dynamic="2.3.13" callerrev="1.0"/>
@@ -1281,7 +1711,11 @@
 			</revision>
 		</module>
 		<module organisation="org.scalaz" name="scalaz-concurrent_2.11">
+<<<<<<< HEAD
 			<revision name="7.0.6" status="release" pubdate="20150225085701" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://scalaz.org" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="91">
+=======
+			<revision name="7.0.6" status="release" pubdate="20150225085701" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://scalaz.org" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="90">
+>>>>>>> master
 				<license name="BSD-style" url="http://www.opensource.org/licenses/bsd-license.php"/>
 				<metadata-artifact status="no" details="" size="2819" time="0" location="/Users/spyroslalos/.ivy2/cache/org.scalaz/scalaz-concurrent_2.11/ivy-7.0.6.xml" searched="false" origin-is-local="true" origin-location="/Users/spyroslalos/Downloads/activator-dist-1.3.5/repository/org.scalaz/scalaz-concurrent_2.11/7.0.6/ivys/ivy.xml"/>
 				<caller organisation="default" name="ermis$sources_javadoc_2.11" conf="test, compile, runtime" rev="7.0.6" rev-constraint-default="7.0.6" rev-constraint-dynamic="7.0.6" callerrev="1.0"/>
@@ -1299,7 +1733,11 @@
 			</revision>
 		</module>
 		<module organisation="org.scalaz" name="scalaz-effect_2.11">
+<<<<<<< HEAD
 			<revision name="7.0.6" status="release" pubdate="20150225085702" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://scalaz.org" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="92">
+=======
+			<revision name="7.0.6" status="release" pubdate="20150225085702" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://scalaz.org" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="91">
+>>>>>>> master
 				<license name="BSD-style" url="http://www.opensource.org/licenses/bsd-license.php"/>
 				<metadata-artifact status="no" details="" size="2660" time="0" location="/Users/spyroslalos/.ivy2/cache/org.scalaz/scalaz-effect_2.11/ivy-7.0.6.xml" searched="false" origin-is-local="true" origin-location="/Users/spyroslalos/Downloads/activator-dist-1.3.5/repository/org.scalaz/scalaz-effect_2.11/7.0.6/ivys/ivy.xml"/>
 				<caller organisation="default" name="ermis$sources_javadoc_2.11" conf="test, compile, runtime" rev="7.0.6" rev-constraint-default="7.0.6" rev-constraint-dynamic="7.0.6" callerrev="1.0"/>
@@ -1317,7 +1755,11 @@
 			</revision>
 		</module>
 		<module organisation="org.scalaz" name="scalaz-core_2.11">
+<<<<<<< HEAD
 			<revision name="7.0.6" status="release" pubdate="20150225085700" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://scalaz.org" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="90">
+=======
+			<revision name="7.0.6" status="release" pubdate="20150225085700" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://scalaz.org" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="89">
+>>>>>>> master
 				<license name="BSD-style" url="http://www.opensource.org/licenses/bsd-license.php"/>
 				<metadata-artifact status="no" details="" size="2834" time="0" location="/Users/spyroslalos/.ivy2/cache/org.scalaz/scalaz-core_2.11/ivy-7.0.6.xml" searched="false" origin-is-local="true" origin-location="/Users/spyroslalos/Downloads/activator-dist-1.3.5/repository/org.scalaz/scalaz-core_2.11/7.0.6/ivys/ivy.xml"/>
 				<caller organisation="default" name="ermis$sources_javadoc_2.11" conf="test, compile, runtime" rev="7.0.6" rev-constraint-default="7.0.6" rev-constraint-dynamic="7.0.6" callerrev="1.0"/>
@@ -1335,7 +1777,11 @@
 			</revision>
 		</module>
 		<module organisation="org.specs2" name="classycle">
+<<<<<<< HEAD
 			<revision name="1.4.3" status="release" pubdate="20150225083126" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://classycle.sourceforge.net/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="89">
+=======
+			<revision name="1.4.3" status="release" pubdate="20150225083126" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://classycle.sourceforge.net/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="88">
+>>>>>>> master
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="2768" time="0" location="/Users/spyroslalos/.ivy2/cache/org.specs2/classycle/ivy-1.4.3.xml" searched="false" origin-is-local="true" origin-location="/Users/spyroslalos/Downloads/activator-dist-1.3.5/repository/org.specs2/classycle/1.4.3/ivys/ivy.xml"/>
 				<caller organisation="default" name="ermis$sources_javadoc_2.11" conf="test, compile, runtime" rev="1.4.3" rev-constraint-default="1.4.3" rev-constraint-dynamic="1.4.3" callerrev="1.0"/>
@@ -1353,7 +1799,11 @@
 			</revision>
 		</module>
 		<module organisation="org.mockito" name="mockito-core">
+<<<<<<< HEAD
 			<revision name="1.9.5" status="release" pubdate="20150225083105" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.mockito.org" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="87">
+=======
+			<revision name="1.9.5" status="release" pubdate="20150225083105" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.mockito.org" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="86">
+>>>>>>> master
 				<license name="The MIT License" url="http://code.google.com/p/mockito/wiki/License"/>
 				<metadata-artifact status="no" details="" size="2657" time="0" location="/Users/spyroslalos/.ivy2/cache/org.mockito/mockito-core/ivy-1.9.5.xml" searched="false" origin-is-local="true" origin-location="/Users/spyroslalos/Downloads/activator-dist-1.3.5/repository/org.mockito/mockito-core/1.9.5/ivys/ivy.xml"/>
 				<caller organisation="default" name="ermis$sources_javadoc_2.11" conf="test, compile, runtime" rev="1.9.5" rev-constraint-default="1.9.5" rev-constraint-dynamic="1.9.5" callerrev="1.0"/>
@@ -1371,7 +1821,11 @@
 			</revision>
 		</module>
 		<module organisation="org.objenesis" name="objenesis">
+<<<<<<< HEAD
 			<revision name="1.0" status="release" pubdate="20150225083106" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://objenesis.googlecode.com/svn/docs/index.html" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="88">
+=======
+			<revision name="1.0" status="release" pubdate="20150225083106" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://objenesis.googlecode.com/svn/docs/index.html" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="87">
+>>>>>>> master
 				<license name="MIT License" url="http://objenesis.googlecode.com/svn/docs/license.html"/>
 				<metadata-artifact status="no" details="" size="2381" time="0" location="/Users/spyroslalos/.ivy2/cache/org.objenesis/objenesis/ivy-1.0.xml" searched="false" origin-is-local="true" origin-location="/Users/spyroslalos/Downloads/activator-dist-1.3.5/repository/org.objenesis/objenesis/1.0/ivys/ivy.xml"/>
 				<caller organisation="default" name="ermis$sources_javadoc_2.11" conf="test, compile, runtime" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="1.0"/>
@@ -1389,7 +1843,11 @@
 			</revision>
 		</module>
 		<module organisation="org.scalacheck" name="scalacheck_2.11">
+<<<<<<< HEAD
 			<revision name="1.11.3" status="release" pubdate="20140416231713" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scalacheck.org" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="85">
+=======
+			<revision name="1.11.3" status="release" pubdate="20140416231713" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scalacheck.org" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="84">
+>>>>>>> master
 				<license name="BSD-style" url="http://www.opensource.org/licenses/bsd-license.php"/>
 				<metadata-artifact status="no" details="" size="2841" time="0" location="/Users/spyroslalos/.ivy2/cache/org.scalacheck/scalacheck_2.11/ivy-1.11.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalacheck/scalacheck_2.11/1.11.3/scalacheck_2.11-1.11.3.pom"/>
 				<caller organisation="default" name="ermis$sources_javadoc_2.11" conf="test, compile, runtime" rev="1.11.3" rev-constraint-default="1.11.3" rev-constraint-dynamic="1.11.3" callerrev="1.0"/>
@@ -1407,7 +1865,11 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-sbt" name="test-interface">
+<<<<<<< HEAD
 			<revision name="1.0" status="release" pubdate="20130629004435" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-sbt.org" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="86">
+=======
+			<revision name="1.0" status="release" pubdate="20130629004435" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-sbt.org" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="85">
+>>>>>>> master
 				<license name="BSD" url="https://github.com/sbt/test-interface/blob/master/LICENSE"/>
 				<metadata-artifact status="no" details="" size="2589" time="0" location="/Users/spyroslalos/.ivy2/cache/org.scala-sbt/test-interface/ivy-1.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scala-sbt/test-interface/1.0/test-interface-1.0.pom"/>
 				<caller organisation="default" name="ermis$sources_javadoc_2.11" conf="test, compile, runtime" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="1.0"/>
@@ -1425,7 +1887,11 @@
 			</revision>
 		</module>
 		<module organisation="org.pegdown" name="pegdown">
+<<<<<<< HEAD
 			<revision name="1.2.1" status="release" pubdate="20150225083111" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://pegdown.org" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="79">
+=======
+			<revision name="1.2.1" status="release" pubdate="20150225083111" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://pegdown.org" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="78">
+>>>>>>> master
 				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="2776" time="0" location="/Users/spyroslalos/.ivy2/cache/org.pegdown/pegdown/ivy-1.2.1.xml" searched="false" origin-is-local="true" origin-location="/Users/spyroslalos/Downloads/activator-dist-1.3.5/repository/org.pegdown/pegdown/1.2.1/ivys/ivy.xml"/>
 				<caller organisation="default" name="ermis$sources_javadoc_2.11" conf="test, compile, runtime" rev="1.2.1" rev-constraint-default="1.2.1" rev-constraint-dynamic="1.2.1" callerrev="1.0"/>
@@ -1443,7 +1909,11 @@
 			</revision>
 		</module>
 		<module organisation="org.parboiled" name="parboiled-java">
+<<<<<<< HEAD
 			<revision name="1.1.4" status="release" pubdate="20150225083112" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://parboiled.org" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="80">
+=======
+			<revision name="1.1.4" status="release" pubdate="20150225083112" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://parboiled.org" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="79">
+>>>>>>> master
 				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
 				<metadata-artifact status="no" details="" size="3347" time="0" location="/Users/spyroslalos/.ivy2/cache/org.parboiled/parboiled-java/ivy-1.1.4.xml" searched="false" origin-is-local="true" origin-location="/Users/spyroslalos/Downloads/activator-dist-1.3.5/repository/org.parboiled/parboiled-java/1.1.4/ivys/ivy.xml"/>
 				<caller organisation="default" name="ermis$sources_javadoc_2.11" conf="test, compile, runtime" rev="1.1.4" rev-constraint-default="1.1.4" rev-constraint-dynamic="1.1.4" callerrev="1.0"/>
@@ -1461,7 +1931,11 @@
 			</revision>
 		</module>
 		<module organisation="org.ow2.asm" name="asm-util">
+<<<<<<< HEAD
 			<revision name="4.1" status="release" pubdate="20150225083123" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="84">
+=======
+			<revision name="4.1" status="release" pubdate="20150225083123" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="83">
+>>>>>>> master
 				<metadata-artifact status="no" details="" size="4369" time="0" location="/Users/spyroslalos/.ivy2/cache/org.ow2.asm/asm-util/ivy-4.1.xml" searched="false" origin-is-local="true" origin-location="/Users/spyroslalos/Downloads/activator-dist-1.3.5/repository/org.ow2.asm/asm-util/4.1/ivys/ivy.xml"/>
 				<caller organisation="default" name="ermis$sources_javadoc_2.11" conf="test, compile, runtime" rev="4.1" rev-constraint-default="4.1" rev-constraint-dynamic="4.1" callerrev="1.0"/>
 				<artifacts>
@@ -1478,7 +1952,11 @@
 			</revision>
 		</module>
 		<module organisation="org.ow2.asm" name="asm-analysis">
+<<<<<<< HEAD
 			<revision name="4.1" status="release" pubdate="20150225083122" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="83">
+=======
+			<revision name="4.1" status="release" pubdate="20150225083122" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="82">
+>>>>>>> master
 				<metadata-artifact status="no" details="" size="4377" time="0" location="/Users/spyroslalos/.ivy2/cache/org.ow2.asm/asm-analysis/ivy-4.1.xml" searched="false" origin-is-local="true" origin-location="/Users/spyroslalos/Downloads/activator-dist-1.3.5/repository/org.ow2.asm/asm-analysis/4.1/ivys/ivy.xml"/>
 				<caller organisation="default" name="ermis$sources_javadoc_2.11" conf="test, compile, runtime" rev="4.1" rev-constraint-default="4.1" rev-constraint-dynamic="4.1" callerrev="1.0"/>
 				<artifacts>
@@ -1495,7 +1973,11 @@
 			</revision>
 		</module>
 		<module organisation="org.ow2.asm" name="asm-tree">
+<<<<<<< HEAD
 			<revision name="4.1" status="release" pubdate="20150225083121" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="82">
+=======
+			<revision name="4.1" status="release" pubdate="20150225083121" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="81">
+>>>>>>> master
 				<metadata-artifact status="no" details="" size="4364" time="0" location="/Users/spyroslalos/.ivy2/cache/org.ow2.asm/asm-tree/ivy-4.1.xml" searched="false" origin-is-local="true" origin-location="/Users/spyroslalos/Downloads/activator-dist-1.3.5/repository/org.ow2.asm/asm-tree/4.1/ivys/ivy.xml"/>
 				<caller organisation="default" name="ermis$sources_javadoc_2.11" conf="test, compile, runtime" rev="4.1" rev-constraint-default="4.1" rev-constraint-dynamic="4.1" callerrev="1.0"/>
 				<artifacts>
@@ -1512,7 +1994,11 @@
 			</revision>
 		</module>
 		<module organisation="org.ow2.asm" name="asm">
+<<<<<<< HEAD
 			<revision name="4.1" status="release" pubdate="20150225083115" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="81">
+=======
+			<revision name="4.1" status="release" pubdate="20150225083115" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="80">
+>>>>>>> master
 				<metadata-artifact status="no" details="" size="3733" time="0" location="/Users/spyroslalos/.ivy2/cache/org.ow2.asm/asm/ivy-4.1.xml" searched="false" origin-is-local="true" origin-location="/Users/spyroslalos/Downloads/activator-dist-1.3.5/repository/org.ow2.asm/asm/4.1/ivys/ivy.xml"/>
 				<caller organisation="default" name="ermis$sources_javadoc_2.11" conf="test, compile, runtime" rev="4.1" rev-constraint-default="4.1" rev-constraint-dynamic="4.1" callerrev="1.0"/>
 				<artifacts>
@@ -1583,7 +2069,11 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe.akka" name="akka-testkit_2.11">
+<<<<<<< HEAD
 			<revision name="2.3.6" status="release" pubdate="20140905090020" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="74">
+=======
+			<revision name="2.3.6" status="release" pubdate="20140905090020" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="73">
+>>>>>>> master
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
 				<metadata-artifact status="no" details="" size="2914" time="0" location="/Users/spyroslalos/.ivy2/cache/com.typesafe.akka/akka-testkit_2.11/ivy-2.3.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-testkit_2.11/2.3.6/akka-testkit_2.11-2.3.6.pom"/>
 				<caller organisation="default" name="ermis$sources_javadoc_2.11" conf="test, compile, runtime" rev="2.3.6" rev-constraint-default="2.3.6" rev-constraint-dynamic="2.3.6" callerrev="1.0"/>
@@ -1601,7 +2091,11 @@
 			</revision>
 		</module>
 		<module organisation="junit" name="junit">
+<<<<<<< HEAD
 			<revision name="4.11" status="release" pubdate="20150225082938" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://junit.org" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="77">
+=======
+			<revision name="4.11" status="release" pubdate="20150225082938" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://junit.org" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="76">
+>>>>>>> master
 				<license name="Common Public License Version 1.0" url="http://www.opensource.org/licenses/cpl1.0.txt"/>
 				<metadata-artifact status="no" details="" size="2760" time="0" location="/Users/spyroslalos/.ivy2/cache/junit/junit/ivy-4.11.xml" searched="false" origin-is-local="true" origin-location="/Users/spyroslalos/Downloads/activator-dist-1.3.5/repository/junit/junit/4.11/ivys/ivy.xml"/>
 				<caller organisation="default" name="ermis$sources_javadoc_2.11" conf="test, compile, runtime" rev="4.11" rev-constraint-default="4.11" rev-constraint-dynamic="4.11" callerrev="1.0"/>
@@ -1619,7 +2113,11 @@
 			</revision>
 		</module>
 		<module organisation="org.hamcrest" name="hamcrest-core">
+<<<<<<< HEAD
 			<revision name="1.3" status="release" pubdate="20150225082939" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="78">
+=======
+			<revision name="1.3" status="release" pubdate="20150225082939" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="77">
+>>>>>>> master
 				<metadata-artifact status="no" details="" size="2387" time="0" location="/Users/spyroslalos/.ivy2/cache/org.hamcrest/hamcrest-core/ivy-1.3.xml" searched="false" origin-is-local="true" origin-location="/Users/spyroslalos/Downloads/activator-dist-1.3.5/repository/org.hamcrest/hamcrest-core/1.3/ivys/ivy.xml"/>
 				<caller organisation="default" name="ermis$sources_javadoc_2.11" conf="test, compile, runtime" rev="1.3" rev-constraint-default="1.3" rev-constraint-dynamic="1.3" callerrev="1.0"/>
 				<artifacts>

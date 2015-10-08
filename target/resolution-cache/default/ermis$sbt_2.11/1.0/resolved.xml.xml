@@ -4,7 +4,11 @@
 		module="ermis$sbt_2.11"
 		revision="1.0"
 		status="integration"
+<<<<<<< HEAD
 		publication="20150911151259"
+=======
+		publication="20150916144153"
+>>>>>>> master
 	/>
 	<configurations>
 		<conf name="default" visibility="public"/>

@@ -4,7 +4,11 @@
 		module="ermis-build"
 		revision="0.1-SNAPSHOT"
 		status="integration"
+<<<<<<< HEAD
 		publication="20150831124910"
+=======
+		publication="20151008111101"
+>>>>>>> master
 		e:scalaVersion="2.10" e:sbtVersion="0.13"
 	>
 		<description>

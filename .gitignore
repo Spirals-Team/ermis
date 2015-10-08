@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 #ignore .idea
 .idea/
 =======
@@ -20,3 +21,6 @@ project/plugins/project/
 .scala_dependencies
 .worksheet
 >>>>>>> f241e0c3e812f09b666644c69475896ac4fcafc7
+=======
+.idea/
+>>>>>>> master

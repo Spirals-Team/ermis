@@ -9,7 +9,11 @@
 		extra-scalaVersion="2.10"
 		conf="compile-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
+<<<<<<< HEAD
 		date="20150831124910"/>
+=======
+		date="20151008111101"/>
+>>>>>>> master
 	<dependencies>
 		<module organisation="org.scala-sbt" name="sbt">
 			<revision name="0.13.8" status="release" pubdate="20150320121147" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="default(compile), compile" position="1">
