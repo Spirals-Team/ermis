@@ -15,7 +15,8 @@ object NovaConnector {
 
   def getNovaClient(): Nova = {
 
-    val conf = ConfigFactory.load( "nova_authentication.conf" ).getConfig( "nova_authentication" )
+    val conf = ConfigFactory.load( "nova_authentication.conf" )
+      .getConfig( "nova_authentication" )
 
     try {
 
@@ -30,26 +31,38 @@ object NovaConnector {
       return novaClient
 
     } catch {
+
       case e: Exception => {
         e.printStackTrace()
         println( "Failed to create/initialize a Nova client." )
+        throw e
         System.exit( 0 )
       }
+
     }
     null
   }
 
 
-  //================================================================================
-  // Information Getters
+
   /*
     Get Flavors using Nova Service
    */
   def GetFlavors(nova_client: Nova): util.List[Flavor] ={
 
-    val flavors = nova_client.flavors().list( true ).execute()
-    return flavors.getList
+    try {
 
+      val flavors = nova_client.flavors().list(true).execute()
+      return flavors.getList
+
+    } catch {
+
+      case e: Exception => {
+        e.printStackTrace()
+        throw e
+      }
+
+    }
   }
 
   /*
@@ -57,19 +70,39 @@ object NovaConnector {
    */
   def GetKeys(nova_client: Nova): util.List[KeyPair] ={
 
-    val keys = nova_client.keyPairs().list().execute()
-    //    print(flavors.getList.get(1))
-    return keys.getList
+    try {
 
+      val keys = nova_client.keyPairs().list().execute()
+      return keys.getList
+
+    } catch {
+
+      case e: Exception => {
+        e.printStackTrace()
+        throw e
+      }
+
+    }
   }
 
   /*
-    Get Images using Nova Service
+    Get Instances/Servers using Nova Service
    */
   def GetServers(nova_client: Nova): util.List[Server] ={
-    val servers = nova_client.servers().list( true ).execute()
-    return servers.getList
 
+    try {
+
+      val servers = nova_client.servers().list(true).execute()
+      return servers.getList
+
+    } catch {
+
+        case e: Exception => {
+          e.printStackTrace()
+          throw e
+      }
+
+    }
   }
 
   /*
@@ -77,15 +110,26 @@ object NovaConnector {
    */
   def GetImages(nova_client: Nova): util.List[Image] ={
 
-    val images = nova_client.images().list(true).execute()
-    //    print(flavors.getList.get(1))
-    return images.getList
+    try {
+
+      val images = nova_client.images().list(true).execute()
+      return images.getList
+
+    } catch {
+
+      case e: Exception => {
+        e.printStackTrace()
+        throw e
+      }
+
+    }
   }
 
 
 
-  //================================================================================
+  //===================================
   // Main Tester
+  //===================================
   def main (args: Array[String]): Unit = {
 
     println("Starting main Nova Connector")
@@ -100,10 +144,6 @@ object NovaConnector {
 
     print("NOW get the servers")
     print(GetServers(novaClient))
-    //get the Hypervisor of an Instance-VMs
-    //GetServers(novaClient).get(0).getHostId
-    //i.e. nova list --host e68acdd4a993707a4e11fe9a86e47552c58aaf190f95c9b7b089e76c
-   // print(GetServers(novaClient).get(0))
 
     //convert a java.util to Scala list
     val serversSeq = scala.collection.JavaConversions.asScalaBuffer(GetFlavors(novaClient))
@@ -118,26 +158,12 @@ object NovaConnector {
     }
 
     var keysSeq = scala.collection.JavaConversions.asScalaBuffer(NovaConnector.GetKeys(novaClient))
+    //  print(FlavorsSeq)
     for (key <- keysSeq) {
       print(key.getName+"$###$########")
     }
 
     print(GetImages(novaClient))
-    /*
-    //==========================================
-
-    val serverForCreate = new ServerForCreate()
-    serverForCreate.setName("lalos_testing_vm")
-    print("XAXAXA"+novaClient.flavors().list(true).execute().getList().get(3).getId)
-    serverForCreate.setFlavorRef( "d2e0cd62-fe1c-41d3-890c-27cad5e45bcd" )
-    serverForCreate.setImageRef( novaClient.images().list(true).execute().getList.get(0).getId() )
-    serverForCreate.setKeyName(novaClient.keyPairs().list().execute().getList().get(2).getName())
-
-    val server = novaClient.servers().boot(serverForCreate).execute()
-    println(server.getUserId)
-
-    */
-    //==========================================
 
   }
 

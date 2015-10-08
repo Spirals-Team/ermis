@@ -53,7 +53,7 @@ class SprayRouteService extends HttpService with Actor {
               complete(s"The result was $value")
             }
             case Failure(value) =>
-              complete("Could not connect OR Already Connected")
+              complete(s"$value")
           }
 
       }~
@@ -118,13 +118,13 @@ class SprayRouteService extends HttpService with Actor {
     if (novaClient!=null) {
       print("You are already connected")
     }
-    val Message = "Nova_demo_Connect"
+    val Message = "Nova_Demo_Connect"
     (novaActor ? Message).mapTo[Nova]
   }
 
   def NovaConnected(novaActor: ActorRef): Future[util.List[Server]] = {
     implicit val timeout = Timeout(5 seconds)
-    val Message = "Nova_instances_Connect"
+    val Message = "Get_Instances"
     (novaActor ? Message).mapTo[util.List[Server]]
   }
 

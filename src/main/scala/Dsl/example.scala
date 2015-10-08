@@ -1,6 +1,0 @@
-package dsl
-
-
-class example {
-
-}

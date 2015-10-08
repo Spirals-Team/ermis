@@ -26,7 +26,7 @@ class NovaActor(FlavorActor: ActorRef, KeyActor: ActorRef, ImageActor: ActorRef)
   //Return instances list
   def is_connected( client: Nova, servers: util.List[Server] ): Receive = {
 
-    case "Nova_instances_Connect" => {
+    case "Get_Instances" => {
 
       println( "I am already Connected, get my VMs" )
 
@@ -79,26 +79,44 @@ class NovaActor(FlavorActor: ActorRef, KeyActor: ActorRef, ImageActor: ActorRef)
         sender ! s"Created server with name $server"
         servers.add(server)
       }
+
       context become is_connected( client,servers )
 
     }
 
   }
 
-  //State_0
-  //First time: We connect to Nova Service
-  //Create a Nova Client, return it to the parent
+  /*
+    Failure Case:
+      If we fail connecting to Nova Service using getNovaClient()
+      we throw the exception. The Nova actor catches the exception and
+      re-throws it. Sends back to the Spray Actor the cause of the error
+
+    *State_0
+    First time: We connect to Nova Service
+    Create a Nova Client, return it to the parent
+   */
   def receive = {
 
-    case "Nova_demo_Connect" => {
+    case "Nova_Demo_Connect" => {
 
       println("Setting up the Nova Connection")
-      var client= NovaConnector.getNovaClient()
-      var servers = NovaConnector.GetServers(client)
-      sender ! client
-      context become is_connected(client, servers)
+      //handke the case of exception
+      try {
+        var client = NovaConnector.getNovaClient()
+        var servers = NovaConnector.GetServers(client)
+        sender ! client
+        context become is_connected(client, servers)
 
+      } catch {
+
+          case e: Exception ⇒
+            print("XAXAXAXAX" + e)
+            sender ! akka.actor.Status.Failure(e)
+            throw e
+      }
     }
+
 
   }
 

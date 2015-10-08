@@ -28,8 +28,6 @@ class NovaFlavorActor extends Actor{
         }
       }
       if (!found){
-          print(s"NOT found the flavor $flavor_name")
-          val flavor = None
           sender ! ""
       }
     }

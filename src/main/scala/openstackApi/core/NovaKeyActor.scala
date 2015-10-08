@@ -29,8 +29,6 @@ class NovaKeyActor extends Actor{
         }
       }
       if (!found){
-        print(s"NOT found the Keypair $key_name")
-        val key = None
         sender ! ""
       }
     }

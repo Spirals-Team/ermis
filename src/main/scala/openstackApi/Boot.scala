@@ -13,7 +13,7 @@ object Boot extends App {
   val serviceActor = system.actorOf( Props( new SprayRouteService ), name = "Spray-rest-routing" )
 
   // time to shutdown the Actor serving a request
-  system.registerOnTermination {
+    system.registerOnTermination {
     system.log.info( "Actor per request demo shutdown." )
   }
 
