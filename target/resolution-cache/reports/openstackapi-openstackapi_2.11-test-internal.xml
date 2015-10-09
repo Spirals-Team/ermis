@@ -7,7 +7,7 @@
 		revision="1.0"
 		conf="test-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20151008124539"/>
+		date="20151009151712"/>
 	<dependencies>
 		<module organisation="io.spray" name="spray-testkit_2.11">
 			<revision name="1.3.2" status="release" pubdate="20141008155319" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spray.io" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="86">
@@ -879,39 +879,45 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe.akka" name="akka-http-experimental_2.11">
-			<revision name="1.0-RC3" status="release" pubdate="20150522161600" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="13">
+			<revision name="1.0" status="release" pubdate="20150715130013" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="13">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
-				<metadata-artifact status="no" details="" size="2737" time="0" location="/Users/spyroslalos/.ivy2/cache/com.typesafe.akka/akka-http-experimental_2.11/ivy-1.0-RC3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-http-experimental_2.11/1.0-RC3/akka-http-experimental_2.11-1.0-RC3.pom"/>
-				<caller organisation="openstackapi" name="openstackapi_2.11" conf="test-internal, test, optional, compile, provided, runtime" rev="1.0-RC3" rev-constraint-default="1.0-RC3" rev-constraint-dynamic="1.0-RC3" callerrev="1.0"/>
+				<metadata-artifact status="no" details="" size="2729" time="0" location="/Users/spyroslalos/.ivy2/cache/com.typesafe.akka/akka-http-experimental_2.11/ivy-1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-http-experimental_2.11/1.0/akka-http-experimental_2.11-1.0.pom"/>
+				<caller organisation="openstackapi" name="openstackapi_2.11" conf="test-internal, test, optional, compile, provided, runtime" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="1.0"/>
 				<artifacts>
-					<artifact name="akka-http-experimental_2.11" type="jar" ext="jar" status="no" details="" size="1794336" time="0" location="/Users/spyroslalos/.ivy2/cache/com.typesafe.akka/akka-http-experimental_2.11/jars/akka-http-experimental_2.11-1.0-RC3.jar">
-						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-http-experimental_2.11/1.0-RC3/akka-http-experimental_2.11-1.0-RC3.jar"/>
+					<artifact name="akka-http-experimental_2.11" type="jar" ext="jar" status="no" details="" size="2182925" time="0" location="/Users/spyroslalos/.ivy2/cache/com.typesafe.akka/akka-http-experimental_2.11/jars/akka-http-experimental_2.11-1.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-http-experimental_2.11/1.0/akka-http-experimental_2.11-1.0.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="com.typesafe.akka" name="akka-http-core-experimental_2.11">
-			<revision name="1.0-RC3" status="release" pubdate="20150522161506" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="14">
+			<revision name="1.0" status="release" pubdate="20150715125936" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="14">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
-				<metadata-artifact status="no" details="" size="3550" time="0" location="/Users/spyroslalos/.ivy2/cache/com.typesafe.akka/akka-http-core-experimental_2.11/ivy-1.0-RC3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-http-core-experimental_2.11/1.0-RC3/akka-http-core-experimental_2.11-1.0-RC3.pom"/>
-				<caller organisation="com.typesafe.akka" name="akka-http-experimental_2.11" conf="default, compile, runtime, master" rev="1.0-RC3" rev-constraint-default="1.0-RC3" rev-constraint-dynamic="1.0-RC3" callerrev="1.0-RC3"/>
+				<metadata-artifact status="no" details="" size="3534" time="0" location="/Users/spyroslalos/.ivy2/cache/com.typesafe.akka/akka-http-core-experimental_2.11/ivy-1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-http-core-experimental_2.11/1.0/akka-http-core-experimental_2.11-1.0.pom"/>
+				<caller organisation="com.typesafe.akka" name="akka-http-experimental_2.11" conf="default, compile, runtime, master" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="1.0"/>
 				<artifacts>
-					<artifact name="akka-http-core-experimental_2.11" type="jar" ext="jar" status="no" details="" size="2746544" time="0" location="/Users/spyroslalos/.ivy2/cache/com.typesafe.akka/akka-http-core-experimental_2.11/jars/akka-http-core-experimental_2.11-1.0-RC3.jar">
-						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-http-core-experimental_2.11/1.0-RC3/akka-http-core-experimental_2.11-1.0-RC3.jar"/>
+					<artifact name="akka-http-core-experimental_2.11" type="jar" ext="jar" status="no" details="" size="2822409" time="0" location="/Users/spyroslalos/.ivy2/cache/com.typesafe.akka/akka-http-core-experimental_2.11/jars/akka-http-core-experimental_2.11-1.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-http-core-experimental_2.11/1.0/akka-http-core-experimental_2.11-1.0.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="com.typesafe.akka" name="akka-stream-experimental_2.11">
-			<revision name="1.0-RC3" status="release" pubdate="20150522161408" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, compile(*), runtime(*), master(compile), master" position="16">
+			<revision name="1.0" status="release" pubdate="20150715125758" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master, default(compile)" position="16">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
-				<metadata-artifact status="no" details="" size="3570" time="0" location="/Users/spyroslalos/.ivy2/cache/com.typesafe.akka/akka-stream-experimental_2.11/ivy-1.0-RC3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-stream-experimental_2.11/1.0-RC3/akka-stream-experimental_2.11-1.0-RC3.pom"/>
-				<caller organisation="com.typesafe.akka" name="akka-http-core-experimental_2.11" conf="compile, runtime" rev="1.0-RC3" rev-constraint-default="1.0-RC3" rev-constraint-dynamic="1.0-RC3" callerrev="1.0-RC3"/>
+				<metadata-artifact status="no" details="" size="3566" time="0" location="/Users/spyroslalos/.ivy2/cache/com.typesafe.akka/akka-stream-experimental_2.11/ivy-1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-stream-experimental_2.11/1.0/akka-stream-experimental_2.11-1.0.pom"/>
+				<caller organisation="com.typesafe.akka" name="akka-http-core-experimental_2.11" conf="compile, runtime" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="1.0"/>
 				<caller organisation="openstackapi" name="openstackapi_2.11" conf="test-internal, test, optional, compile, provided, runtime" rev="1.0-RC3" rev-constraint-default="1.0-RC3" rev-constraint-dynamic="1.0-RC3" callerrev="1.0"/>
 				<artifacts>
-					<artifact name="akka-stream-experimental_2.11" type="jar" ext="jar" status="no" details="" size="4567441" time="0" location="/Users/spyroslalos/.ivy2/cache/com.typesafe.akka/akka-stream-experimental_2.11/jars/akka-stream-experimental_2.11-1.0-RC3.jar">
-						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-stream-experimental_2.11/1.0-RC3/akka-stream-experimental_2.11-1.0-RC3.jar"/>
+					<artifact name="akka-stream-experimental_2.11" type="jar" ext="jar" status="no" details="" size="4988017" time="0" location="/Users/spyroslalos/.ivy2/cache/com.typesafe.akka/akka-stream-experimental_2.11/jars/akka-stream-experimental_2.11-1.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-stream-experimental_2.11/1.0/akka-stream-experimental_2.11-1.0.jar"/>
 					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.0-RC3" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="default(compile), default, compile, runtime, master" position="-1">
+				<evicted-by rev="1.0"/>
+				<caller organisation="openstackapi" name="openstackapi_2.11" conf="test-internal, test, optional, compile, provided, runtime" rev="1.0-RC3" rev-constraint-default="1.0-RC3" rev-constraint-dynamic="1.0-RC3" callerrev="1.0"/>
+				<artifacts>
 				</artifacts>
 			</revision>
 		</module>
@@ -919,7 +925,7 @@
 			<revision name="1.0.0" status="release" pubdate="20150429121454" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.reactive-streams.org/" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="19">
 				<license name="CC0" url="http://creativecommons.org/publicdomain/zero/1.0/"/>
 				<metadata-artifact status="no" details="" size="2386" time="0" location="/Users/spyroslalos/.ivy2/cache/org.reactivestreams/reactive-streams/ivy-1.0.0.xml" searched="false" origin-is-local="true" origin-location="/Users/spyroslalos/Downloads/activator-dist-1.3.5/repository/org.reactivestreams/reactive-streams/1.0.0/ivys/ivy.xml"/>
-				<caller organisation="com.typesafe.akka" name="akka-stream-experimental_2.11" conf="compile, runtime" rev="1.0.0" rev-constraint-default="1.0.0" rev-constraint-dynamic="1.0.0" callerrev="1.0-RC3"/>
+				<caller organisation="com.typesafe.akka" name="akka-stream-experimental_2.11" conf="compile, runtime" rev="1.0.0" rev-constraint-default="1.0.0" rev-constraint-dynamic="1.0.0" callerrev="1.0"/>
 				<artifacts>
 					<artifact name="reactive-streams" type="jar" ext="jar" status="no" details="" size="2042" time="0" location="/Users/spyroslalos/Downloads/activator-dist-1.3.5/repository/org.reactivestreams/reactive-streams/1.0.0/jars/reactive-streams.jar">
 						<origin-location is-local="true" location="/Users/spyroslalos/Downloads/activator-dist-1.3.5/repository/org.reactivestreams/reactive-streams/1.0.0/jars/reactive-streams.jar"/>
@@ -928,24 +934,24 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe.akka" name="akka-actor_2.11">
-			<revision name="2.3.11" status="release" pubdate="20150508104512" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master, default(compile), default" position="17">
+			<revision name="2.3.12" status="release" pubdate="20150709075835" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master, default(compile), default" position="17">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
-				<metadata-artifact status="no" details="" size="2843" time="0" location="/Users/spyroslalos/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/ivy-2.3.11.xml" searched="false" origin-is-local="true" origin-location="/Users/spyroslalos/Downloads/activator-dist-1.3.5/repository/com.typesafe.akka/akka-actor_2.11/2.3.11/ivys/ivy.xml"/>
+				<metadata-artifact status="no" details="" size="2667" time="0" location="/Users/spyroslalos/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/ivy-2.3.12.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.11/2.3.12/akka-actor_2.11-2.3.12.pom"/>
+				<caller organisation="com.typesafe.akka" name="akka-stream-experimental_2.11" conf="compile, runtime" rev="2.3.12" rev-constraint-default="2.3.12" rev-constraint-dynamic="2.3.12" callerrev="1.0"/>
 				<caller organisation="org.reactivemongo" name="reactivemongo_2.11" conf="default, compile, runtime, master" rev="2.3.6" rev-constraint-default="2.3.6" rev-constraint-dynamic="2.3.6" callerrev="0.10.5.0.akka23"/>
 				<caller organisation="openstackapi" name="openstackapi_2.11" conf="test-internal, test, optional, compile, provided, runtime" rev="2.3.7" rev-constraint-default="2.3.7" rev-constraint-dynamic="2.3.7" callerrev="1.0"/>
 				<caller organisation="com.typesafe.akka" name="akka-agent_2.11" conf="default, compile, runtime, master" rev="2.3.7" rev-constraint-default="2.3.7" rev-constraint-dynamic="2.3.7" callerrev="2.3.7"/>
 				<caller organisation="com.typesafe.akka" name="akka-testkit_2.11" conf="compile, runtime" rev="2.3.6" rev-constraint-default="2.3.6" rev-constraint-dynamic="2.3.6" callerrev="2.3.6"/>
-				<caller organisation="com.typesafe.akka" name="akka-stream-experimental_2.11" conf="compile, runtime" rev="2.3.11" rev-constraint-default="2.3.11" rev-constraint-dynamic="2.3.11" callerrev="1.0-RC3"/>
 				<caller organisation="com.typesafe.akka" name="akka-slf4j_2.11" conf="default, compile, runtime, master" rev="2.3.7" rev-constraint-default="2.3.7" rev-constraint-dynamic="2.3.7" callerrev="2.3.7"/>
 				<caller organisation="com.typesafe.akka" name="akka-remote_2.11" conf="compile, runtime" rev="2.3.7" rev-constraint-default="2.3.7" rev-constraint-dynamic="2.3.7" callerrev="2.3.7"/>
 				<artifacts>
-					<artifact name="akka-actor_2.11" type="jar" ext="jar" status="no" details="" size="2631202" time="0" location="/Users/spyroslalos/Downloads/activator-dist-1.3.5/repository/com.typesafe.akka/akka-actor_2.11/2.3.11/jars/akka-actor_2.11.jar">
-						<origin-location is-local="true" location="/Users/spyroslalos/Downloads/activator-dist-1.3.5/repository/com.typesafe.akka/akka-actor_2.11/2.3.11/jars/akka-actor_2.11.jar"/>
+					<artifact name="akka-actor_2.11" type="jar" ext="jar" status="no" details="" size="2792073" time="0" location="/Users/spyroslalos/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.12.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.11/2.3.12/akka-actor_2.11-2.3.12.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 			<revision name="2.3.7" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="default(compile), default, compile, compile(*), runtime, runtime(*), master(compile), master" position="-1">
-				<evicted-by rev="2.3.11"/>
+				<evicted-by rev="2.3.12"/>
 				<caller organisation="openstackapi" name="openstackapi_2.11" conf="test-internal, test, optional, compile, provided, runtime" rev="2.3.7" rev-constraint-default="2.3.7" rev-constraint-dynamic="2.3.7" callerrev="1.0"/>
 				<caller organisation="com.typesafe.akka" name="akka-agent_2.11" conf="default, compile, runtime, master" rev="2.3.7" rev-constraint-default="2.3.7" rev-constraint-dynamic="2.3.7" callerrev="2.3.7"/>
 				<caller organisation="com.typesafe.akka" name="akka-slf4j_2.11" conf="default, compile, runtime, master" rev="2.3.7" rev-constraint-default="2.3.7" rev-constraint-dynamic="2.3.7" callerrev="2.3.7"/>
@@ -954,7 +960,7 @@
 				</artifacts>
 			</revision>
 			<revision name="2.3.6" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="-1">
-				<evicted-by rev="2.3.11"/>
+				<evicted-by rev="2.3.12"/>
 				<caller organisation="org.reactivemongo" name="reactivemongo_2.11" conf="default, compile, runtime, master" rev="2.3.6" rev-constraint-default="2.3.6" rev-constraint-dynamic="2.3.6" callerrev="0.10.5.0.akka23"/>
 				<caller organisation="com.typesafe.akka" name="akka-testkit_2.11" conf="compile, runtime" rev="2.3.6" rev-constraint-default="2.3.6" rev-constraint-dynamic="2.3.6" callerrev="2.3.6"/>
 				<artifacts>
@@ -962,10 +968,10 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe" name="config">
-			<revision name="1.2.1" status="release" pubdate="20150225083014" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/typesafehub/config" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master(compile), master" position="18">
+			<revision name="1.2.1" status="release" pubdate="20150225083014" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/typesafehub/config" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="18">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
 				<metadata-artifact status="no" details="" size="2741" time="0" location="/Users/spyroslalos/.ivy2/cache/com.typesafe/config/ivy-1.2.1.xml" searched="false" origin-is-local="false" origin-location="file:/Users/spyroslalos/Downloads/activator-dist-1.3.5/repository/com.typesafe/config/1.2.1/ivys/ivy.xml"/>
-				<caller organisation="com.typesafe.akka" name="akka-actor_2.11" conf="compile, runtime" rev="1.2.1" rev-constraint-default="1.2.1" rev-constraint-dynamic="1.2.1" callerrev="2.3.11"/>
+				<caller organisation="com.typesafe.akka" name="akka-actor_2.11" conf="compile, runtime" rev="1.2.1" rev-constraint-default="1.2.1" rev-constraint-dynamic="1.2.1" callerrev="2.3.12"/>
 				<caller organisation="com.typesafe.play" name="play-iteratees_2.11" conf="compile, runtime" rev="1.2.1" rev-constraint-default="1.2.1" rev-constraint-dynamic="1.2.1" callerrev="2.3.5"/>
 				<artifacts>
 					<artifact name="config" type="bundle" ext="jar" status="no" details="" size="219554" time="0" location="/Users/spyroslalos/.ivy2/cache/com.typesafe/config/bundles/config-1.2.1.jar">
@@ -975,13 +981,13 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe.akka" name="akka-parsing-experimental_2.11">
-			<revision name="1.0-RC3" status="release" pubdate="20150522161419" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="15">
+			<revision name="1.0" status="release" pubdate="20150715125813" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="15">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
-				<metadata-artifact status="no" details="" size="2727" time="0" location="/Users/spyroslalos/.ivy2/cache/com.typesafe.akka/akka-parsing-experimental_2.11/ivy-1.0-RC3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-parsing-experimental_2.11/1.0-RC3/akka-parsing-experimental_2.11-1.0-RC3.pom"/>
-				<caller organisation="com.typesafe.akka" name="akka-http-core-experimental_2.11" conf="compile, runtime" rev="1.0-RC3" rev-constraint-default="1.0-RC3" rev-constraint-dynamic="1.0-RC3" callerrev="1.0-RC3"/>
+				<metadata-artifact status="no" details="" size="2723" time="0" location="/Users/spyroslalos/.ivy2/cache/com.typesafe.akka/akka-parsing-experimental_2.11/ivy-1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-parsing-experimental_2.11/1.0/akka-parsing-experimental_2.11-1.0.pom"/>
+				<caller organisation="com.typesafe.akka" name="akka-http-core-experimental_2.11" conf="compile, runtime" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="1.0"/>
 				<artifacts>
-					<artifact name="akka-parsing-experimental_2.11" type="jar" ext="jar" status="no" details="" size="716681" time="0" location="/Users/spyroslalos/.ivy2/cache/com.typesafe.akka/akka-parsing-experimental_2.11/jars/akka-parsing-experimental_2.11-1.0-RC3.jar">
-						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-parsing-experimental_2.11/1.0-RC3/akka-parsing-experimental_2.11-1.0-RC3.jar"/>
+					<artifact name="akka-parsing-experimental_2.11" type="jar" ext="jar" status="no" details="" size="718520" time="0" location="/Users/spyroslalos/.ivy2/cache/com.typesafe.akka/akka-parsing-experimental_2.11/jars/akka-parsing-experimental_2.11-1.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-parsing-experimental_2.11/1.0/akka-parsing-experimental_2.11-1.0.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
@@ -1498,12 +1504,13 @@
 				<caller organisation="com.chuusai" name="shapeless_2.11" conf="compile, runtime" rev="2.11.0" rev-constraint-default="2.11.0" rev-constraint-dynamic="2.11.0" callerrev="1.2.4"/>
 				<caller organisation="com.typesafe.akka" name="akka-cluster_2.11" conf="default, compile, runtime, master" rev="2.11.4" rev-constraint-default="2.11.4" rev-constraint-dynamic="2.11.4" callerrev="2.3.7"/>
 				<caller organisation="io.spray" name="spray-http_2.11" conf="compile, runtime" rev="2.11.2" rev-constraint-default="2.11.2" rev-constraint-dynamic="2.11.2" callerrev="1.3.2"/>
-				<caller organisation="com.typesafe.akka" name="akka-http-core-experimental_2.11" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.6" callerrev="1.0-RC3"/>
 				<caller organisation="org.scalaz" name="scalaz-core_2.11" conf="compile, runtime" rev="2.11.0" rev-constraint-default="2.11.0" rev-constraint-dynamic="2.11.0" callerrev="7.0.6"/>
 				<caller organisation="net.databinder.dispatch" name="dispatch-core_2.11" conf="compile, runtime" rev="2.11.2" rev-constraint-default="2.11.2" rev-constraint-dynamic="2.11.2" callerrev="0.11.2"/>
+				<caller organisation="com.typesafe.akka" name="akka-http-experimental_2.11" conf="default, compile, runtime, master" rev="2.11.5" rev-constraint-default="2.11.5" rev-constraint-dynamic="2.11.5" callerrev="1.0"/>
 				<caller organisation="io.spray" name="spray-util_2.11" conf="compile, runtime" rev="2.11.2" rev-constraint-default="2.11.2" rev-constraint-dynamic="2.11.2" callerrev="1.3.2"/>
 				<caller organisation="org.json4s" name="json4s-native_2.11" conf="compile, runtime" rev="2.11.0" rev-constraint-default="2.11.0" rev-constraint-dynamic="2.11.0" callerrev="3.2.10"/>
 				<caller organisation="openstackapi" name="openstackapi_2.11" conf="test-internal, test, optional, compile, provided, runtime" rev="2.11.7" rev-constraint-default="2.11.7" rev-constraint-dynamic="2.11.7" callerrev="1.0"/>
+				<caller organisation="com.typesafe.akka" name="akka-actor_2.11" conf="compile, runtime" rev="2.11.5" rev-constraint-default="2.11.5" rev-constraint-dynamic="2.11.5" callerrev="2.3.12"/>
 				<caller organisation="org.specs2" name="specs2_2.11" conf="compile, runtime" rev="2.11.1" rev-constraint-default="2.11.1" rev-constraint-dynamic="2.11.1" callerrev="2.3.13"/>
 				<caller organisation="com.typesafe.akka" name="akka-remote_2.11" conf="compile, runtime" rev="2.11.4" rev-constraint-default="2.11.4" rev-constraint-dynamic="2.11.4" callerrev="2.3.7"/>
 				<caller organisation="org.scala-lang" name="scala-compiler" conf="compile, runtime" rev="2.11.2" rev-constraint-default="2.11.2" rev-constraint-dynamic="2.11.2" callerrev="2.11.2"/>
@@ -1514,24 +1521,23 @@
 				<caller organisation="org.reactivemongo" name="reactivemongo-bson_2.11" conf="compile, runtime" rev="2.11.2" rev-constraint-default="2.11.2" rev-constraint-dynamic="2.11.2" callerrev="0.10.5.0.akka23"/>
 				<caller organisation="org.scala-lang.modules" name="scala-async_2.10" conf="default, compile, runtime, master" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="0.9.2"/>
 				<caller organisation="com.typesafe.akka" name="akka-agent_2.11" conf="default, compile, runtime, master" rev="2.11.4" rev-constraint-default="2.11.4" rev-constraint-dynamic="2.11.4" callerrev="2.3.7"/>
+				<caller organisation="com.typesafe.akka" name="akka-parsing-experimental_2.11" conf="compile, runtime" rev="2.11.5" rev-constraint-default="2.11.5" rev-constraint-dynamic="2.11.5" callerrev="1.0"/>
 				<caller organisation="io.spray" name="spray-json_2.11" conf="default, compile, runtime, master" rev="2.11.2" rev-constraint-default="2.11.2" rev-constraint-dynamic="2.11.2" callerrev="1.3.1"/>
 				<caller organisation="org.reactivemongo" name="reactivemongo-bson-macros_2.11" conf="compile, runtime" rev="2.11.2" rev-constraint-default="2.11.2" rev-constraint-dynamic="2.11.2" callerrev="0.10.5.0.akka23"/>
 				<caller organisation="org.scala-lang" name="scala-reflect" conf="compile, runtime" rev="2.11.2" rev-constraint-default="2.11.2" rev-constraint-dynamic="2.11.2" callerrev="2.11.2"/>
-				<caller organisation="com.typesafe.akka" name="akka-parsing-experimental_2.11" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.6" callerrev="1.0-RC3"/>
+				<caller organisation="com.typesafe.akka" name="akka-stream-experimental_2.11" conf="compile, runtime" rev="2.11.5" rev-constraint-default="2.11.5" rev-constraint-dynamic="2.11.5" callerrev="1.0"/>
+				<caller organisation="com.typesafe.akka" name="akka-http-core-experimental_2.11" conf="compile, runtime" rev="2.11.5" rev-constraint-default="2.11.5" rev-constraint-dynamic="2.11.5" callerrev="1.0"/>
 				<caller organisation="org.scalaz" name="scalaz-effect_2.11" conf="compile, runtime" rev="2.11.0" rev-constraint-default="2.11.0" rev-constraint-dynamic="2.11.0" callerrev="7.0.6"/>
 				<caller organisation="io.spray" name="spray-routing_2.11" conf="default, compile, runtime, master" rev="2.11.2" rev-constraint-default="2.11.2" rev-constraint-dynamic="2.11.2" callerrev="1.3.2"/>
 				<caller organisation="org.scalacheck" name="scalacheck_2.11" conf="compile, runtime" rev="2.11.0" rev-constraint-default="2.11.0" rev-constraint-dynamic="2.11.0" callerrev="1.11.3"/>
-				<caller organisation="com.typesafe.akka" name="akka-stream-experimental_2.11" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.6" callerrev="1.0-RC3"/>
 				<caller organisation="com.typesafe.play" name="play-iteratees_2.11" conf="compile, runtime" rev="2.11.1" rev-constraint-default="2.11.1" rev-constraint-dynamic="2.11.1" callerrev="2.3.5"/>
 				<caller organisation="com.typesafe.akka" name="akka-slf4j_2.11" conf="default, compile, runtime, master" rev="2.11.4" rev-constraint-default="2.11.4" rev-constraint-dynamic="2.11.4" callerrev="2.3.7"/>
 				<caller organisation="io.spray" name="spray-httpx_2.11" conf="compile, runtime" rev="2.11.2" rev-constraint-default="2.11.2" rev-constraint-dynamic="2.11.2" callerrev="1.3.2"/>
 				<caller organisation="org.scalaz" name="scalaz-concurrent_2.11" conf="compile, runtime" rev="2.11.0" rev-constraint-default="2.11.0" rev-constraint-dynamic="2.11.0" callerrev="7.0.6"/>
-				<caller organisation="com.typesafe.akka" name="akka-http-experimental_2.11" conf="default, compile, runtime, master" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.6" callerrev="1.0-RC3"/>
 				<caller organisation="org.scala-lang.modules" name="scala-parser-combinators_2.11" conf="compile, runtime" rev="2.11.1" rev-constraint-default="2.11.1" rev-constraint-dynamic="2.11.1" callerrev="1.0.2"/>
 				<caller organisation="io.spray" name="spray-can_2.11" conf="default, compile, runtime, master" rev="2.11.2" rev-constraint-default="2.11.2" rev-constraint-dynamic="2.11.2" callerrev="1.3.2"/>
 				<caller organisation="io.spray" name="spray-io_2.11" conf="compile, runtime" rev="2.11.2" rev-constraint-default="2.11.2" rev-constraint-dynamic="2.11.2" callerrev="1.3.2"/>
 				<caller organisation="com.fasterxml.jackson.module" name="jackson-module-scala_2.11" conf="default, compile, runtime, master" rev="2.11.2" rev-constraint-default="2.11.2" rev-constraint-dynamic="2.11.2" callerrev="2.4.2"/>
-				<caller organisation="com.typesafe.akka" name="akka-actor_2.11" conf="compile, runtime" rev="2.11.5" rev-constraint-default="2.11.5" rev-constraint-dynamic="2.11.5" callerrev="2.3.11"/>
 				<caller organisation="org.scala-stm" name="scala-stm_2.11" conf="compile, runtime" rev="2.11.0" rev-constraint-default="2.11.0" rev-constraint-dynamic="2.11.0" callerrev="0.7"/>
 				<caller organisation="org.json4s" name="json4s-core_2.11" conf="compile, runtime" rev="2.11.0" rev-constraint-default="2.11.0" rev-constraint-dynamic="2.11.0" callerrev="3.2.10"/>
 				<caller organisation="com.typesafe.akka" name="akka-testkit_2.11" conf="compile, runtime" rev="2.11.2" rev-constraint-default="2.11.2" rev-constraint-dynamic="2.11.2" callerrev="2.3.6"/>
@@ -1557,19 +1563,13 @@
 				<artifacts>
 				</artifacts>
 			</revision>
-			<revision name="2.11.5" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, master(*), runtime, compile(*), runtime(*)" position="-1">
+			<revision name="2.11.5" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="-1">
 				<evicted-by rev="2.11.7"/>
-				<caller organisation="com.typesafe.akka" name="akka-actor_2.11" conf="compile, runtime" rev="2.11.5" rev-constraint-default="2.11.5" rev-constraint-dynamic="2.11.5" callerrev="2.3.11"/>
-				<artifacts>
-				</artifacts>
-			</revision>
-			<revision name="2.11.6" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master, master(*)" position="-1">
-				<evicted-by rev="2.11.7"/>
-				<caller organisation="com.typesafe.akka" name="akka-http-experimental_2.11" conf="default, compile, runtime, master" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.6" callerrev="1.0-RC3"/>
-				<caller organisation="com.typesafe.akka" name="akka-http-core-experimental_2.11" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.6" callerrev="1.0-RC3"/>
-				<caller organisation="com.typesafe.akka" name="akka-parsing-experimental_2.11" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.6" callerrev="1.0-RC3"/>
-				<caller organisation="com.typesafe.akka" name="akka-actor_2.11" conf="compile, runtime" rev="2.11.5" rev-constraint-default="2.11.5" rev-constraint-dynamic="2.11.5" callerrev="2.3.11"/>
-				<caller organisation="com.typesafe.akka" name="akka-stream-experimental_2.11" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.6" callerrev="1.0-RC3"/>
+				<caller organisation="com.typesafe.akka" name="akka-stream-experimental_2.11" conf="compile, runtime" rev="2.11.5" rev-constraint-default="2.11.5" rev-constraint-dynamic="2.11.5" callerrev="1.0"/>
+				<caller organisation="com.typesafe.akka" name="akka-http-core-experimental_2.11" conf="compile, runtime" rev="2.11.5" rev-constraint-default="2.11.5" rev-constraint-dynamic="2.11.5" callerrev="1.0"/>
+				<caller organisation="com.typesafe.akka" name="akka-http-experimental_2.11" conf="default, compile, runtime, master" rev="2.11.5" rev-constraint-default="2.11.5" rev-constraint-dynamic="2.11.5" callerrev="1.0"/>
+				<caller organisation="com.typesafe.akka" name="akka-actor_2.11" conf="compile, runtime" rev="2.11.5" rev-constraint-default="2.11.5" rev-constraint-dynamic="2.11.5" callerrev="2.3.12"/>
+				<caller organisation="com.typesafe.akka" name="akka-parsing-experimental_2.11" conf="compile, runtime" rev="2.11.5" rev-constraint-default="2.11.5" rev-constraint-dynamic="2.11.5" callerrev="1.0"/>
 				<artifacts>
 				</artifacts>
 			</revision>
