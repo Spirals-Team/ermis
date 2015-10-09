@@ -1,12 +1,16 @@
 package dsl
 
+import java.io.IOException
+
 import akka.actor.ActorSystem
 import akka.http.scaladsl.Http
+import akka.http.scaladsl.client.RequestBuilding
 import akka.http.scaladsl.model._
+import akka.http.scaladsl.unmarshalling.Unmarshal
 import akka.stream.ActorFlowMaterializer
 import akka.stream.scaladsl._
 import com.woorea.openstack.nova.Nova
-import scala.concurrent.duration._
+
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.Future
 
@@ -20,30 +24,29 @@ object NovaDsl {
     implicit val system = ActorSystem()
     implicit val materializer = ActorFlowMaterializer()
 
-
-
-    val connectionFlow: Flow[HttpRequest, HttpResponse, Future[Http.OutgoingConnection]] =
-    //   Http().outgoingConnection("http://akka.io")
+    val connection: Flow[HttpRequest, HttpResponse, Future[Http.OutgoingConnection]] =
       Http().outgoingConnection(host="localhost", port = 7371)
+    //   Http().outgoingConnection("http://akka.io")
 
-    val responseFuture: Future[HttpResponse] =
-      Source.single(HttpRequest(uri = "/nova-demo"))
-        .via(connectionFlow)
-        .runWith(Sink.head)
+    val request:HttpRequest = RequestBuilding.Get(s"/nova-demo")
 
+    Source.single(request).via(connection).runWith(Sink.head).flatMap {
 
-    responseFuture.onSuccess{
-      case value => {
-        print("SUCCESS")
-        print(value.entity.toStrict(5 seconds).map(_.data.decodeString("UTF-8")))
-        print(value.entity.toStrict(5 seconds).map{_.data}.map(_.utf8String))
+      response =>
+      response.status match {
+
+        case status if status.isSuccess => {
+          val reply = Unmarshal(response.entity).to[String]
+          println(reply)
+          reply
+        }
+        case status => {
+          println(s"$status error:${response.toString}")
+          Future.failed(new IOException(s"Token request failed with status ${response.status} and error ${response.entity}"))
+        }
+
       }
-    }
-    responseFuture.onFailure{
-      case value => {
-        print("FAIL")
-        print(value.getMessage)
-      }
+
     }
 
   }

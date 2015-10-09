@@ -13,7 +13,7 @@ libraryDependencies ++= {
     "io.spray"            %%  "spray-routing" % sprayV withSources() withJavadoc(),
     "io.spray"            %%  "spray-json"    % "1.3.1",
     "io.spray"            %%  "spray-testkit" % sprayV  % "test",
-    "com.typesafe.akka" % "akka-http-experimental_2.11" % "1.0-RC3",
+    "com.typesafe.akka" % "akka-http-experimental_2.11" % "1.0",
     "org.reactivemongo" %% "reactivemongo" % "0.10.5.0.akka23",    "com.typesafe.akka" %% "akka-actor" % akkaVersion,
     "ch.qos.logback" % "logback-classic" % "1.1.2",
     "org.scala-lang.modules" % "scala-async_2.10" % "0.9.2",
@@ -33,8 +33,6 @@ libraryDependencies ++= {
     "com.woorea" %  "quantum-client"     % "3.2.1" withSources(),
     "com.woorea" %  "swift-client"       % "3.2.1" withSources(),
     "com.woorea" % "jersey2-connector" % "3.2.2-SNAPSHOT"
-//    "com.woorea" %  "openstack-examples" % "3.1.1" withSources()
-
   )
 }
 resolvers += Resolver.mavenLocal
