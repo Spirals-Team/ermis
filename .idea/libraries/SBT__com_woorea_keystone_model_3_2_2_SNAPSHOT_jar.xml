@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="SBT: com.woorea:keystone-model:3.2.2-SNAPSHOT:jar">
-    <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/com/woorea/keystone-model/3.2.2-SNAPSHOT/keystone-model-3.2.2-SNAPSHOT.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
