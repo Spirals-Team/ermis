@@ -30,6 +30,7 @@ class NovaActor(FlavorActor: ActorRef, KeyActor: ActorRef, ImageActor: ActorRef)
 
       println( "I am already Connected, get my VMs" )
 
+      //TODO: query again nova and reply with the new Server-List
 
       sender ! servers
       context become is_connected( client, servers )

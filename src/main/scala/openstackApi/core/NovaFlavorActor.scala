@@ -15,6 +15,9 @@ class NovaFlavorActor extends Actor{
 
   def connected(novaClient: Nova): Receive ={
 
+    //TODO: Case: "flavors" => sender ! <list_of_flavors>
+
+
     case flavor_name: String => {
       var found=false
       // Get Flavors and check if the flavor exists or not
