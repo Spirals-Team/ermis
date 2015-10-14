@@ -26,13 +26,13 @@ class NovaActor(FlavorActor: ActorRef, KeyActor: ActorRef, ImageActor: ActorRef)
   //Return instances list
   def is_connected( client: Nova, servers: util.List[Server] ): Receive = {
 
+    case "Nova_Demo_Connect" => {
+      sender ! "You are already connected to Nova"
+    }
+
     case "Get_Instances" => {
 
-      println( "I am already Connected, get my VMs" )
-
-      //TODO: query again nova and reply with the new Server-List
-
-      sender ! servers
+      sender ! NovaConnector.GetServers(client)
       context become is_connected( client, servers )
 
     }

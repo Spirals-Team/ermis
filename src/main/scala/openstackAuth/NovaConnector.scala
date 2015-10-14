@@ -125,6 +125,20 @@ object NovaConnector {
     }
   }
 
+  /*
+  Pretty print of a Java List using
+  new lines between object of the collection
+  Useful for Nova Get<X> functions
+ */
+  def prettyPrint[T] ( list: util.List[T]): String={
+    var result=""
+    var x = 0
+
+    for ( x <- 0 to (list.size()-1) ) {
+      result += list.get(x).toString + "\n\n"
+    }
+    result
+  }
 
 
   //===================================

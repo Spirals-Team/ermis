@@ -8,10 +8,11 @@ import akka.pattern.ask
 import akka.stream.ActorMaterializer
 import akka.util.Timeout
 import com.woorea.openstack.nova.Nova
-import com.woorea.openstack.nova.model.Server
+import com.woorea.openstack.nova.model.{Flavor, Server}
 import openstackApi.core._
 import openstackApi.domain.CreateVMrq
 import akka.http.scaladsl.server.Directives._
+import openstackAuth.NovaConnector
 
 import scala.concurrent.duration._
 
@@ -78,7 +79,18 @@ class AkkaHttpService(system: ActorSystem) extends Actor {
 
           onSuccess( NovaActor ? Message ) {
             case message: util.List[Server] => {
-              complete( message.toString )
+              complete( NovaConnector.prettyPrint[Server](message) )            }
+          }
+        }~
+        path( "nova-demo"/"flavors" ) {
+
+          val Message = "flavors"
+
+          onSuccess( FlavorActor ? Message ) {
+            case message: util.List[Flavor] => {
+
+              complete( NovaConnector.prettyPrint[Flavor](message) )
+
             }
           }
         }~
