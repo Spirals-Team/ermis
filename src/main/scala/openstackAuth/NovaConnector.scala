@@ -7,7 +7,8 @@ import com.woorea.openstack.keystone.Keystone
 import com.woorea.openstack.keystone.model.authentication.UsernamePassword
 import com.woorea.openstack.keystone.utils.KeystoneUtils
 import com.woorea.openstack.nova.Nova
-import com.woorea.openstack.nova.model.{Flavor, Image, KeyPair, Server}
+import com.woorea.openstack.nova.model._
+import org.slf4j.bridge.SLF4JBridgeHandler
 
 
 object NovaConnector {
@@ -19,6 +20,9 @@ object NovaConnector {
       .getConfig( "nova_authentication" )
 
     try {
+
+      SLF4JBridgeHandler.removeHandlersForRootLogger();
+      SLF4JBridgeHandler.install();
 
       val keystoneClient = new Keystone( conf.getString( "keystone_auth_url" ) )
       val access = keystoneClient.tokens().authenticate( new UsernamePassword( conf.getString( "tenant_name" ),
@@ -105,6 +109,22 @@ object NovaConnector {
     }
   }
 
+  def GetHypervisors(nova_client: Nova): util.List[Hypervisor] ={
+
+    try {
+
+      val servers = nova_client.hypervisors().list().execute()
+      return servers.getList
+
+    } catch {
+
+      case e: Exception => {
+        e.printStackTrace()
+        throw e
+      }
+
+    }
+  }
   /*
     Get Images using Nova Service
    */

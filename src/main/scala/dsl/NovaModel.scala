@@ -28,6 +28,18 @@ object NovaModel {
 
   }
 
+  def images() = {
+
+    Requester.Request( inputRequest="images", null )
+
+  }
+
+  def keyPairs() = {
+
+    Requester.Request( inputRequest="keyPairs", null )
+
+  }
+
   def +=(instance: NovaInstance): Unit ={
 
     Requester.Request( inputRequest="create_instance", instance )

@@ -2,7 +2,7 @@ package openstackApi.api
 
 import java.util
 
-import OpenstackActorsApi.core.NovaKeyActor
+import openstackApi.core.NovaKeyActor
 import akka.actor.{Actor, ActorRef, Props}
 import akka.pattern.ask
 import akka.util.Timeout

@@ -9,7 +9,6 @@ import akka.http.scaladsl.model._
 import akka.http.scaladsl.unmarshalling.Unmarshal
 import akka.stream.ActorMaterializer
 import akka.stream.scaladsl._
-import dsl.NovaInstance
 
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.Future
@@ -41,6 +40,10 @@ object Requester {
         request = RequestBuilding.Get( s"/nova-demo/instances" )
       case "flavors" =>
         request = RequestBuilding.Get( s"/nova-demo/flavors" )
+      case "images" =>
+        request = RequestBuilding.Get( s"/nova-demo/images" )
+      case "keyPairs" =>
+        request = RequestBuilding.Get( s"/nova-demo/keyPairs" )
       case "create_instance" => {
         var query = "/nova-demo/create_instance?name=" + novaInstance._name + "&flavor=" + novaInstance._flavor + "&image=" + novaInstance._image + "&keyname=" + novaInstance._keyPair
         request = RequestBuilding.Get( query )

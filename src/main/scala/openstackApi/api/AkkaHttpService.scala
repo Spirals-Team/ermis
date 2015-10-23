@@ -1,7 +1,7 @@
 package openstackApi.api
 
 import java.util
-import OpenstackActorsApi.core.NovaKeyActor
+import openstackApi.core.NovaKeyActor
 import akka.actor.{Actor, ActorSystem, Props}
 import akka.http.scaladsl.Http
 import akka.pattern.ask
